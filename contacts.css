@@ -3,62 +3,100 @@
 body
 {
     background-color: #ffffff;
+    display: flex;
+    
 }
 
 .header
 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(112, 190, 235);
-    border-radius: 25px;
-    margin-top: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(112, 190, 235);
+  border-radius: 0 0 25px 25px;
+}
+
+.container
+{
+  height: 6.1em;
 }
 
 .menu {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
+  position: fixed;
+  top: 20px;
+  right: 12em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
 
-  main
+main {
+  margin-top: 8em;
+  opacity: 0;
+  justify-content: center;
+    align-items: center;
+}
+
+main p {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1
 {
-  margin-top: 11em;
+  opacity: 0;
 }
 
 img
 {
-    width: 130px;
+    width: 73.2px;
     margin-top: 15px;
 }
 
-.menu li {
-    font-family: 'Fira Sans', sans-serif;
-    
-    margin-bottom: 10px;
-    margin-right: 20px;
-    margin-top: 3.2em;
-  }
-  
-  .menu a {
-    color: black;
-    text-decoration: underline;
-    font-size: 24px;
-  }
-  
-  .menu a:hover
-  {
-    color: white;
-  }
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
 
-  .footer
-  {
-    height: 100vh;
-    display: block;
-  }
+.logo
+{
+  margin-left: 15.4em;
+  margin-top: 1em;
+}
+
+.menu li {
+  font-family: 'Fira Sans', sans-serif;
+  
+  margin-bottom: 10px;
+  margin-right: 30px;
+  margin-top: 1.2em;
+}
+
+.menu a {
+  color: black;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.menu a:hover
+{
+  color: rgb(207, 235, 252);
+}
+  
+ 

@@ -15,8 +15,8 @@ window.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() {
     logo.classList.add('move');
     logo.style.opacity = '1';
-    logo.style.top = '-90px';
-    logo.style.left = '-90px';
-    logo.style.transform = 'translate(0, 0) scale(0.4)';
+    logo.style.top = '-130px';
+    logo.style.left = '100px';
+    logo.style.transform = 'translate(0, 0) scale(0.2)';
   }, 2000);
 });
