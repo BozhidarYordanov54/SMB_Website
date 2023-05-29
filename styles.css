@@ -1,86 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-
 body
 {
-    background-color: darkgray;
+  background-color: darkgray;
 }
 
 header
 {
-    height: 100vh;
+  background-color: transparent;
+  border: 1px solid transparent;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    height: 5em;
-    overflow: hidden;
-    border: 2px solid transparent;
-    border-radius: 25px;
-    background-color: darkgray;
-    transition: border-color 0.5s ease, background-color 0.5s ease;
-  }
-  
-  .logo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-  
-  .menu {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    opacity: 0;
-    display: flex;
-    flex-direction: row;
-    transition: opacity 0.5s ease;
-  }
-  
-  .menu li {
-    list-style: none;
-    margin-right: 1rem;
-  }
-
-  .menu li:last-child
-  {
-    margin-right: 1em;
-  }
-
-  .menu li:not(:last-child) {
-    margin-right: 2.2em; /* Add spacing between menu items */
-  }
-  
-  .menu li a {
-    font-family: "Fira Sans", sans-serif;
-    color: black;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
-  
-  .scroll-up .logo {
-    
-    top: 10px;
-    left: 10px;
-    transform: translate(0, 0) scale(1);  /* Updated: Reset translate transform */
-  }
-  
-  .scroll-up.menu {
-    opacity: 1;
-  }
-
-  .container.scroll-up
-  {
-    position: fixed;
-    border-color: #ffffff;
-    background-color: #ffffff;
-  }
-
-
-#main-content
+header.show
 {
-    display: none;
+  background-color: #ffffff;
+  border: 1px solid #ffffff
 }
+
+.container
+{
+  height: 15em;
+}
+
+.logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+.logo.move {
+  top: 20px;
+  left: 20px;
+  transform: none;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+
+.logo.move img {
+  transform: scale(0.6);
+}
+
+.menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.menu.show {
+  opacity: 1;
+}
+
+.menu li {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#main-content{
+  display: none;
+}
+
+#main-content.show {
+  display: block;
+  opacity: 1;
+}
+
+.footer
+{
+  display: none;
+}
+
+.footer.show
+{
+  display: block;
+  opacity: 1;
+}
+
+
