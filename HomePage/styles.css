@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em 2em 0 0;
+    background: rgb(90, 125, 219);
+    color: #ffffff;
+    height: 60px;
+}
+
+.footer-info
+{
+    font-size: 16px;
+    font-family: "Fira Sans", serif;
+}
