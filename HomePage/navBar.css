@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.site-header
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 2em 2em;
+    padding: 1em;
+    background: rgb(90, 125, 219);
+}
+
+.logo
+{
+    flex: 0 0 auto;
+}
+
+.logo a img
+{
+    width: 100px;
+    height: auto;
+    
+}
+
+.nav-bar{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-contents {
+    display: flex;
+    list-style: none;
+    margin-right: 1em;
+    padding: 0;
+    
+    gap: 2em;
+}
+
+.navbar-contents li {
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.nav-bar .navbar-contents li a
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Fira Sans", serif;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.2s ease-in;
+}
+
+.nav-bar .navbar-contents li a:hover
+{
+    color: #f3df27;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        padding: 1em 0;
+    }
+
+    .logo {
+        margin-bottom: 1em;
+    }
+
+    .nav-bar {
+        justify-content: center;
+    }
+
+    .navbar-contents {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        gap: 1em;
+    }
+}
+
+
+
