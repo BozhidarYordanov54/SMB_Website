@@ -11,7 +11,7 @@
    
     display: grid;
     grid-template-rows: 10em 50vh auto 10em;
-    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-columns: 2fr 6fr 2fr 2fr;
     grid-gap: 1em;
     grid-row-gap: 2em;
     margin-top: 2em;
@@ -21,25 +21,32 @@
 
 .na-header{
     display: flex;
-    justify-content: center;
+    margin-left: 30%;
+    margin-bottom: 0;
+    font-family: "Fira Sans", serif;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-top: 1em;
 }
 
 .oa-header
 {
     display: flex;
     justify-content: center;
-    align-items: center;
+
+    font-family: "Fira Sans", serif;
+    font-size: 18px;
+    text-decoration: underline;
+    margin-top: 2em;
 }
 
 .older-articles
 {
-    display: flex;
+    display: block;
     flex-direction: column;
     gap: 0.5em;
     
 }
-
-
 
 .newest-article {
     
@@ -59,6 +66,8 @@
 }
 
 .text {
+    display: flex;
+    justify-content: start;
     width: auto;
     position: absolute;
     bottom: 0;
@@ -69,6 +78,10 @@
     color: white;
     padding: 10px;
     margin: 0;
+    overflow: hidden;
+    height: 3.2em;
+    margin-bottom: 5px;
+    font-family: "Fira Sans", serif;
 }
 
 
@@ -76,23 +89,21 @@ img {
     border-radius: 5px;
     width: 100%;
     height: auto;
-
-    transition: all 0.2s ease-in;
 }
 
-img:hover{
-    background: rgba(255, 255, 255, 0.2);
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .article-container {
         grid-template-columns: 1fr;
-    }
-    
-    .newest-article {
-        grid-column: auto;
+        gap: 5em;
     }
 
-   
+    .newest-article {
+        grid-column: span 1;
+      }
+
+      .oa-header
+      {
+        margin-top: 1.5em;
+      }
 }
 
