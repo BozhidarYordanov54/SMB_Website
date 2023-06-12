@@ -68,7 +68,7 @@
 }
 
 
-footer{
+footer {
     position: relative;
     margin-top: 2em;
     left: 0;
@@ -81,28 +81,24 @@ footer{
     background: rgb(90, 125, 219);
     color: #ffffff;
     height: 60px;
-    
     padding: 3em;
     gap: 30em;
 }
 
-.footer-copyright
-{
+.footer-copyright {
     position: inherit;
     font-size: 20px;
     font-family: "Fira Sans", serif;
 }
 
-.partners{
+.partners {
     display: flex;
     flex-direction: row;
-    width: 3%;
     gap: 5em;
     padding: 10px;
 }
 
-.mon-image
-{
+.mon-image {
     margin-top: .8em;
 }
 
@@ -139,5 +135,33 @@ footer{
     {
         width: 75px;
         height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 0.2em;
+        padding: 0.5em;
+        margin-top: 5.1em;
+        
+    }
+
+    .footer-copyright{
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .partners {
+        flex-direction: row;
+        gap: 3em;
+    }
+
+    .mon-image, .smb-image, .uchimi-image{
+        width: 100%;
+    }
+
+    .mon-image{
+        margin-top: .2em;
     }
 }

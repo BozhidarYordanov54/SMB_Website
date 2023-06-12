@@ -112,3 +112,25 @@ a {
   color: #000;
 }
 
+@media (max-width: 768px) {
+  .newest-article {
+    width: 360px; 
+    font-size: 18px; 
+  }
+
+  .oa-header{
+    margin-top: 0.8em;
+  }
+
+  .older-articles
+  {
+    margin-top: .5em;
+  }
+
+  .older-article {
+    width: 110px;
+    font-size: 16px; 
+    letter-spacing: 0.1px;
+    padding: 1px;
+  }
+}
