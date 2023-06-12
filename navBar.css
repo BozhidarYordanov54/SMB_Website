@@ -75,47 +75,35 @@ footer{
     bottom: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     border-radius: 2em 2em 0 0;
     background: rgb(90, 125, 219);
     color: #ffffff;
     height: 60px;
-    overflow: hidden;
+    
     padding: 3em;
+    gap: 30em;
 }
 
 .footer-copyright
 {
-    
+    position: inherit;
     font-size: 20px;
     font-family: "Fira Sans", serif;
 }
 
-.partners {
+.partners{
     display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    margin-left: 15em;
+    flex-direction: row;
+    width: 3%;
     gap: 5em;
-}
-
-.partners a {
-    margin-right: 10px;
-}
-
-.mon-image, .uchimi-image {
-    width: 250px; /* Adjust the width as needed */
-    height: auto; /* Preserve aspect ratio */
+    padding: 10px;
 }
 
 .mon-image
 {
-    margin-bottom: 0.5em;
-}
-
-.SMB-image{
-    width: 60px;
+    margin-top: .8em;
 }
 
 
