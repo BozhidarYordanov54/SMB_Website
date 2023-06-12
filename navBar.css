@@ -69,7 +69,8 @@
 
 
 footer{
-    position: fixed;
+    position: relative;
+    margin-top: 2em;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -82,7 +83,7 @@ footer{
     height: 60px;
 }
 
-.footer-info
+.footer-copyright
 {
     font-size: 16px;
     font-family: "Fira Sans", serif;
