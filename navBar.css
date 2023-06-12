@@ -81,13 +81,43 @@ footer{
     background: rgb(90, 125, 219);
     color: #ffffff;
     height: 60px;
+    overflow: hidden;
+    padding: 3em;
 }
 
 .footer-copyright
 {
-    font-size: 16px;
+    
+    font-size: 20px;
     font-family: "Fira Sans", serif;
 }
+
+.partners {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-left: 15em;
+    gap: 5em;
+}
+
+.partners a {
+    margin-right: 10px;
+}
+
+.mon-image, .uchimi-image {
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Preserve aspect ratio */
+}
+
+.mon-image
+{
+    margin-bottom: 0.5em;
+}
+
+.SMB-image{
+    width: 60px;
+}
+
 
 @media (max-width: 768px) {
     .site-header {
@@ -122,6 +152,8 @@ footer{
         width: 75px;
         height: auto;
     }
+
+    .footer-copyright
 }
 
 
