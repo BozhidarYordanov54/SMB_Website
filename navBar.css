@@ -14,6 +14,7 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 0 0 2em 2em;
+    border: 1px solid #ffffff;
     height: auto;
     padding: 1em;
     width: 100%;
@@ -32,8 +33,8 @@
 }
 
 .nav-bar{
-    flex: 1 1 auto;
     display: flex;
+    flex: 1 1 auto;
     align-items: center;
     justify-content: flex-end;
 }
@@ -43,7 +44,6 @@
     list-style: none;
     margin-right: 0.5em;
     padding: 0;
-    
     gap: 2em;
 }
 
