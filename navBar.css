@@ -18,7 +18,7 @@
     height: auto;
     padding: 1em;
     width: 100%;
-    background: rgb(90, 125, 219);
+    background: #5B91BD;
 }
 
 .logo
@@ -64,7 +64,7 @@
 
 .nav-bar .navbar-contents li a:hover
 {
-    color: #e7d31c;
+    color: #f0d645;
 }
 
 
@@ -78,7 +78,7 @@ footer {
     justify-content: start;
     align-items: center;
     border-radius: 2em 2em 0 0;
-    background: rgb(90, 125, 219);
+    background: #5B91BD;
     color: #ffffff;
     height: 60px;
     padding: 3em;
@@ -142,7 +142,7 @@ footer {
         height: auto;
         gap: 0.2em;
         padding: 0.5em;
-        margin-top: 5.1em;
+        margin-top: 40%;
         
     }
 

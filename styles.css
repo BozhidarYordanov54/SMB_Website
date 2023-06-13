@@ -1,3 +1,7 @@
+body{
+  background: #dddddd;
+}
+
 .content {
   width: 80%;
   margin: 0 auto;
@@ -22,7 +26,7 @@
 .na-header{
   background-color: #f0f0f0;
   border-radius: 0 0 1em 1em;
-  background: rgb(90, 125, 219);
+  background: #5B91BD;
   font-family: "Fira Sans",serif;
   color: #ffffff;
   font-size: 20px;
@@ -33,7 +37,7 @@
   padding: 10px;
   transition: all 0.2s ease-in;
   background: rgb(208,147,41);
-  background: linear-gradient(180deg, rgba(90,125,219,1) 43%, rgba(255,182,182,1) 82%);
+  background: linear-gradient(180deg, rgba(91,145,189,1) 35%, rgba(54,86,112,1) 75%);
   padding: 1em;
   border-radius: 1em;
 
@@ -48,14 +52,14 @@
   padding: 10px;
   width: 100%;
   border-radius: 1.5em;
-  background: rgb(90, 125, 219);
+  background: rgba(54,86,112,1);
   color: #ffffff;
   font-family: "Fira Sans", serif;
   font-size: 20px;
 }
 
 .older-articles {
-  background: linear-gradient(180deg, rgba(255,182,182,1) 43%, rgba(90,125,219,1) 82%);
+  background: linear-gradient(0deg, rgba(91,145,189,1) 35%, rgba(54,86,112,1) 75%);
   padding: 1em;
   border-radius: 1em;
   margin-top: 1.5em;
