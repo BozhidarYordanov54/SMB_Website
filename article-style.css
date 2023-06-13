@@ -39,3 +39,22 @@ main img{
     border-radius: 2em;
     overflow: hidden;
 }
+
+@media (max-width: 1024px) {
+    .article-paragraph-one,
+    .article-paragraph-two,
+    .article-parahraph-three {
+        flex-direction: column;
+    }
+
+    .text{
+        font-size: 20px;
+        text-align: start;
+    }
+
+    main img{
+        border-radius: 2em;
+        width: 115%;
+        overflow: hidden;
+    }
+}
