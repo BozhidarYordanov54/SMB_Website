@@ -33,6 +33,7 @@
     font-family: "Fira Sans" ,serif;
     font-size: 24px;
     text-indent: 2em;
+    text-align: justify;
 }
 
 main img{
@@ -49,7 +50,7 @@ main img{
 
     .text{
         font-size: 20px;
-        text-align: start;
+        text-align: justify;
     }
 
     main img{
