@@ -47,7 +47,7 @@ body{
   transform: scale(1.05);
 }
 
-.oa-header{
+.future-header, .oa-header{
   margin-top: 2em;
   padding: 10px;
   width: 100%;
@@ -56,9 +56,11 @@ body{
   color: #ffffff;
   font-family: "Fira Sans", serif;
   font-size: 20px;
+  text-align: center;
 }
 
-.older-articles {
+
+.future-articles, .older-articles {
   background: linear-gradient(0deg, rgba(91,145,189,1) 35%, rgba(54,86,112,1) 75%);
   padding: 1em;
   border-radius: 1em;
@@ -68,20 +70,38 @@ body{
   gap: 0.2em;
 }
 
-.older-article {
+.future-articles{
+  background: rgba(54,86,112,1);
+}
+
+.future-article, .older-article {
   padding: 10px;
   display: flex;
   flex-direction: row;
   transition: all 0.2s ease-in;
 }
 
-.older-article:hover {
+.future-article:hover, .older-article:hover {
   transform: scale(1.05);
 }
 
 .image-container {
+  display: flex;
   text-align: center;
   position: relative;
+}
+
+.card-list{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.card{
+  flex: 1 0 30%;
+  border-radius: 12px;
+  background-color: #4f7a9e;
+  padding: 10px;
 }
 
 .image-container img {
@@ -90,25 +110,20 @@ body{
   border-radius: 5px;
 }
 
-.older-article .image-container img{
+.future-article, .older-article .image-container img{
   overflow: hidden;
 }
+
 
 .text {
   margin-top: 10px;
   font-family: "Fira Sans", serif;
   font-size: 16px;
   color: #ffffff;
-  text-align: justify;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* Limit the text to 3 lines */
-  -webkit-box-orient: vertical;
-}
-
-.older-article .text{
-  letter-spacing: 0.1px;
+  -webkit-line-clamp: 1;
 }
 
 a {
@@ -122,19 +137,38 @@ a {
     font-size: 18px; 
   }
 
-  .oa-header{
+  .future-header, .oa-header{
     margin-top: 0.8em;
   }
 
-  .older-articles
+  .text{
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .future-articles, .older-articles
   {
     margin-top: .5em;
   }
 
-  .older-article {
-    width: 110px;
+  .older-articles{
+    padding: 8px;
+  }
+
+  .card-list{
+    gap: 0.5em;
+  }
+  
+  .card{
+    flex: 0 0 20%;
+    padding: 2px;
+  }
+
+  .future-article, .older-article {
+    width: 115px;
     font-size: 16px; 
-    letter-spacing: 0.1px;
-    padding: 1px;
+    padding: 0 0;
   }
 }

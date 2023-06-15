@@ -18,6 +18,7 @@
     padding: 1em;
     width: 100%;
     background: #5B91BD;
+    border: 2px solid rgb(65, 83, 121);
 }
 
 .logo
@@ -65,7 +66,6 @@
 {
     color: #f0d645;
 }
-
 
 footer {
     position: relative;
@@ -141,8 +141,6 @@ footer {
         height: auto;
         gap: 0.2em;
         padding: 0.5em;
-        margin-top: 40%;
-        
     }
 
     .footer-copyright{
