@@ -57,3 +57,21 @@
 .pdf-results li a:hover{
     color: rgb(255, 252, 53);
 }
+
+@media (width <= 768px)
+{
+    .article-header{
+        font-size: 20px;
+    }
+    .article-header p{
+        font-size: 20px;
+    }
+
+    .desc{
+        font-size: 24px;
+    }
+
+    .pdf-results li{
+        font-size: 16px;
+    }
+}
