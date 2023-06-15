@@ -151,14 +151,14 @@ a {
   .future-articles, .older-articles
   {
     margin-top: .5em;
-  }
-
-  .older-articles{
-    padding: 8px;
+    flex-direction: column;
+    padding: 10px;
+    width: 115%;
   }
 
   .card-list{
     gap: 0.5em;
+    flex-direction: column;
   }
   
   .card{
@@ -167,8 +167,9 @@ a {
   }
 
   .future-article, .older-article {
-    width: 115px;
+    width: 100%;
+    height: auto;
     font-size: 16px; 
-    padding: 0 0;
+    padding: 10px;
   }
 }
