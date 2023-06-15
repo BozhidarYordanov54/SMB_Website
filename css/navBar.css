@@ -59,12 +59,13 @@
     font-family: "Fira Sans", serif;
     font-size: 24px;
     font-weight: bold;
-    transition: all 0.1s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .nav-bar .navbar-contents li a:hover
 {
     color: #f0d645;
+    font-size: 26px;
 }
 
 footer {

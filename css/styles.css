@@ -35,12 +35,11 @@ body{
 .newest-article {
   width: 70%;
   padding: 10px;
-  transition: all 0.2s ease-in;
   background: rgb(208,147,41);
   background: linear-gradient(180deg, rgba(91,145,189,1) 35%, rgba(54,86,112,1) 75%);
   padding: 1em;
   border-radius: 1em;
-
+  transition: all 0.2s ease-in;
 }
 
 .newest-article:hover {
@@ -78,11 +77,7 @@ body{
   padding: 10px;
   display: flex;
   flex-direction: row;
-  transition: all 0.2s ease-in;
-}
-
-.future-article:hover, .older-article:hover {
-  transform: scale(1.05);
+  
 }
 
 .image-container {
@@ -100,14 +95,21 @@ body{
 .card{
   flex: 1 0 30%;
   border-radius: 12px;
-  background-color: #4f7a9e;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 35%, rgba(255, 251, 227, 0.1) 77%);
   padding: 10px;
+  transition: all 0.2s ease-in;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  
 }
 
 .image-container img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  justify-content: center;
 }
 
 .future-article, .older-article .image-container img{
@@ -118,7 +120,7 @@ body{
 .text {
   margin-top: 10px;
   font-family: "Fira Sans", serif;
-  font-size: 16px;
+  font-size: 20px;
   color: #ffffff;
   overflow: hidden;
   text-overflow: ellipsis;

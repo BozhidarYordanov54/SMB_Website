@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
-.header-wrapper{
+.header-wrapper, .image-container-header{
     display: flex;
     justify-content: center;
     background: #29455c;
@@ -8,7 +8,7 @@
     padding: 1em;
 }
 
-.article-header{
+.article-header, .image-container-header{
     position: relative;
     text-align: center;
     font-size: 26px;
@@ -34,6 +34,24 @@
     font-size: 24px;
     text-indent: 2em;
     text-align: justify;
+}
+
+.image-container{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 30%;
+}
+
+.image-container ul{
+    list-style-type: none;
+}
+
+.image-container li img{
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
 }
 
 main img{

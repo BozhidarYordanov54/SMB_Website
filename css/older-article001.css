@@ -55,7 +55,8 @@
 }
 
 .pdf-results li a:hover{
-    color: rgb(255, 252, 53);
+    color: rgb(255, 252, 63);
+    font-size: 45px;
 }
 
 @media (width <= 768px)
