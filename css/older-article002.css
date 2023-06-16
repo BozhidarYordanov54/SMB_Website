@@ -51,7 +51,12 @@ body{
     margin: 1em 0;
     background-color: #29455c;
     color: #ffffff;
-    
+}
+
+.table-header-desc{
+    padding: .5em;
+    font-size: 22px;
+    color: #fff677;
 }
 
 .table-wrapper {
@@ -107,7 +112,7 @@ body{
 
 .pdf-results li{
     display: block;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
 }
 
