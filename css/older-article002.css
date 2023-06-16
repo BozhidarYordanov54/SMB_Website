@@ -60,8 +60,8 @@ body{
 }
 
 .table-wrapper {
-    margin: 20px;
-    
+    overflow: auto;
+    margin-bottom: 1em;
   }
   
   .table-wrapper table {
@@ -125,6 +125,16 @@ body{
 .pdf-results li a:hover{
     color: rgb(255, 252, 63);
     font-size: 34px;
+}
+
+.end-of-table-wrapper{
+    background: #29455c;
+    padding: 1em;
+    margin: 0 0 1em 0;
+}
+
+.end-of-table{
+    display: none;
 }
 
 @media (width <= 768px)
