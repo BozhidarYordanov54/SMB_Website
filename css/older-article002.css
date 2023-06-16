@@ -24,7 +24,6 @@ body{
 .image-article-wrapper{
     display: flex;
     justify-content: center;
-    
     align-items: center;
     padding: 0 1.5em;
     margin-top: 2em;
@@ -121,4 +120,23 @@ body{
 .pdf-results li a:hover{
     color: rgb(255, 252, 63);
     font-size: 34px;
+}
+
+@media (width <= 768px)
+{
+    .image-article-wrapper{
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .pdf-results{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .pdf-results li{
+        font-size: 24px;
+    }
 }
