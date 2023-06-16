@@ -59,7 +59,7 @@
 
 .pdf-results li{
     display: block;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -71,7 +71,7 @@
 
 .pdf-results li a:hover{
     color: rgb(255, 252, 63);
-    font-size: 45px;
+    font-size: 34px;
 }
 
 @media (width <= 768px)
@@ -87,11 +87,19 @@
         flex-direction: column;
     }
 
-    .desc{
-        font-size: 24px;
+    .image-article-wrapper .article-text{
+        padding: 1em;
+    }
+
+    .pdf-results{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: .5em 0;
+        gap: 1em;
     }
 
     .pdf-results li{
-        font-size: 16px;
+        font-size: 26px;
     }
 }
