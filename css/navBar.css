@@ -131,6 +131,12 @@ footer {
         font-size: 16px;
     }
 
+    .nav-bar .navbar-contents li a:hover
+    {
+        font-size: 20px;
+        overflow: hidden;
+    }
+
     .logo a img
     {
         width: 75px;
