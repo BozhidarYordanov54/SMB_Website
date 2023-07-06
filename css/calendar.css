@@ -4,36 +4,42 @@
     border-radius: 8px;
     padding: 16px;
     font-family: Arial, sans-serif;
-    width: 23em;
   }
   
   .calendar-header {
     text-align: center;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .calendar-header h3 {
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
     color: #333;
   }
   
   #calendar-table th,
   #calendar-table td {
+    padding: calc(1% - 2px);
+    color: #333;
+    font-size: calc(1vw + 0.5vh);
     text-align: center;
-    padding: 8px;
-    font-weight: bold;
+    padding: 6px;
     color: #333;
   }
-  
+
   #calendar-table td {
-    cursor: pointer;
-  }
+    cursor: default;
+}
+
   
   .current-day {
-    background-color: green;
-    color: #000;
+    background: #4257f5;
+    color: #fff;
     border-radius: 50%;
+    height: 2.2em;
   }
   
   #current-day {
@@ -53,12 +59,6 @@
   
   .arrow-btn:focus {
     outline: none;
-  }
-  
-  .calendar-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   #prev-month-btn {
