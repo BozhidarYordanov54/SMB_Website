@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
+.article-header-wrapper{
+  text-align: center;
+  font-family: "Fira Sans",serif;
+  padding: 1em;
+  background: #29455c;
+  margin: 1em 0;
+}
+
+.article-header-wrapper h1
+{
+  color: #ffffff;
+  
+}
+
 .searchBar-wrapper {
   display: flex;
   flex-direction: column;
@@ -7,22 +21,22 @@
   align-items: center;
   justify-content: center;
   padding: 20px 0px;
-  margin: 1em 2em;
-  border-radius: 5em;
+  margin-top: 1em;
   font-family: "Fira Sans",serif;
-  background: #c67777;
+  background: #7d7d7d;
 }
 
 .search-by-p {
   margin-right: 10px;
   font-size: 28px;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
   text-decoration: underline;
 }
 
 #searchInput {
-  padding: 8px;
+  padding: 12px;
+  width: 20em;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
@@ -37,7 +51,6 @@
 
 
 .table-wrapper{
-    padding: 1em 0;
     overflow: auto;
 }
 
@@ -67,5 +80,13 @@ table {
   /* Hover effect */
   tbody tr:hover {
     background-color: #f5f5f5;
+  }
+
+  #notFoundMessage
+  {
+    text-align: center;
+    font-family: "Fira Sans",serif;
+    font-size: 3em;
+    padding: 2em;
   }
 

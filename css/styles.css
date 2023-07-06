@@ -95,14 +95,14 @@ body{
 .card{
   flex: 1 0 30%;
   border-radius: 12px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 35%, rgba(255, 251, 227, 0.1) 77%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 40%, rgba(0, 0, 0, 0));
   padding: 10px;
   transition: all 0.2s ease-in;
 }
 
 .card:hover{
   transform: scale(1.05);
-  
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 60%, rgba(0, 0, 0, 0));
 }
 
 .image-container img {
@@ -135,10 +135,6 @@ a {
 
 .animate-scroll {
   opacity: 0;
-  transition: opacity 1s;
-}
-
-.animate-scroll-slower{
   transition: opacity 2s;
 }
 
