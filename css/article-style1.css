@@ -59,6 +59,15 @@ main img{
     overflow: hidden;
 }
 
+.animate-scroll {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .animate{
+    opacity: 1;
+  }
+
 @media (max-width: 1024px) {
     .article-paragraph-one,
     .article-paragraph-two,

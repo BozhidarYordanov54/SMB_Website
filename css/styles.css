@@ -32,6 +32,13 @@ body{
   font-size: 20px;
 }
 
+.neweset-article-wrapper
+{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
 .newest-article {
   width: 70%;
   padding: 10px;
@@ -40,10 +47,17 @@ body{
   padding: 1em;
   border-radius: 1em;
   transition: all 0.2s ease-in;
+  flex: 1;
+  flex-grow: 2;
 }
 
 .newest-article:hover {
   transform: scale(1.05);
+}
+
+.calendar-container {
+  flex: 1;
+  flex-grow: 1;
 }
 
 .future-header, .oa-header{
