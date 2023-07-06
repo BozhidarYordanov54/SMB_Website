@@ -1,5 +1,5 @@
 body{
-  background: #dddddd;
+  background: rgba(225, 221, 219, 1);
 }
 
 .content {
@@ -26,7 +26,7 @@ body{
 .na-header{
   background-color: #f0f0f0;
   border-radius: 0 0 1em 1em;
-  background: #5B91BD;
+  background:  #5B91BD;
   font-family: "Fira Sans",serif;
   color: #ffffff;
   font-size: 20px;

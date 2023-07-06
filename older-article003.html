@@ -9,6 +9,8 @@
     <title>Document</title>
 </head>
 <body>
+  <script src="js/search.js"></script>
+
     <header class="site-header">
         <section class="logo">
              <a href="index.html"><img src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
@@ -24,8 +26,13 @@
          </nav>
      </header>
 
+     <div class="searchBar-wrapper">
+        <p class="search-by-p">Търсене по име</p>
+        <input type="text" id="searchInput" placeholder="Търсене по име..." oninput="searchTable()">
+     </div>
+
      <div class="table-wrapper">
-        <table>
+        <table id="myTable">
             <tr>
               <th>Място</th>
               <th>Име, презиме, фамилия</th>
@@ -251,6 +258,8 @@
         <tr><td ">89</td><td>Пресияна Петкова Москова</td><td>Велико Търново</td><td>ОУ „Бачо Киро"</td><td ">14</td><td ">5.5</td><td ">19.5</td></tr><tr><td ">90</td><td>Борис Дилянов Глушков</td><td>Велико Търново</td><td>СУ "Емилиян Станев"</td><td ">17</td><td ">2</td><td ">19</td></tr><tr><td ">91</td><td>Светослав Галимиров Димитров</td><td>Велико Търново</td><td>ОУ "П. Р. Славейков"</td><td ">17</td><td ">0</td><td ">17</td></tr><tr><td ">92</td><td>Лора Пенчева Личева</td><td>Велико Търново</td><td>ОУ "Димитър Благоев"</td><td ">14</td><td ">0</td><td ">14</td></tr><tr><td ">92</td><td>Юлиана Станиславова Димитрова</td><td>Велико Търново</td><td>ОУ "Димитър Благоев"</td><td ">13</td><td ">1</td><td ">14</td></tr><tr><td ">92</td><td>Теодора Асенова Стоянова</td><td>Велико Търново</td><td>СУ "Емилиян Станев"</td><td ">13</td><td ">1</td><td ">14</td></tr><tr><td ">93</td><td>Димитър Димитров Димитров</td><td>Велико Търново</td><td>СУ "Емилиян Станев"</td><td ">13</td><td ">0.5</td><td ">13.5</td></tr><tr><td ">94</td><td>Александър Георгиев Георгиев</td><td>Велико Търново</td><td>ОУ "П. Р. Славейков"</td><td ">13</td><td ">0</td><td ">13</td></tr><tr><td ">94</td><td>Преслав Радославов Валентинов</td><td>Велико Търново</td><td>ОУ "Св.Патриарх Евтимий"</td><td ">13</td><td ">0</td><td ">13</td></tr><tr><td ">95</td><td>Стилиан Здравков Ламбев</td><td>Велико Търново</td><td>ОУ "П. Р. Славейков"</td><td ">12</td><td ">0</td><td ">12</td></tr><tr><td ">96</td><td>Наталия Даниелова Димова</td><td>Велико Търново</td><td>ОУ "Св.Патриарх Евтимий"</td><td ">11</td><td ">0.5</td><td ">11.5</td></tr><tr><td ">97</td><td>Мария-Магдалена Златинова Златанова</td><td>Велико Търново</td><td>ОУ "П. Р. Славейков"</td><td ">6</td><td ">0</td><td ">6</td></tr></tbody></table>
 </table> 
 </div>  
+
+<p id="notFoundMessage" style="display: none;">Името не е намерено</p>
 
      <footer>
         <div class="footer-copyright">&copy; СМБ-Велико Търново 2023-2023</div>
