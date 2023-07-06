@@ -87,7 +87,8 @@ footer {
 
 .footer-copyright {
     position: inherit;
-    font-size: 20px;
+    font-size: 14px;
+    width: 100%;
     font-family: "Fira Sans", serif;
 }
 

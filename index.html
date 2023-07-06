@@ -32,7 +32,6 @@
         
         <div class="article-container">
            <!--Newest article-->
-            <div class="neweset-article-wrapper">
                 <article class="newest-article">
                     <div class="image-container">
                        <a href="newest-aricle.html">
@@ -42,38 +41,11 @@
                     </div>
                 </article>
 
-                <!--Calendar-->
-                <aside class="calendar-container">
-                    <div class="calendar">
-                        <div class="calendar-header">
-                            <button id="prev-month-btn" class="arrow-btn">&larr;</button>
-                            <h3 id="calendar-title"></h3>
-                            <button id="next-month-btn" class="arrow-btn">&rarr;</button>
-                        </div>
-                        <table id="calendar-table">
-                            <thead>
-                                <tr>
-                                    <th>Mon</th>
-                                    <th>Tue</th>
-                                    <th>Wed</th>
-                                    <th>Thu</th>
-                                    <th>Fri</th>
-                                    <th>Sat</th>
-                                    <th>Sun</th>
-                                </tr>
-                            </thead>
-                            <tbody id="calendar-body"></tbody>
-                        </table>
-                    </div>
-                    <p id="current-day"></p>
-                </aside>
-            </div>
-
             <!--Future articles-->
-            <header class="future-header">
+            <header class="future-header animate-scroll">
                 <h3>Предстоящи събития</h3>
             </header>
-            <div class="future-articles">
+            <div class="future-articles animate-scroll">
                 <div class="card-list">
                     <div class="card">
                         <article class="future-article">
@@ -109,10 +81,10 @@
             </div>
 
             <!--Older articles-->
-            <header class="oa-header">
+            <header class="oa-header animate-scroll">
                 <h3>Отминали събития</h3>
             </header>
-           <div class="older-articles">
+           <div class="older-articles animate-scroll">
             
             <div class="card-list">
                 <div class="card">
@@ -151,7 +123,7 @@
     </main>
 
     <footer>
-        <div class="footer-copyright">&copy; СМБ-Велико Търново 2023-2023</div>
+        <div class="footer-copyright">&copy; СМБ-Велико Търново 2023</div>
         <span class="partners">
             <a href="https://www.mon.bg/"><img class="mon-image" src="Images/Partners/mon-logo.png" alt="Министерство на образованието и науката на България"></a>
             <a href="http://www.math.bas.bg/smb/"><img class="smb-image" src="Images/Partners/SMB-logo-b&w.png" alt=""></a>
@@ -159,6 +131,7 @@
         </span>
     </footer>
 
-    <script src="js/calendar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>
