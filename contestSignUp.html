@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/navBar.css">
+    <link rel="stylesheet" href="css/signupForm.css">
+    <title>Записване за състезание</title>
+</head>
+<body>
+    <header class="site-header">
+        <section class="logo">
+             <a href="index.html"><img src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
+        </section>
+         <nav class="nav-bar">
+             <ul class="navbar-contents">
+                 <li><a href="#">Състезания</a></li>
+                 <li><a href="#">Изпити</a></li>
+                 <li><a href="#">Записване</a></li>
+                 <li><a href="members.html">Членство</a></li>
+                 <li><a href="#">Контакти</a></li>
+             </ul>
+         </nav>
+     </header>
+
+     <section class="countdown-timer">
+        <h1>Следващо Състезание</h1>
+        <div id="countdown"></div>
+     </section>
+
+     <main>
+        <form id="signup-form" action="/signup" method="post">
+            <div class="form-group">
+                <label for="name">Име:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="contestant-name">Име на участника:</label>
+                <input type="text" id="contestant-name" name="contestant-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Тел. номер:</label>
+                <input type="text" name="phone-number" id="phone-number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="city">Град:</label>
+                <input type="text" name="city" id="city" required>
+            </div>
+            <div class="form-group">
+                <label for="school-name">Училище:</label>
+                <input type="text" name="school-name" id="school-name" required>
+            </div>
+    
+            <input type="submit" value="Записване">
+        </form>
+    </main>
+
+     <footer>
+        <div class="footer-copyright">&copy; СМБ-Велико Търново 2023</div>
+        <span class="partners">
+            <a href="https://www.mon.bg/"><img class="mon-image" src="Images/Partners/mon-logo.png" alt="Министерство на образованието и науката на България"></a>
+            <a href="http://www.math.bas.bg/smb/"><img class="smb-image" src="Images/Partners/SMB-logo-b&w.png" alt=""></a>
+            <a href="http://www.math.bas.bg/omi/hssimi/"><img class="uchimi-image" src="Images/Partners/UchIMI-logo-short_text-color-transparent-BG.png" alt="УчИМИ"></a>
+        </span>
+    </footer>
+
+    <script src="js/validateData.js"></script>
+    <script src="js/countdownTimer.js"></script>
+</body>
+</html>
