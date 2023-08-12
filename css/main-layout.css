@@ -124,18 +124,29 @@ body{
     object-fit: cover;
   }
   
+@media(max-width: 768px)
+{
+   .newest-article{
+    flex-direction: column;
+   }
 
-@media screen and (max-width: 768px){
-    .nav-bar {
-        display: flex;
-        flex-direction: column;
-        background: gray;
-        padding: 1em;
-        position: absolute;
-        top: 4.5em; /* Adjust the top position to avoid overlapping */
-        left: 0;
-        width: 100%;
-        z-index: 1; /* Ensure it's above the content */
-        transition: opacity 0.3s ease-in-out;
-    }
+   .older-articles .card-list{
+    flex-direction: column;
+   }
+
+   .card{
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+   }
+
+   .image-container .text{
+    font-size: 16px;
+}
+
+    .oa-imge{
+        width: 20em;
+        height: auto;
+    } 
+
 }

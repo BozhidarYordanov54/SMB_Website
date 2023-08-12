@@ -17,3 +17,26 @@ footer{
     gap: 4em;
     align-items: center;
 }
+
+@media(max-width: 768px)
+{
+    footer{
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .footer-copyright{
+        font-size: 22px;
+    }
+
+   .partners{
+    flex-direction: column;
+    gap: 1em;
+   }
+
+   .partners a img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+   }
+}
