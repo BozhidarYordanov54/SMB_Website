@@ -1,0 +1,141 @@
+body{
+    overflow-x: hidden;
+}
+
+.content
+{
+    font-family: "Poppins",sans-serif;
+}
+
+.cards-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    flex: 1;
+    border-right: 3px solid #ccc; /* Add the vertical separator */
+    padding: 10px; /* Optional: Add padding for spacing */
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05) translateX(0); /* Scale up the card on hover */
+}
+
+.card:last-child {
+    border-right: none; /* Remove separator from the last card */
+}
+  
+.na-header
+{
+    background: gray;
+}
+
+.newest-article {
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+    align-items: center;
+    padding: 2em; /* Adjust as needed */
+    background: gray;
+}
+
+.text-wrapper
+{
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
+    color: #ffffff;
+    cursor: default;
+}
+
+.read-more a
+{
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.article-header
+{
+    font-size: 40px;
+    word-wrap: break-word;
+}
+
+.newest-article .image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.newest-article .image-container p.text {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.newest-article .image-container a img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3%;
+    display: block;
+}
+
+/* Hidden elements */
+.future-header, .future-articles
+{
+    display: none;
+}
+
+.oa-header
+{
+    text-align: center;
+    padding: 1em;
+    font-size: 24px;
+    color: rgb(49, 162, 249);
+}
+
+.older-articles{
+    margin-top: 1em;
+}
+
+.older-articles .card-list
+{
+    display: flex;
+   
+}
+
+.image-container
+{
+    text-align: center;
+}
+
+.image-container a{
+    text-decoration: none;
+    color: #343434;
+}
+
+.image-container .text{
+    font-size: 18px;
+}
+
+.oa-imge {
+    width: auto;/* Set your desired width here */
+    height: 15em; /* Set your desired height here */
+    object-fit: cover;
+  }
+  
+
+@media screen and (max-width: 768px){
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        background: gray;
+        padding: 1em;
+        position: absolute;
+        top: 4.5em; /* Adjust the top position to avoid overlapping */
+        left: 0;
+        width: 100%;
+        z-index: 1; /* Ensure it's above the content */
+        transition: opacity 0.3s ease-in-out;
+    }
+}
