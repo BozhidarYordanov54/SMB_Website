@@ -8,14 +8,27 @@
     margin-top: 2em;
 }
 
-.contact-item{
+#contacts{
     display: flex;
-    gap: 1em;
+}
+
+.contact-info{
+    margin-top: 1em;
 }
 
 
 .position {
     color: #666;
+}
+
+.contacts-wrapper {
+    flex: 1;
+}
+
+.id-card{
+    max-width: 150px;
+    object-fit: contain;
+    height: auto;
 }
 
 #email{
