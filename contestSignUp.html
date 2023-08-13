@@ -28,7 +28,7 @@
      </section>
 
      <main class="signup-main">
-        <form id="signup-form" action="https://script.google.com/macros/s/AKfycbxrHUaDmQ56YMVgdw4fgzL3Yv7UeIeQRv-k3XvMbGwYmcmNhKjNuwjp7IgkFpaPy4iSCQ/exec" method="post">
+        <form id="signup-form" action="#" method="post">
             <div class="form-group">
                 <label for="name">Родител:</label>
                 <input name="Родител" type="text" placeholder="Name" required>
@@ -54,7 +54,10 @@
                 <input type="text" name="Училище" id="school-name" required>
             </div>
     
-            <input type="submit" value="Записване">
+            <input type="submit" id="submit-button" value="Записване">
+            <div id="loading-spinner" style="display: none;">
+                <div class="spinner"></div>
+            </div>
 
         </form>
     </main>
@@ -68,7 +71,6 @@
         </span>
     </footer>
 
-    <script src="js/validateData.js"></script>
-    <script src="js/countdownTimer.js"></script>
+    <script src="js/returnToMainPage.js"></script>
 </body>
 </html>
