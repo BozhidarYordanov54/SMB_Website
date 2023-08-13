@@ -38,7 +38,7 @@ body{
     gap: 5em;
     align-items: center;
     padding: 2em; /* Adjust as needed */
-    background: gray;
+    background: rgb(49, 162, 249);
 }
 
 .text-wrapper

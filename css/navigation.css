@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0.2em;
-    background: gray;
+    background: rgb(49, 162, 249);
     justify-content: space-around;
     align-items: center; /* Center items vertically */
     font-family: "Poppins", sans-serif;
@@ -44,7 +44,7 @@
     height: 3px;
     bottom: -3px;
     left: 0;
-    background-color: #007bff;
+    background-color: #ffffff;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;

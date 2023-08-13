@@ -1,9 +1,10 @@
 footer{
     font-family: "Poppins",sans-serif;
-    background: gray;
+    background: rgb(49, 162, 249);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 2em;
     padding: 0.4em;
 }
 
