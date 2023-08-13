@@ -11,7 +11,11 @@ const emailInput = document.querySelector('input[name="Email"]');
 const emailId = document.getElementById('email');
 
 const cityInput = document.querySelector('input[name="Населено място"]');
+const cityId = document.getElementById('city');
+
+
 const schoolInput = document.querySelector('input[name="Училище"]');
+const schoolId = document.getElementById('school-name');
 
 const submitButton = document.getElementById('submit-button');
 
@@ -41,11 +45,15 @@ function updateSubmitButton() {
     fullNameId.style.transition = `background-color ${transitionDuration}`;
     contestantNameId.style.transition = `background-color ${transitionDuration}`;
     emailId.style.transition = `background-color ${transitionDuration}`;
+    cityId.style.transition = `background-color ${transitionDuration}`
+    schoolId.style.transition = `background-color ${transitionDuration}`
   
-    phoneId.style.backgroundColor = isValidPhone ? 'rgba(0, 196, 0, 0.41)' : 'rgba(202, 0, 0, 0.41)';
-    fullNameId.style.backgroundColor = isValidFullName ? 'rgba(0, 196, 0, 0.41)' : 'rgba(202, 0, 0, 0.41)';
-    contestantNameId.style.backgroundColor = isValidContestantName ? 'rgba(0, 196, 0, 0.41)' : 'rgba(202, 0, 0, 0.41)';
-    emailId.style.backgroundColor = isValidEmail ? 'rgba(0, 196, 0, 0.41)' : 'rgba(202, 0, 0, 0.41)';
+    phoneId.style.backgroundColor = isValidPhone ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
+    fullNameId.style.backgroundColor = isValidFullName ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
+    contestantNameId.style.backgroundColor = isValidContestantName ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
+    emailId.style.backgroundColor = isValidEmail ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
+    cityId.style.backgroundColor = isFilledCity ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
+    schoolId.style.backgroundColor = isValidEmail ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
     
     fullNameInput.parentElement.classList.toggle('invalid', !isValidFullName);
     contestantNameInput.parentElement.classList.toggle('invalid', !isValidContestantName);
