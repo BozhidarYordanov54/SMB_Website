@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
-main{
+.signup-main{
     font-family: 'Fira Sans', serif;
     max-width: 400px;
     margin: 0 auto;
