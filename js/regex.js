@@ -33,13 +33,13 @@ function updateSubmitButton() {
       cityInput.value !== '' &&
       schoolInput.value !== ''
     );
-  
+
     const isValidPhone = phoneRegex.test(phoneInput.value);
     const isValidFullName = fullNameRegex.test(fullNameInput.value);
     const isValidContestantName = contestantNameRegex.test(contestantNameInput.value);
     const isValidEmail = emailRegex.test(emailInput.value);
 
-    const transitionDuration = '1s'; // Adjust the duration as needed
+    const transitionDuration = '0.7s'; // Adjust the duration as needed
 
     phoneId.style.transition = `background-color ${transitionDuration}`;
     fullNameId.style.transition = `background-color ${transitionDuration}`;
@@ -49,7 +49,7 @@ function updateSubmitButton() {
     schoolId.style.transition = `background-color ${transitionDuration}`
     submitButton.transition = `background-color ${transitionDuration}`;
   
-    phoneId.style.backgroundColor = isValidPhone ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
+    phoneId.style.backgroundColor = isValidPhone ? 'rgba(0, 196, 0, 0.41)' : 'f9f9f9';
     fullNameId.style.backgroundColor = isValidFullName ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
     contestantNameId.style.backgroundColor = isValidContestantName ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
     emailId.style.backgroundColor = isValidEmail ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';

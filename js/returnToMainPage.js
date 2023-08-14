@@ -19,7 +19,7 @@ document.getElementById('signup-form').addEventListener('submit', async function
 
         if (response.status === 200) {
             // Set success message in localStorage
-            localStorage.setItem('notificationMessage', 'Записването успешно!\nМоля проверете вашия email за повече информация');
+            localStorage.setItem('notificationMessage', 'Записването успешно!\nМоля проверете вашия email за повече информация.');
         } else {
             // Set error message in localStorage
             localStorage.setItem('notificationMessage', 'Записването не бе успешно. Моля опитайте отново.');
