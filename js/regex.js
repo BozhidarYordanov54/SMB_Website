@@ -47,33 +47,22 @@ function updateSubmitButton() {
     emailId.style.transition = `background-color ${transitionDuration}`;
     cityId.style.transition = `background-color ${transitionDuration}`
     schoolId.style.transition = `background-color ${transitionDuration}`
+    submitButton.transition = `background-color ${transitionDuration}`;
   
     phoneId.style.backgroundColor = isValidPhone ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
     fullNameId.style.backgroundColor = isValidFullName ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
     contestantNameId.style.backgroundColor = isValidContestantName ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
     emailId.style.backgroundColor = isValidEmail ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
-    cityId.style.backgroundColor = isFilledCity ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
-    schoolId.style.backgroundColor = isValidEmail ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
+
+    const isValidData = isValidPhone && isValidFullName && isValidContestantName && isValidEmail && allFieldsFilled;
+    submitButton.style.backgroundColor = isValidData ? '' : 'gray';
     
     fullNameInput.parentElement.classList.toggle('invalid', !isValidFullName);
     contestantNameInput.parentElement.classList.toggle('invalid', !isValidContestantName);
     emailInput.parentElement.classList.toggle('invalid', !isValidEmail);
     cityInput.parentElement.classList.toggle('invalid', cityInput.value === '');
     schoolInput.parentElement.classList.toggle('invalid', schoolInput.value === '');
-  
-    if (
-      isValidPhone &&
-      isValidFullName &&
-      isValidContestantName &&
-      isValidEmail &&
-      allFieldsFilled
-    ) {
-      submitButton.disabled = false;
-      submitButton.style.backgroundColor = '';
-    } else {
-      submitButton.disabled = true;
-      submitButton.style.backgroundColor = 'gray';
-    }
+   
   }
 
 phoneInput.addEventListener('input', () => {
