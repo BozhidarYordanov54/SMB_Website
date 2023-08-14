@@ -11,25 +11,27 @@ document.getElementById('signup-form').addEventListener('submit', async function
         // Disable the submit button and show the loading spinner
         submitButton.disabled = true;
         loadingSpinner.style.display = 'block';
-        
+
         const response = await fetch(url, {
             method: 'POST',
             body: formData
         });
 
-        // Check if the response indicates success (adjust this condition as needed)
         if (response.status === 200) {
-            // Redirect to the main page after successful submission
-            window.location.href = 'index.html'; // Replace with your main page URL
+            // Set success message in localStorage
+            localStorage.setItem('notificationMessage', 'Записването успешно!\nМоля проверете вашия email за повече информация');
         } else {
-            // Handle error response
-            console.error('Form submission failed:', response.statusText);
+            // Set error message in localStorage
+            localStorage.setItem('notificationMessage', 'Записването не бе успешно. Моля опитайте отново.');
         }
     } catch (error) {
-        console.error('An error occurred:', error);
+        // Set error message in localStorage
+        localStorage.setItem('notificationMessage', 'Възникна грешка при обработката на формата. Моля опитайте отново.');
     } finally {
         // Re-enable the submit button and hide the loading spinner
         submitButton.disabled = false;
         loadingSpinner.style.display = 'none';
+        // Redirect to the main page
+        window.location.href = 'index.html';
     }
 });

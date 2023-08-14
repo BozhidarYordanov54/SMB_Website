@@ -123,7 +123,20 @@ body{
     height: 15em; /* Set your desired height here */
     object-fit: cover;
   }
-  
+
+  .notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+
 @media(max-width: 768px)
 {
    .newest-article{
