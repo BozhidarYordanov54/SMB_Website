@@ -33,4 +33,33 @@
 
 #email{
     margin-top: 2em;
+    display: none;
+}
+
+.contact-form-wrapper{
+    padding: 3em;
+}
+
+.names-wrapper, .contact-info{
+    display: flex;
+    gap: 1em;
+}
+
+.email-wrapper{
+    margin-top: 1em;
+    margin-right: 1.3em;
+}
+
+#first-row{
+    background: rgba(232, 233, 253, 1);
+}
+
+#second-row{
+    background: rgba(221, 225, 255, 1);
+}
+
+#third-row{
+    min-height: 5em;
+    
+    background: rgba(164, 177, 252, 1);
 }

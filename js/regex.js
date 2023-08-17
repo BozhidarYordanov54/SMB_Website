@@ -8,7 +8,7 @@ const contestantNameInput = document.querySelector('input[name="Участник
 const contestantNameId = document.getElementById('competitors-name');
 
 const emailInput = document.querySelector('input[name="Email"]');
-const emailId = document.getElementById('email');
+const emailId = document.getElementById('email-signup');
 
 const cityInput = document.querySelector('input[name="Населено място"]');
 const cityId = document.getElementById('city');
