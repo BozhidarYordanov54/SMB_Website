@@ -54,12 +54,16 @@
     background: rgba(232, 233, 253, 1);
 }
 
+#first-row::placeholder{
+    color: rgba(164, 177, 252, 1);
+    font-weight: bold;
+}
+
 #second-row{
-    background: rgba(221, 225, 255, 1);
+    background: rgb(181, 189, 255);
 }
 
 #third-row{
     min-height: 5em;
-    
-    background: rgba(164, 177, 252, 1);
+    background: rgb(143, 160, 255);
 }
