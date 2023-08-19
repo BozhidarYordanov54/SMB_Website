@@ -53,23 +53,28 @@
             <h2>За връзка с ръководството на СМБ - секция Велико Търново:</h2>
             <p>e-mail: pmg_competitions@abv.bg</p>
         </section>
+
+        <section class="contact-form-wrapper">
+            <h2 class="contact-form-header">Свържете се с нас</h2>
+            <form action="php/send_email.php" method="post" class="contact-form">
+                <div class="names-wrapper">
+                    <input type="text" placeholder="Име" id="first-name" required>
+                    <input type="text" placeholder="Фамилия" id="last-name" required>
+                </div>
+                <div class="contact-info-form">
+                    <input type="text" placeholder="Email" id="email-contact" required>
+                    <input type="text" placeholder="Тел. номер" id="phone-number" required>
+                </div>
+                <div class="email-wrapper">
+                    <textarea name="text" id="message" placeholder="Текст" cols="30" rows="10" required></textarea>
+                </div>
+            
+                <input type="submit" id="send-button" value="Изпращане">
+            </form>
+         </section>
      </main>
 
-     <section class="contact-form-wrapper">
-        <form action="#" class="contact-form">
-            <div class="names-wrapper">
-                <input type="text" placeholder="Име" id="first-row" required>
-                <input type="text" placeholder="Фамилия" id="first-row" required>
-            </div>
-            <div class="contact-info">
-                <input type="text" placeholder="Email" id="second-row" required>
-                <input type="text" placeholder="Тел. номер" id="second-row" required>
-            </div>
-            <div class="email-wrapper">
-                <input type="text" placeholder="Текст" id="third-row" required>
-            </div>
-        </form>
-     </section>
+    
 
      <footer>
         <div class="footer-copyright">&copy; СМБ-Велико Търново 2023</div>

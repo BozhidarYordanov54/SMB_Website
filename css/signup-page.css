@@ -35,7 +35,7 @@ input[type="text"] {
     background-color: #f9f9f9;
 }
 
-input[type="submit"] {
+#submit-button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -48,7 +48,7 @@ input[type="submit"] {
     margin-top: 20px;
 }
 
-input[type="submit"]:hover {
+#submit-button:hover {
     background-color: #0056b3;
 }
 

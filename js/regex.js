@@ -13,7 +13,6 @@ const emailId = document.getElementById('email-signup');
 const cityInput = document.querySelector('input[name="Населено място"]');
 const cityId = document.getElementById('city');
 
-
 const schoolInput = document.querySelector('input[name="Училище"]');
 const schoolId = document.getElementById('school-name');
 
@@ -29,7 +28,7 @@ function updateSubmitButton() {
       phoneInput.value !== '' &&
       fullNameInput.value !== '' &&
       contestantNameInput.value !== '' &&
-      emailInput.value !== '' && 
+      emailInput.value !== '' &&
       cityInput.value !== '' &&
       schoolInput.value !== ''
     );
@@ -40,6 +39,7 @@ function updateSubmitButton() {
     const isValidEmail = emailRegex.test(emailInput.value);
 
     const transitionDuration = '0.7s'; // Adjust the duration as needed
+    const transitionDurationButton = '0.4s'; // Adjust the duration as needed
 
     phoneId.style.transition = `background-color ${transitionDuration}`;
     fullNameId.style.transition = `background-color ${transitionDuration}`;
@@ -47,7 +47,7 @@ function updateSubmitButton() {
     emailId.style.transition = `background-color ${transitionDuration}`;
     cityId.style.transition = `background-color ${transitionDuration}`
     schoolId.style.transition = `background-color ${transitionDuration}`
-    submitButton.transition = `background-color ${transitionDuration}`;
+    submitButton.style.transition = `background-color ${transitionDurationButton}`;
   
     phoneId.style.backgroundColor = isValidPhone ? 'rgba(0, 196, 0, 0.41)' : 'f9f9f9';
     fullNameId.style.backgroundColor = isValidFullName ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
@@ -56,6 +56,8 @@ function updateSubmitButton() {
 
     const isValidData = isValidPhone && isValidFullName && isValidContestantName && isValidEmail && allFieldsFilled;
     submitButton.style.backgroundColor = isValidData ? '' : 'gray';
+    submitButton.disabled = isValidData ? false : true;
+    submitButton.style.cursor = isValidData ? 'pointer' : 'not-allowed';
     
     fullNameInput.parentElement.classList.toggle('invalid', !isValidFullName);
     contestantNameInput.parentElement.classList.toggle('invalid', !isValidContestantName);
