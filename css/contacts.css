@@ -58,6 +58,7 @@
 
 .contact-form-header {
     color: #007bff;
+    border-bottom: 2px solid #a6a6a6;
 }
 
 .names-wrapper,
@@ -94,4 +95,23 @@
 
 #send-button:hover {
     background: #005dc0;
+}
+
+@media(max-width: 768px)
+{
+    .contacts{
+        flex-direction: column;
+    }
+
+    .contact-form-header{
+        margin-right: 5em;
+        margin-top: 1em;
+        font-size: 20px;
+
+       
+    }
+
+    .contact-form{
+        margin-right: 6em;
+    }
 }
