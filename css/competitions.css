@@ -1,0 +1,86 @@
+
+.competitions-header{
+    background: rgb(49, 162, 249);
+    color: #ffffff;
+    padding: 2em;
+    text-align: justify;
+}
+
+.math-comp-wrapper{
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.cmc-header, .emc-header{
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(49, 162, 249);
+    color: #ffffff;
+}
+
+
+.christmas-math-competition,
+.easter-math-competition
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.comp-regulation, 
+.ranking-info-header, 
+.ranking-criteria,
+.ranking-info,
+.ranking-footer,
+.past-competitions,
+.tasks{
+    margin-left: 1em;
+}
+
+.ranking-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.ranking-criteria-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.ranking-criteria{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.comp-regulation{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style-type: upper-roman;
+}
+
+@media (max-width: 768px) {
+    .competitions-header{
+        padding: 1em;
+    }
+
+    .competitions-header h2{
+        font-size: 18px;
+    }
+
+    .math-comp-wrapper{
+        flex-direction: column;
+    }
+
+    .cmc-header, .emc-header{
+        font-size: 13px;
+        padding: 0.5em;
+        margin: 0;
+    }
+}
+
