@@ -8,28 +8,35 @@
 
 .math-comp-wrapper{
     display: flex;
-    gap: 1em;
+    
     width: 100%;
     margin-bottom: 2em;
 }
 
 .cmc-header, .emc-header{
-    margin-top: 1em;
+    margin-top: 0.5em;
     padding: 1em;
     text-align: center;
     background-color: rgb(49, 162, 249);
     color: #ffffff;
 }
 
+.comp-regulations-wrapper{
+    padding: 0em 1em;
+    padding-top: 1em;
+}
+
+.comp-regulations-wrapper:hover{
+    background-color: rgba(49, 162, 249, 0.2);
+}
 
 .christmas-math-competition,
 .easter-math-competition
 {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    
 }
-
 
 
 .comp-regulation, 
