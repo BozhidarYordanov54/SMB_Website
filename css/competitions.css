@@ -7,9 +7,7 @@
 }
 
 .math-comp-wrapper{
-    display: flex;
-    
-    width: 100%;
+   display: flex;
     margin-bottom: 2em;
 }
 
@@ -22,12 +20,14 @@
 }
 
 .comp-regulations-wrapper{
-    padding: 0em 1em;
+    margin: 0em 2em;
     padding-top: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2em;
 }
 
-.comp-regulations-wrapper:hover{
-    background-color: rgba(49, 162, 249, 0.2);
+.comp-regulation{
+    padding: 1em;
 }
 
 .christmas-math-competition,
@@ -35,7 +35,6 @@
 {
     display: flex;
     flex-direction: column;
-    
 }
 
 
@@ -67,12 +66,7 @@
     font-size: 18px;
 }
 
-.comp-regulation{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    list-style-type: upper-roman;
-}
+
 
 @media (max-width: 768px) {
     .competitions-header{
@@ -96,6 +90,11 @@
     .christmas-math-competition,
     .easter-math-competition{
         padding: 0.5em;
+    }
+
+    .comp-regulations-wrapper{
+        margin: 0.5em;
+        padding: 1em;
     }
 }
 

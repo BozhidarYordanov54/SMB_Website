@@ -1,0 +1,52 @@
+.exam-header{
+    color: #ffffff;
+    background: rgb(49, 162, 249);
+    text-align: center;
+}
+
+.address{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.date-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.date-info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.date-info ul li{
+    margin-left: 2em;
+}
+
+.more-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    gap: 0.5em;
+    list-style-type: upper-roman;
+    font-weight: bold;
+}
+
+.italic{
+    margin-top: 1em;
+    margin-left: 1em;
+    font-style: italic;
+}
+
+.italic ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.italic ul li{
+    margin-left: 2em;
+}

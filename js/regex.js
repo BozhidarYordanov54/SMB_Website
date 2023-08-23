@@ -18,9 +18,9 @@ const schoolId = document.getElementById('school-name');
 
 const submitButton = document.getElementById('submit-button');
 
-const phoneRegex = /^(0|359)([87][0-9]{8})$/;
-const fullNameRegex = /^[а-яА-Яa-zA-Z\s']+\s[а-яА-Яa-zA-Z\s']+$/;
-const contestantNameRegex = /^[а-яА-Яa-zA-Z\s']+\s[а-яА-Яa-zA-Z\s']+$/;
+const phoneRegex = /^(0|\+359)([87][0-9]{8})$/;
+const fullNameRegex = /^[а-яА-Яa-zA-Z]+\s[а-яА-Яa-zA-Z]+$/;;
+const contestantNameRegex = /^[а-яА-Яa-zA-Z]+\s[а-яА-Яa-zA-Z]+$/;;
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
 function updateSubmitButton() {
@@ -49,10 +49,11 @@ function updateSubmitButton() {
     schoolId.style.transition = `background-color ${transitionDuration}`
     submitButton.style.transition = `background-color ${transitionDurationButton}`;
   
-    phoneId.style.backgroundColor = isValidPhone ? 'rgba(0, 196, 0, 0.41)' : 'f9f9f9';
-    fullNameId.style.backgroundColor = isValidFullName ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
-    contestantNameId.style.backgroundColor = isValidContestantName ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
-    emailId.style.backgroundColor = isValidEmail ? 'rgba(0, 196, 0, 0.41)' : '#f9f9f9';
+    phoneId.style.backgroundColor = phoneInput.value === '' ? 'f9f9f9' : (isValidPhone ? 'rgba(0, 196, 0, 0.41)' : 'red');
+    fullNameId.style.backgroundColor = fullNameInput.value === '' ? 'f9f9f9' : (isValidFullName ? 'rgba(0, 196, 0, 0.41)' : 'red');
+    contestantNameId.style.backgroundColor = contestantNameInput.value === '' ? 'f9f9f9' : (isValidContestantName ? 'rgba(0, 196, 0, 0.41)' : 'red');
+    emailId.style.backgroundColor = emailInput.value === '' ? 'f9f9f9' : (isValidEmail ? 'rgba(0, 196, 0, 0.41)' : 'red');
+
 
     const isValidData = isValidPhone && isValidFullName && isValidContestantName && isValidEmail && allFieldsFilled;
     submitButton.style.backgroundColor = isValidData ? '' : 'gray';

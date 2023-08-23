@@ -1,6 +1,3 @@
-body{
-    overflow-x: hidden;
-}
 
 .content
 {
@@ -17,10 +14,6 @@ body{
     border-right: 3px solid #ccc; /* Add the vertical separator */
     padding: 10px; /* Optional: Add padding for spacing */
     transition: all 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.05) translateX(0); /* Scale up the card on hover */
 }
 
 .card:last-child {
@@ -141,6 +134,7 @@ body{
 {
    .newest-article{
     flex-direction: column;
+    padding: 1em;
    }
 
    .older-articles .card-list{
@@ -155,11 +149,15 @@ body{
 
    .image-container .text{
     font-size: 16px;
-}
+    }
 
     .oa-imge{
         width: 20em;
         height: auto;
-    } 
+    }
+    
+    .article-header{
+        font-size: 30px;
+    }
 
 }
