@@ -27,7 +27,7 @@ label {
     margin-top: 1em;
 }
 
-input[type="text"] {
+input[type="text"], #city, #school-name {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -35,7 +35,7 @@ input[type="text"] {
     background-color: #f9f9f9;
 }
 
-#submit-button {
+#submit-button{
     display: block;
     width: 100%;
     padding: 10px;

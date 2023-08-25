@@ -10,10 +10,10 @@ const contestantNameId = document.getElementById('competitors-name');
 const emailInput = document.querySelector('input[name="Email"]');
 const emailId = document.getElementById('email-signup');
 
-const cityInput = document.querySelector('input[name="Населено място"]');
+const cityInput = document.querySelector('select[name="Населено място"]');
 const cityId = document.getElementById('city');
 
-const schoolInput = document.querySelector('input[name="Училище"]');
+const schoolInput = document.querySelector('select[name="Училище"]');
 const schoolId = document.getElementById('school-name');
 
 const submitButton = document.getElementById('submit-button');
@@ -84,11 +84,11 @@ emailInput.addEventListener('input', () => {
   updateSubmitButton();
 });
 
-cityInput.addEventListener('input', () => {
+cityInput.addEventListener('change', () => {
   updateSubmitButton();
 });
 
-schoolInput.addEventListener('input', () => {
+schoolInput.addEventListener('change', () => {
   updateSubmitButton();
 });
 

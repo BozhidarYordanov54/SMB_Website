@@ -49,11 +49,65 @@
             </div>
             <div class="form-group">
                 <label for="city">Населено място:</label>
-                <input type="text" placeholder="Град/ Село" name="Населено място" id="city" required>
+                <!--<inpu>t type="text" placeholder="Град/ Село" name="Населено място" id="city" required>-->
+                    <select name="Населено място" id="city" required>
+                        <option value="">Изберете населено място</option>
+                        <option value="Алеково">Алеково</option>
+                        <option value="Асеново">Асеново</option>
+                        <option value="Балван">Балван</option>
+                        <option value="Батак">Батак</option>
+                        <option value="Беброво">Беброво</option>
+                        <option value="Бяла черква">Бяла черква</option>
+                        <option value="Велико Търново">Велико Търново</option>
+                        <option value="Виноград">Виноград</option>
+                        <option value="Водолей">Водолей</option>
+                        <option value="Върбица">Върбица</option>
+                        <option value="Върбовка">Върбовка</option>
+                        <option value="Горна Оряховица">Горна Оряховица</option>
+                        <option value="Горско Ново село">Горско Ново село</option>
+                        <option value="Дебелец">Дебелец</option>
+                        <option value="Джулюница">Джулюница</option>
+                        <option value="Долна Оряховица">Долна Оряховица</option>
+                        <option value="Драганово">Драганово</option>
+                        <option value="Елена">Елена</option>
+                        <option value="Златарица">Златарица</option>
+                        <option value="Камен">Камен</option>
+                        <option value="Караисен">Караисен</option>
+                        <option value="Кесарево">Кесарево</option>
+                        <option value="Килифарево">Килифарево</option>
+                        <option value="Константин">Константин</option>
+                        <option value="Леденик">Леденик</option>
+                        <option value="Лясковец">Лясковец</option>
+                        <option value="Майско">Майско</option>
+                        <option value="Морава">Морава</option>
+                        <option value="Овча могила">Овча могила</option>
+                        <option value="Ореш">Ореш</option>
+                        <option value="Павликени">Павликени</option>
+                        <option value="Петко Каравелово">Петко Каравелово</option>
+                        <option value="Писарево">Писарево</option>
+                        <option value="Поликраище">Поликраище</option>
+                        <option value="Полски Тръмбеш">Полски Тръмбеш</option>
+                        <option value="Първомайци">Първомайци</option>
+                        <option value="Раданово">Раданово</option>
+                        <option value="Ресен">Ресен</option>
+                        <option value="Русаля">Русаля</option>
+                        <option value="Самоводене">Самоводене</option>
+                        <option value="Свищов">Свищов</option>
+                        <option value="Средно село">Средно село</option>
+                        <option value="Стражица">Стражица</option>
+                        <option value="Страхилово">Страхилово</option>
+                        <option value="Сухиндол">Сухиндол</option>
+                        <option value="Сушица">Сушица</option>
+                        <option value="Царски извор">Царски извор</option>
+                        <option value="Церова кория">Церова кория</option>
+                    </select>
             </div>
             <div class="form-group">
                 <label for="school-name">Училище:</label>
-                <input type="text" placeholder="ПМГ 'Васил Друмев'" name="Училище" id="school-name" required>
+                <!--<input type="text" placeholder="ПМГ 'Васил Друмев'" name="Училище" id="school-name" required>-->
+                <select name="Училище" id="school-name" required>
+                    <option value="">Изберете училище</option>
+                </select>
             </div>
 
             <input type="submit" id="submit-button" value="Записване">
@@ -77,5 +131,7 @@
 
     <script src="js/regex.js"></script>
     <script src="js/returnToMainPage.js"></script>
+    <script src="js/citySchool.js"></script>
+    
 </body>
 </html>
