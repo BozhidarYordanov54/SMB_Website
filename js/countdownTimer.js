@@ -25,12 +25,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
                 // Display the countdown
-                document.getElementById("countdown").innerHTML = "Формата ще бъде отворена след: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+                document.getElementById("countdown").innerHTML = "Формата ще бъде отворена след: " + days + "д " + hours + "ч " + minutes + "м " + seconds + "с";
 
                 // Enable/disable form submission based on time remaining
                 if (timeRemaining > 21 * 24 * 60 * 60 * 1000) {
                     disableFormSubmission();
-                } else {
+                } 
+                else if(timeRemaining <= 7 * 24 * 60 * 60 * 1000){
+                    disableFormSubmission();
+                }
+                else {
                     enableFormSubmission();
                 }
             }, 1000);
@@ -40,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 var submitButton = document.getElementById("submit-button");
                 submitButton.disabled = true;
                 submitButton.style.background = "gray";
+                submitButton.style.cursor = "not-allowed";
                 submitButton.value = "До състезанието има повече от 3 седмици!";
             }
 
@@ -47,6 +52,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             function enableFormSubmission() {
                 var submitButton = document.getElementById("submit-button");
                 submitButton.disabled = false;
-                submitButton.value = "Submit";
+                submitButton.value = "Записване";
             }
         });

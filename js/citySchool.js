@@ -98,9 +98,6 @@ const citiesSelect = document.getElementById('city');
             "Сушица": ["Начално училище \"Отец Паисий\""],
             "Царски извор": ["Начално училище \"Иван Вазов\""],
             "Церова кория": ["Основно училище \"Петко Рачев Славейков\""]
-            // ... other cities
-        
-            // Adding all the other provided data
         };
 
         citiesSelect.addEventListener('change', function () {
