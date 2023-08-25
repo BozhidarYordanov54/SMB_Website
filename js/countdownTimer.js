@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     // Set the date and time for the next event
-    var eventDate = new Date("2023-11-15T10:00:00Z");
+    var eventDate = new Date("2023-08-25T14:45:00Z");
 
     // Update the countdown every second
     var countdownTimer = setInterval(function() {
@@ -53,5 +53,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 var submitButton = document.getElementById("submit-button");
                 submitButton.disabled = false;
                 submitButton.value = "Записване";
+                document.getElementById("countdown").innerHTML = "Формата ще бъде затворена след: " + days + "д " + hours + "ч " + minutes + "м " + seconds + "с";
             }
         });
