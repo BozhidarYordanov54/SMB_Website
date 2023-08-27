@@ -4,7 +4,7 @@
     $lastName = $_POST["last-name"];
     $email = $_POST["email-contact"];
     $phoneNumber = $_POST["phone-number"];
-    $message = $_POST["text"];
+    $message = $_POST["message"];
     
     // Set up email parameters
     $to = "smb-vt-support@smb-vt.com"; // Replace with your email address

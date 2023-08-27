@@ -5,7 +5,7 @@ document.getElementById('signup-form').addEventListener('submit', async function
     const formData = new FormData(formElement);
     const submitButton = document.getElementById('submit-button');
     const loadingSpinner = document.getElementById('loading-spinner');
-    const url = 'https://script.google.com/macros/s/AKfycbxrHUaDmQ56YMVgdw4fgzL3Yv7UeIeQRv-k3XvMbGwYmcmNhKjNuwjp7IgkFpaPy4iSCQ/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbwsThbibcd3nCL-uLC-muZ97-Vjsn-UmkysKrfNfukMJF7RAKw2gllAwDeSn5jjXJjSxA/exec';
 
     try {
         // Disable the submit button and show the loading spinner
