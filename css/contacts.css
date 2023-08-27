@@ -63,7 +63,8 @@
 
 .names-wrapper,
 .contact-info-form,
-.email-wrapper {
+.text-wrapper 
+.subject-wrapper{
     display: flex;
     gap: 1em;
 }
@@ -76,11 +77,39 @@
     border: 1px solid rgb(206, 206, 206);
     border-radius: 0.3em;
     font-family: "Poppins", sans-serif;
+    padding: 0.5em;
+    box-sizing: border-box;
 }
 
-#message::placeholder{
-    padding: .3em;
-}   
+#subject{
+    width: 100%;
+    resize: none;
+    background: rgba(249, 249, 249, 1);
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 0.3em;
+    font-family: "Poppins", sans-serif;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+#image-upload-label{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    padding-bottom: 0.2em;
+}
+
+#image-upload{
+    display: block;
+    padding: 10px;
+    border: none;
+    width: 96%;
+    border-radius: 4px;
+    background-color: #bababa;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 #send-button {
     display: block;

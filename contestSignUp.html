@@ -25,11 +25,11 @@
      </header>
 
      <section class="countdown-timer">
-        <h1>Следващо Състезание</h1>
+        <h1>Следващо състезание</h1>
         <div id="countdown"></div>
      </section>
 
-     <main class="signup-main">
+     <section class="signup-main">
         <form id="signup-form" action="#" method="post">
             <div class="form-group">
                 <label for="parent-name">Име на родител:</label>
@@ -50,6 +50,7 @@
             <div class="form-group">
                 <label for="city">Населено място:</label>
                 <!--<input> type="text" placeholder="Град/ Село" name="Населено място" id="city" required>-->
+                <div class="custom-select">
                     <select name="Населено място" id="city" required>
                         <option value="">Изберете населено място</option>
                         <option value="Алеково">Алеково</option>
@@ -101,6 +102,7 @@
                         <option value="Царски извор">Царски извор</option>
                         <option value="Церова кория">Церова кория</option>
                     </select>
+                </div>
             </div>
             <div class="form-group">
                 <label for="school-name">Училище:</label>
@@ -116,7 +118,7 @@
               <div class="spinner"></div>
         </div>
         </form>
-    </main>
+     </section>
 
     <div id="notification" class="notification"></div>
 

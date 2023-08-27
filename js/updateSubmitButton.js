@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       submitButton.disabled = true;
       submitButton.style.background = "gray";
       submitButton.style.cursor = "not-allowed";
+      submitButton.value = "Формата не е активна!";
   }
 
   // Enable form submission
@@ -108,10 +109,10 @@ function updateSubmitButton() {
     schoolId.style.transition = `background-color ${transitionDuration}`
     submitButton.style.transition = `background-color ${transitionDurationButton}`;
   
-    phoneId.style.backgroundColor = phoneInput.value === '' ? 'f9f9f9' : (isValidPhone ? 'rgba(0, 196, 0, 0.41)' : 'red');
-    fullNameId.style.backgroundColor = fullNameInput.value === '' ? 'f9f9f9' : (isValidFullName ? 'rgba(0, 196, 0, 0.41)' : 'red');
-    contestantNameId.style.backgroundColor = contestantNameInput.value === '' ? 'f9f9f9' : (isValidContestantName ? 'rgba(0, 196, 0, 0.41)' : 'red');
-    emailId.style.backgroundColor = emailInput.value === '' ? 'f9f9f9' : (isValidEmail ? 'rgba(0, 196, 0, 0.41)' : 'red');
+    phoneId.style.backgroundColor = phoneInput.value === '' ? 'f9f9f9' : (isValidPhone ? 'rgba(0, 196, 0, 0.41)' : 'rgba(255, 0, 0, 0.8)');
+    fullNameId.style.backgroundColor = fullNameInput.value === '' ? 'f9f9f9' : (isValidFullName ? 'rgba(0, 196, 0, 0.41)' : 'rgba(255, 0, 0, 0.8)');
+    contestantNameId.style.backgroundColor = contestantNameInput.value === '' ? 'f9f9f9' : (isValidContestantName ? 'rgba(0, 196, 0, 0.41)' : 'rgba(255, 0, 0, 0.8)');
+    emailId.style.backgroundColor = emailInput.value === '' ? 'f9f9f9' : (isValidEmail ? 'rgba(0, 196, 0, 0.41)' : 'rgba(255, 0, 0, 0.8)');
 
 
     const isValidData = isValidPhone && isValidFullName && isValidContestantName && isValidEmail && allFieldsFilled;
