@@ -31,14 +31,37 @@
 
      <section class="signup-main">
         <div id="termsPage">
-            <h1>Условия за участие</h1>
-            <!-- Your terms and conditions content here -->
-            <button class="continue-button" onclick="showForm()"><span>Напред</span></button>
+            <h3 style="text-align: center;">ИНСТРУКЦИИ ЗА ЗАПИСВАНЕ НА УЧАСТНИК В СЪСТЕЗАНИЕ ИЛИ ИЗПИТ</h3>
+
+            <div class="instructions-wrapper">
+                <p class="instructions-header">Ако искате да запишете участник в състезанието, моля следвайте следните стъпки в <span class="underline-bold">посочената последователност:</span></p>
+                <div class="instruction-one">
+                    <p>1. Направете превод на таксата за правоучастие по тази сметка (информация за стойността на таксата ще намерите в раздел новини на сайта ни) :</p>
+                    <div class="IBAN-wrapper">
+                        <p class="iban-name">СОФ МАТ ЕООД</p>
+                        <p class="iban-number">IBAN: BG72 STSA 9300 0020 8522 42</p>
+                        <p class="bank-location">ДСК – Клон Гео Милев</p>
+                    </div>
+                    <p class="note">Забележка: Посочете като основание за плащане името на състезанието/изпита, като допълнително пояснение, имената на участника, с които ще го регистрирате в тази форма за регистрация.</p>
+                </div>
+                <div class="instruction-two">
+                    <p>2. Регистрирайте участника в състезанието/изпита чрез формата за записване на нашия сайт.</p>
+                    <p class="note">Забележка: Следвайте посочения формат на полетата. Критерий за правилното попълване на формата е оцветяване на полетата в зелено. Ако всички полета са правилно попълнени, бутонът записване става активен. След натискане на бутона за записване ще се появи съобщение, че сте регистрирали участник. </p>
+                </div>
+                <div class="instruction-three">
+                    <p>3. Изпратете на имейл ………….@.......... сканирано копие документа за преведена сума.</p>
+                </div>
+                <p class="warning">Внимание! Само след изпълнение на всички посочени стъпки, регистрираният участник ще бъде включен в списъка на участниците и разпределен в стая, където ще бъде настанен в деня на състезанието/изпита. </p>
+                <p class="qa">При възникване на уточняващи въпроси и запитвания, мола свържете се с нас през формата ни за контакти в страницата <a href="https://smb-vt.com/contacts.hrml">Контакти</a> от главното меню на сайта.</p>
+            </div>
+
+            <button class="continue-button" onclick="showForm()"><span>Напред към записване</span></button>
         </div>
 
         <div id="form-page" style="display: none;">
+            <button type="button" class="back-button" onclick="showTerms()"><span>Назад към условията</span></button>
+            <h3 style="text-align: center;">Форма за записване</h3>
             <form id="signup-form" action="#" method="post">
-                <button type="button" class="back-button" onclick="showTerms()"><span>Назад към условията</span></button>
                 <div class="form-group">
                     <label for="parent-name">Име на родител:</label>
                     <input name="Родител" placeholder="Име Фамилия" type="text" id="parent-name" required>

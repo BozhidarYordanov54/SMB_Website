@@ -1,11 +1,11 @@
 document.getElementById('signup-form').addEventListener('submit', async function(event) {
     event.preventDefault();
-
+    
     const formElement = document.getElementById('signup-form');
     const formData = new FormData(formElement);
     const submitButton = document.getElementById('submit-button');
     const loadingSpinner = document.getElementById('loading-spinner');
-    const url = 'https://script.google.com/macros/s/AKfycbx2zqF8fK5sPfuJJnTYxM-jQYkSHKlq1vyq4fQW0Y1K4n5-5-dIuKLc6qT_kglvHWnnOA/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbxrHUaDmQ56YMVgdw4fgzL3Yv7UeIeQRv-k3XvMbGwYmcmNhKjNuwjp7IgkFpaPy4iSCQ/exec';
 
     try {
         // Disable the submit button and show the loading spinner
@@ -35,3 +35,4 @@ document.getElementById('signup-form').addEventListener('submit', async function
         window.location.href = 'index.html';
     }
 });
+

@@ -1,8 +1,19 @@
-.signup-main{
+.signup-main {
+  max-width: 800px; /* Default width for both form and terms */
+  margin: 0 auto; /* Center the content horizontally */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5em;
+  overflow: hidden;
+  transition: max-width 0.5s ease; /* Add transition for max-width */
+}
+
+.signup-main.form-opened{
    max-width: 400px;
    padding: 2em;
    margin: 0 auto;
    border-radius: 8px;
+   overflow: hidden;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -20,6 +31,16 @@
     background-color: #0056b3;
 }
 
+.instructions-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.IBAN-wrapper{
+  text-indent: 1em;
+  padding: 0.5em 0em;
+}
 
 
 label {
@@ -160,10 +181,17 @@ input[type=file] {
   width: 200px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
 }
 
+.continue-button{
+  margin-top: 1em;
+}
 
+.back-button{
+  width: 150px;
+  font-size: 14px;
+  margin-bottom: 1em;
+}
 
 .continue-button span, .back-button span {
   cursor: pointer;
@@ -191,7 +219,7 @@ input[type=file] {
 }
 
 .back-button:hover span{
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .back-button:hover span::before{
@@ -218,4 +246,24 @@ input[type=file] {
     #countdown{
         font-size: 15px;
     }
+
+    .signup-main {
+      max-height: 1200px; /* Default height for both form and terms */
+      margin: 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1.5em;
+      position: relative;
+      overflow: hidden; /* Hide the overflow content during transitions */
+      transition: max-height 0.5s ease;
+    }
+
+    .signup-main.form-opened{
+      max-height: 700px;
+      padding: 2em;
+      margin: 0 auto;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
 }
