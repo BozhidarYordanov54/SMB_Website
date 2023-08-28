@@ -1,5 +1,5 @@
-const dropContainer = document.getElementById("dropcontainer")
-  const fileInput = document.getElementById("images")
+const dropContainer = document.getElementById("dropcontainer");
+  const files = document.getElementById("images")
 
   dropContainer.addEventListener("dragover", (e) => {
     // prevent default to allow drop
