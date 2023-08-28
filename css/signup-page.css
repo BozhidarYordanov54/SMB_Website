@@ -89,6 +89,7 @@ input[type="text"], #city, #school-name {
     display: none;
 }
 
+/*
 input[type=file] {
     width: 600px;
     max-width: 102%;
@@ -146,7 +147,67 @@ input[type=file] {
     text-align: center;
     transition: color .2s ease-in-out;
   }
+  */
 
+ .continue-button, .back-button {
+  border-radius: 4px;
+  background-color: #007bff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+
+.continue-button span, .back-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.continue-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.back-button span::before{
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.back-button:hover span{
+  padding-left: 20px;
+}
+
+.back-button:hover span::before{
+  opacity: 1;
+  left: 0;
+}
+
+.continue-button:hover span {
+  padding-right: 20px;
+}
+
+.continue-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+ 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
