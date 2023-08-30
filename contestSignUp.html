@@ -162,7 +162,7 @@
                     <label for="images" class="drop-container" id="dropcontainer">
                         <span class="drop-title">Поставете бордерото тук</span>
                         или
-                        <input type="file" id="images" accept="image/*" name="Image" required>
+                        <input type="file" id="images" accept="image/*" name="fileToUpload" onchange="LoadFile(event)" required>
                       </label>
                 </div>
                 
@@ -187,7 +187,6 @@
         </span>
     </footer>
 
-    <script src="js/updateSubmitButton.js"></script>
     <script src="js/returnToMainPage.js"></script>
     <script src="js/citySchool.js"></script>
     <script src="js/switchTermsConditions.js"></script>
