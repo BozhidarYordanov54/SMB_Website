@@ -73,7 +73,7 @@
     font-size: 30px;
 }
 
-@media (width <= 768px)
+@media (max-width: 768px)
 {
     .article-header{
         font-size: 20px;

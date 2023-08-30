@@ -131,7 +131,7 @@
     display: none;
 }
 
-@media (width <= 768px)
+@media (max-width: 768px)
 {
     .image-article-wrapper{
         flex-direction: column;
