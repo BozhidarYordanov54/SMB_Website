@@ -124,8 +124,8 @@ function updateSubmitButton() {
     //var nowEET = new Date(now.getTime() + (now.getTimezoneOffset() + 180) * 60000); // Adjust for EET (UTC+3)
 
     //Calculate the time remaining for form open and close
-    var timeUntilOpen = formOpenDate - nowEET;
-    var timeUntilClose = formCloseDate - nowEET;
+    //var timeUntilOpen = formOpenDate - nowEET;
+    //var timeUntilClose = formCloseDate - nowEET;
 
     ////Check to see if its valid
     //const isFormOpen = timeUntilOpen <= 0 && timeUntilClose > 0;
@@ -172,4 +172,4 @@ fileInput.addEventListener('change', () => {
     updateSubmitButton();
   }
 });
-pdateSubmitButton();
+updateSubmitButton();
