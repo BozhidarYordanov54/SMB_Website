@@ -1,10 +1,16 @@
+function toggleNav() {
+  var sideNav = document.getElementById("mySidenav");
+  if (sideNav.style.width === "" || sideNav.style.width === "0px") {
+      openNav();
+  } else {
+      closeNav();
+  }
+}
+
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("closebtn").style.display = "block";
-  }
-  
-  /* Set the width of the side navigation to 0 */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("closebtn").style.display = "none";
-  }
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

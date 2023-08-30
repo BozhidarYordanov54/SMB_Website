@@ -13,9 +13,8 @@
        <section class="logo">
             <a href="index.html"><img src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
        </section>
-        <nav class="nav-bar" id="mySidenav">
+        <nav class="nav-bar">
             <ul class="navbar-contents">
-                <a style="display: none" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <li><a href="competitions.html">Състезания</a></li>
                 <li><a href="exams.html">Изпити</a></li>
                 <li><a href="contestSignUp.html">Записване</a></li>
@@ -23,7 +22,22 @@
                 <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
-        <span class="openbtn" onclick="openNav()">open</span>
+
+        <div class="sideNavigation">
+            <div id="mySidenav" class="sidenav">
+                <a href="index.html"><img src="Images/Logo/Logo-White.png" alt="СМБ-Велико Търново" class="sidenav-image"></a>
+                <a href="competitions.html">Състезания</a>
+                <a href="exams.html">Изпити</a>
+                <a href="contestSignUp.html">Записване</a>
+                <a href="members.html">Членство</a>
+                <a href="contacts.html">Контакти</a>
+              </div>
+              <div class="container" onclick="toggleNav(); myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+        </div>
     </header>
     
     <main class="content">
@@ -98,5 +112,6 @@
 
     <script src="js/mainPageNotificationRetrieve.js"></script>
     <script src="js/showMenu.js"></script>
+    <script src="js/changeOpenButton.js"></script>
 </body>
 </html>
