@@ -110,7 +110,6 @@ input[type="text"], #city, #school-name {
     display: none;
 }
 
-/*
 input[type=file] {
     width: 600px;
     max-width: 102%;
@@ -168,7 +167,7 @@ input[type=file] {
     text-align: center;
     transition: color .2s ease-in-out;
   }
-  */
+  
 
  .continue-button, .back-button {
   border-radius: 4px;

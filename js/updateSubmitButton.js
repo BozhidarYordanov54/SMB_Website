@@ -100,7 +100,7 @@ function updateSubmitButton() {
     const isValidContestantName = contestantNameRegex.test(contestantNameInput.value);
     const isValidEmail = emailRegex.test(emailInput.value);
 
-    //const isFileUploaded = fileInput.files.length > 0;
+    const isFileUploaded = fileInput.files.length > 0;
 
     const transitionDuration = '0.7s'; // Adjust the duration as needed
     const transitionDurationButton = '0.4s'; // Adjust the duration as needed
@@ -123,16 +123,16 @@ function updateSubmitButton() {
     //var now = new Date();
     //var nowEET = new Date(now.getTime() + (now.getTimezoneOffset() + 180) * 60000); // Adjust for EET (UTC+3)
 
-    //// Calculate the time remaining for form open and close
-    //var timeUntilOpen = formOpenDate - nowEET;
-    //var timeUntilClose = formCloseDate - nowEET;
+    //Calculate the time remaining for form open and close
+    var timeUntilOpen = formOpenDate - nowEET;
+    var timeUntilClose = formCloseDate - nowEET;
 
     ////Check to see if its valid
     //const isFormOpen = timeUntilOpen <= 0 && timeUntilClose > 0;
 
-    submitButton.style.backgroundColor = (isValidData /*&& isFormOpen*/ /*&& isFileUploaded*/) ? '' : 'gray';
-    submitButton.disabled = (isValidData /*&& isFormOpen*/ /*&& isFileUploaded*/) ? false : true;
-    submitButton.style.cursor = (isValidData /*&& isFormOpen*/ /*&& isFileUploaded*/) ? 'pointer' : 'not-allowed';
+    submitButton.style.backgroundColor = (isValidData /*&& isFormOpen*/ && isFileUploaded) ? '' : 'gray';
+    submitButton.disabled = (isValidData /*&& isFormOpen*/ && isFileUploaded) ? false : true;
+    submitButton.style.cursor = (isValidData /*&& isFormOpen*/ && isFileUploaded) ? 'pointer' : 'not-allowed';
     
     fullNameInput.parentElement.classList.toggle('invalid', !isValidFullName);
     contestantNameInput.parentElement.classList.toggle('invalid', !isValidContestantName);
@@ -166,11 +166,10 @@ schoolInput.addEventListener('change', () => {
   updateSubmitButton();
 });
 
-//fileInput.addEventListener('change', () => {
-//  if(fileInput.files.length > 0)
-//  {
-//    updateSubmitButton();
-//  }
-//});
-
-updateSubmitButton();
+fileInput.addEventListener('change', () => {
+  if(fileInput.files.length > 0)
+  {
+    updateSubmitButton();
+  }
+});
+pdateSubmitButton();

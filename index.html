@@ -13,8 +13,9 @@
        <section class="logo">
             <a href="index.html"><img src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
        </section>
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="mySidenav">
             <ul class="navbar-contents">
+                <a style="display: none" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <li><a href="competitions.html">Състезания</a></li>
                 <li><a href="exams.html">Изпити</a></li>
                 <li><a href="contestSignUp.html">Записване</a></li>
@@ -22,6 +23,7 @@
                 <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
+        <span class="openbtn" onclick="openNav()">open</span>
     </header>
     
     <main class="content">
@@ -95,5 +97,6 @@
 
 
     <script src="js/mainPageNotificationRetrieve.js"></script>
+    <script src="js/showMenu.js"></script>
 </body>
 </html>
