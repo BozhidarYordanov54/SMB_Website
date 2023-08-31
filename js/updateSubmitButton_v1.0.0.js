@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Disable form submission
   function disableFormSubmission() {
       var submitButton = document.getElementById("submit-button");
-      submitButton.disabled = true;
       submitButton.style.background = "gray";
       submitButton.style.cursor = "not-allowed";
       submitButton.value = "Формата не е активна!";
@@ -52,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Enable form submission
   function enableFormSubmission() {
       var submitButton = document.getElementById("submit-button");
-      submitButton.disabled = false;
       submitButton.value = "Записване";
   }
 });
@@ -94,15 +92,16 @@ function updateSubmitButton() {
       schoolInput.value !== ''
     );
 
+    //Regex Tests
     const isValidPhone = phoneRegex.test(phoneInput.value);
     const isValidFullName = fullNameRegex.test(fullNameInput.value);
     const isValidContestantName = contestantNameRegex.test(contestantNameInput.value);
     const isValidEmail = emailRegex.test(emailInput.value);
+    
+    const isFileUploaded = fileInput.files.length > 0;
 
-    const isFileUploaded = fileInput.files.length > 0 && data.includes("Image uploaded");
-
-    const transitionDuration = '0.7s'; // Adjust the duration as needed
-    const transitionDurationButton = '0.4s'; // Adjust the duration as needed
+    const transitionDuration = '0.7s'; 
+    const transitionDurationButton = '0.4s'; 
 
     phoneId.style.transition = `background-color ${transitionDuration}`;
     fullNameId.style.transition = `background-color ${transitionDuration}`;
@@ -170,4 +169,5 @@ fileInput.addEventListener('change', () => {
     updateSubmitButton();
   }
 });
+
 updateSubmitButton();

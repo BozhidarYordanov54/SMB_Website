@@ -2,6 +2,8 @@ let url = "https://script.google.com/macros/s/AKfycbwkB9MqrfkZbI-qpX08qHYBhnrNOm
 let file = document.querySelector("#signup-form input[type='file']");
 let img = document.querySelector("#signup-form img");
 
+let imageNotification = document.getElementById('imageUploaded');
+
 file.addEventListener('change', () => {
     let fr = new FileReader();
     fr.addEventListener('loadend', () => {
@@ -24,7 +26,7 @@ file.addEventListener('change', () => {
 
             // Check if the response contains a success message or any indicator that the upload was successful
             if (data.includes("Image uploaded")) {
-                
+                imageNotification.innerHTML = "Image uploaded";
                 // You can perform additional actions here after successful upload
             } else {
                 console.log("Image upload failed.");
