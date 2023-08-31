@@ -2,9 +2,12 @@ document.getElementById('signup-form').addEventListener('submit', async function
     event.preventDefault();
     
     const formElement = document.getElementById('signup-form');
+
     const formData = new FormData(formElement);
+
     const submitButton = document.getElementById('submit-button');
     const loadingSpinner = document.getElementById('loading-spinner');
+
     const url = 'https://script.google.com/macros/s/AKfycbxrHUaDmQ56YMVgdw4fgzL3Yv7UeIeQRv-k3XvMbGwYmcmNhKjNuwjp7IgkFpaPy4iSCQ/exec';
 
     try {

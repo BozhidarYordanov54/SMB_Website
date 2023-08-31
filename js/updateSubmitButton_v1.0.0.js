@@ -1,5 +1,5 @@
 // Set the dates for form open and close
-var formOpenDate = new Date("2023-11-15T06:00:00+03:00"); // EEST (UTC+3)
+var formOpenDate = new Date("2023-08-31T06:00:00+03:00"); // EEST (UTC+3)
 var formCloseDate = new Date("2023-12-06T06:00:00+03:00"); // EEST (UTC+3)
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -99,7 +99,7 @@ function updateSubmitButton() {
     const isValidContestantName = contestantNameRegex.test(contestantNameInput.value);
     const isValidEmail = emailRegex.test(emailInput.value);
 
-    const isFileUploaded = fileInput.files.length > 0;
+    const isFileUploaded = fileInput.files.length > 0 && data.includes("Image uploaded");
 
     const transitionDuration = '0.7s'; // Adjust the duration as needed
     const transitionDurationButton = '0.4s'; // Adjust the duration as needed

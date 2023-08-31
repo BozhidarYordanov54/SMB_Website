@@ -21,10 +21,19 @@ function showNotification(message) {
     0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
         <div class="notification-message">${message}</div>
     `;
-    notification.style.backgroundColor = 'green'; // Change this to the desired background color
-    notification.style.color = 'white';
-    notification.style.display = 'block';
-    notification.style.opacity = 1;
+    if(notification.innerHTML === "Записването успешно!")
+    {
+        notification.style.backgroundColor = 'green'; // Change this to the desired background color
+        notification.style.color = 'white';
+        notification.style.display = 'block';
+        notification.style.opacity = 1;
+    }
+    else{
+        notification.backgroundColor = 'red';
+        notification.style.opacity = 1;
+        notification.style.color = 'white';
+        notification.style.display = 'block';
+    }
 
     setTimeout(() => {
         notification.style.opacity = 0;

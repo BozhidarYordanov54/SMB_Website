@@ -162,7 +162,8 @@
                     <label for="images" class="drop-container" id="dropcontainer">
                         <span class="drop-title">Поставете бордерото тук</span>
                         или
-                        <input type="file" id="images" accept="image/*" required>
+                        <input type="file" id="images" accept="image/*" name="images" required>
+                        <img style="display: none;" src="" alt="">
                       </label>
                 </div>
                 
@@ -176,6 +177,7 @@
         </div>
      </section>
 
+     <div id="imageUploaded" class="imageUploaded" style="display: none;"></div>
     <div id="notification" class="notification"></div>
 
      <footer>
@@ -187,8 +189,14 @@
         </span>
     </footer>
 
-    <script src="js/returnToMainPage.js"></script>
+    <!--logic js-->
     <script src="js/citySchool.js"></script>
+    <script src="js/dragAndDropHandling.js"></script>
+    <script src="js/returnToMainPage.js"></script>
+    <script src="js/saveImageToSpreadSheet.js"></script>
+    <script src="js/updateSubmitButton_v1.0.0.js"></script>
+
+    <!--Visual js-->
     <script src="js/switchTermsConditions.js"></script>
     <script src="js/changeOpenButton.js"></script>
     <script src="js/showMenu.js"></script>
