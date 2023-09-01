@@ -75,6 +75,8 @@ const schoolId = document.getElementById('school-name');
 
 const fileInput = document.getElementById('images');
 
+const imgUploaded = document.getElementById('imageUploaded');
+
 const submitButton = document.getElementById('submit-button');
 
 const phoneRegex = /^(0|\+359)([87][0-9]{8})$/;
@@ -125,6 +127,7 @@ function updateSubmitButton() {
     var timeUntilClose = formCloseDate - nowEET;
 
     //Check to see if its valid
+    
     const isFormOpen = timeUntilOpen <= 0 && timeUntilClose > 0;
 
     submitButton.style.backgroundColor = (isValidData && isFormOpen && isFileUploaded) ? '' : 'gray';

@@ -26,7 +26,7 @@ file.addEventListener('change', () => {
 
             // Check if the response contains a success message or any indicator that the upload was successful
             if (data.includes("Image uploaded")) {
-                imageNotification.innerHTML = "Image uploaded";
+                imgUploaded.innerHTML = "Image uploaded";
                 // You can perform additional actions here after successful upload
             } else {
                 console.log("Image upload failed.");
