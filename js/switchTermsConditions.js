@@ -7,6 +7,10 @@ function showForm(){
     formPage.style.display = 'initial';
     termsPage.style.display = 'none';
     signupMain.classList.add('form-opened');
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
 
 function showTerms(){
