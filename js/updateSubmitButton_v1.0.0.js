@@ -55,6 +55,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 });
 
+
+
 const phoneInput = document.querySelector('input[name="Тел. номер"]');
 const phoneId = document.getElementById('phone-number');
 
@@ -84,6 +86,17 @@ const fullNameRegex = /^[а-яА-Яa-zA-Z]+\s[а-яА-Яa-zA-Z]+$/;;
 const contestantNameRegex = /^[а-яА-Яa-zA-Z]+\s[а-яА-Яa-zA-Z]+$/;;
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
+function checkImgUploadedContent() {
+  const intervalId = setInterval(() => {
+      if (imgUploaded.innerHTML === "Image uploaded") {
+          clearInterval(intervalId); // Stop checking once content is "Image uploaded"
+          updateSubmitButton(); // Call the function to enable the submit button
+      }
+  }, 1000); // Check every 1 second
+}
+
+checkImgUploadedContent();
+
 function updateSubmitButton() {
     const allFieldsFilled = (
       phoneInput.value !== '' &&
@@ -100,7 +113,7 @@ function updateSubmitButton() {
     const isValidContestantName = contestantNameRegex.test(contestantNameInput.value);
     const isValidEmail = emailRegex.test(emailInput.value);
     
-    const isFileUploaded = fileInput.files.length > 0;
+    const isFileUploaded = fileInput.files.length > 0 && imgUploaded.innerHTML === "Image uploaded";
 
     const transitionDuration = '0.7s'; 
     const transitionDurationButton = '0.4s'; 

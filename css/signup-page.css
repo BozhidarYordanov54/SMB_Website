@@ -190,6 +190,7 @@ input[type=file] {
   width: 150px;
   font-size: 14px;
   margin-bottom: 1em;
+  
 }
 
 .continue-button span, .back-button span {
@@ -234,7 +235,25 @@ input[type=file] {
   opacity: 1;
   right: 0;
 }
- 
+
+.instruction-two{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.instruction-two-information{
+  margin-left: 1.5em;
+}
+
+.instruction-two-information li:last-child{
+  list-style-type: none;
+}
+
+.file-uploading-information{
+  margin-left: 2em;
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -244,5 +263,17 @@ input[type=file] {
 {
     #countdown{
         font-size: 15px;
+    }
+
+    .signup-main{
+      max-width: 400px;
+    }
+
+    .signup-main.form-opened{
+      max-width: 320px;
+    }
+
+    .instructions-wrapper li img{
+      width: 100%;
     }
 }
