@@ -82,8 +82,8 @@ const imgUploaded = document.getElementById('imageUploaded');
 const submitButton = document.getElementById('submit-button');
 
 const phoneRegex = /^(0|\+359)([87][0-9]{8})$/;
-const fullNameRegex = /^[а-яА-Яa-zA-Z]+\s[а-яА-Яa-zA-Z]+$/;;
-const contestantNameRegex = /^[а-яА-Яa-zA-Z]+\s[а-яА-Яa-zA-Z]+$/;;
+const fullNameRegex = /^[A-ZА-Я][а-яА-Яa-zA-Z]+\s[A-ZА-Я][а-яА-Яa-zA-Z]{3,}$/;
+const contestantNameRegex = /^[A-ZА-Я][а-яА-Яa-zA-Z]+\s[A-ZА-Я][а-яА-Яa-zA-Z]{3,}$/;
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
 function checkImgUploadedContent() {
