@@ -135,6 +135,11 @@
    .newest-article{
     flex-direction: column;
     padding: 1em;
+    gap: 1.5em;
+   }
+
+   .text-wrapper{
+    gap: 1.5em;
    }
 
    .older-articles .card-list{
@@ -153,6 +158,11 @@
 
     .oa-imge{
         width: 20em;
+        height: auto;
+    }
+
+    .oa-image-2{
+        width: 15em;
         height: auto;
     }
     

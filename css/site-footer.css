@@ -23,21 +23,22 @@ footer{
 {
     footer{
         flex-direction: column;
-        gap: 3em;
+        gap: 1em;
     }
 
     .footer-copyright{
-        font-size: 22px;
+        font-size: 16px;
     }
 
    .partners{
-    flex-direction: column;
     gap: 1em;
    }
 
    .partners a img{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+    width: 150px;
+   }
+
+   .partners a .smb-image{
+    width: 40px;
    }
 }
