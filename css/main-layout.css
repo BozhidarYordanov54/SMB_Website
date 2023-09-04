@@ -11,7 +11,7 @@
 
 .card {
     flex: 1;
-    border-right: 3px solid #ccc; /* Add the vertical separator */
+    border-right: 3px solid rgba(49, 162, 249, 0.5); /* Add the vertical separator */
     padding: 10px; /* Optional: Add padding for spacing */
     transition: all 0.3s ease-in-out;
 }
@@ -100,11 +100,21 @@
 .image-container
 {
     text-align: center;
+    transition: 0.5s all ease;
+}
+
+.image-container:nth-child(1){
+    margin-right: 2em;
+}
+
+.image-container:nth-child(1):hover{
+    transform: scale(1.07);
 }
 
 .image-container a{
     text-decoration: none;
     color: #343434;
+    
 }
 
 .image-container .text{
@@ -112,10 +122,14 @@
 }
 
 .oa-imge {
-    width: auto;/* Set your desired width here */
-    height: 15em; /* Set your desired height here */
-    object-fit: cover;
+    width: 90%;/* Set your desired width here */
+    height: auto; /* Set your desired height here */
   }
+
+.oa-image-2{
+    width: 50%;
+    height: auto;
+}
 
   .notification {
     position: fixed;
@@ -148,9 +162,14 @@
 
    .card{
     border-right: none;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid rgba(49, 162, 249, 0.5);
     padding: 10px;
    }
+
+   .image-container:nth-child(1){
+    margin-right: 0;
+    }
+
 
    .image-container .text{
     font-size: 16px;
@@ -162,7 +181,7 @@
     }
 
     .oa-image-2{
-        width: 15em;
+        width: 13em;
         height: auto;
     }
     
