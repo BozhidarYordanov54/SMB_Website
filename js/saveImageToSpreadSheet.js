@@ -9,6 +9,7 @@ imageStatus.style.fontWeight = "bold";
 let imageNotification = document.getElementById('imageUploaded');
 
 file.addEventListener('change', () => {
+    imageStatus.style.color = "#000";
     imageStatus.innerHTML = "Снимката се качва...";
 
     let fr = new FileReader();
@@ -22,7 +23,7 @@ file.addEventListener('change', () => {
             name: file.files[0].name
         }
 
-        if (obj.type.startsWith('image/')) {
+        if (obj.type.startsWith('image/jpeg') || obj.type.startsWith('image/jpg') || obj.type.startsWith('image/png')) {
             fetch(url, {
                 method: "POST",
                 body: JSON.stringify(obj)
