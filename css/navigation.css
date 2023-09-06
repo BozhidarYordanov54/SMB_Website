@@ -24,9 +24,9 @@
 }
 
 .site-header .nav-bar .navbar-contents li {
-    white-space: nowrap; /* Prevent words from breaking */
-    overflow: hidden; /* Hide overflow content */
-    text-overflow: ellipsis; /* Show ellipsis (...) for longer words */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 
 .site-header .nav-bar .navbar-contents li a {
