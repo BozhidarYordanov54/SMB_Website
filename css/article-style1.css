@@ -45,6 +45,7 @@
 
 .image-container{
     margin-top: 1.5em;
+    margin-left: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,20 +54,26 @@
 
 .image-container ul{
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .image-container li img{
     justify-content: space-around;
     width: 95%;
-    padding: 10px;
 }
 
 main img{
-    border-radius: 2em;
+    border-radius: 1em;
     overflow: hidden;
 }
 
 @media (max-width: 768px) {
+    .image-container-header{
+        padding: .5em;
+    }
+   
     .article-paragraph-one,
     .article-paragraph-two,
     .article-parahraph-three {
@@ -76,11 +83,19 @@ main img{
     .article-paragraph-one img,
     .article-paragraph-two img,
     .article-parahraph-three img{
-        width: 110%;
+        width: 105%;
     }
 
     .text{
         font-size: 20px;
         text-align: justify;
+    }
+
+    .image-container{
+        margin-left: 0.5em;
+    }
+    
+    .image-container ul{
+        gap: 0.5em;
     }
 }
