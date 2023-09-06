@@ -70,7 +70,8 @@
 }
 
 #message {
-    height: 8em;
+    height: 15.7em;
+    min-height: 8em;
     width: 100%;
     resize: vertical;
     background: rgba(249, 249, 249, 1);
@@ -103,6 +104,7 @@
 }
 
 .contact-svg{
+    margin-top: 8.6em;
     display: flex;
     gap: 1em;
 }
@@ -143,5 +145,9 @@
 
     .contact-form{
         margin-right: 6em;
+    }
+
+    .contact-svg{
+        margin-top: 1em;
     }
 }
