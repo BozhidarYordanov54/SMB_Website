@@ -102,6 +102,29 @@
     cursor: pointer;
 }
 
+.contact-svg{
+    display: flex;
+    gap: 1em;
+}
+
+.facebook svg{
+    fill: #ffffff;
+    transition: all 0.4s ease;
+}
+
+.email-svg svg{
+    fill: #ffffff;
+    transition: all 0.4s ease;
+}
+
+.facebook svg:hover{
+    fill: #4267B2;
+}
+
+.email-svg svg:hover{
+    fill: rgb(255, 215, 37);
+}
+
 #send-button:hover {
     background: #005dc0;
 }

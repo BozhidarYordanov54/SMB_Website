@@ -76,6 +76,7 @@ const schoolInput = document.querySelector('select[name="Училище"]');
 const schoolId = document.getElementById('school-name');
 
 const fileInput = document.getElementById('images');
+const imgDrop = document.getElementById('dropcontainer');
 
 const imgUploaded = document.getElementById('imageUploaded');
 
@@ -146,7 +147,11 @@ function updateSubmitButton() {
     submitButton.style.backgroundColor = (isValidData && isFormOpen && isFileUploaded) ? '' : 'gray';
     submitButton.disabled = (isValidData && isFormOpen && isFileUploaded) ? false : true;
     submitButton.style.cursor = (isValidData && isFormOpen && isFileUploaded) ? 'pointer' : 'not-allowed';
-    
+
+    fileInput.disabled = isFormOpen ? false : true;
+    fileInput.style.cursor = isFormOpen ? 'pointer' : 'not-allowed';
+    imgDrop.style.cursor = isFormOpen ? 'pointer' : 'not-allowed';
+
     fullNameInput.parentElement.classList.toggle('invalid', !isValidFullName);
     contestantNameInput.parentElement.classList.toggle('invalid', !isValidContestantName);
     emailInput.parentElement.classList.toggle('invalid', !isValidEmail);
