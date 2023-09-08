@@ -23,6 +23,7 @@ function updateCalculation() {
     else if(k > n)
     {
         resultDisplay.textContent = "Числото n трябва да е по голямо или равно на k";
+        resultDisplay.style.fontSize = "15px"
         resultDisplay.style.color = 'red';
     }
     else 

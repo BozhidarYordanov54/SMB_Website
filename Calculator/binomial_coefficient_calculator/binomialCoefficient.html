@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../css/site.css">
+    <link rel="stylesheet" type="text/css" href="../calculator_css/calculator_site.css">
     <link rel="stylesheet" type="text/css" href="binomialCoefficient.css">
     <title>Binomial Coefficient Calculator</title>
 </head>
@@ -39,21 +39,24 @@
          </div>
      </header>
 
-     <section class="type-of-calculator">
-        <h1>Калкулатор - биномни коефициенти</h1>
-     </section>
+     
     <div class="calculator">
+        <section class="type-of-calculator">
+            <h1>Калкулатор - биномни коефициенти</h1>
+         </section>
+         <div class="input-group">
+            <div class="calc-group">
+                <label class="floating-label">n:</label>
+                <input type="text" id="n" min="0">
+            </div>
+             
+            <div class="calc-group">
+                <label class="floating-label">k:</label>
+                <input type="text" id="k" min="0">
+            </div>
+         </div>
         
-        <div class="calc-group">
-            <span class="floating-label">n:</span>
-            <input type="text" id="n" min="0">
-        </div>
-        
-        <div class="calc-group">
-            <span class="floating-label">k:</label>
-            <input type="text" id="k" min="0">
-        </div>
-        <p>Result: <span id="result"></span></p>
+        <p class="result">Резултат: <span id="result"></span></p>
     </div>
 
     <footer>
