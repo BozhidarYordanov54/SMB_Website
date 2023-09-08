@@ -14,7 +14,12 @@
     border-radius: 8px;
 }
 
-
+.floating-label{
+    position: relative;
+    top: 1.8em;
+    left: 0.5em;
+    color: #7a7a7a;
+}
 
 #k{
     margin-left: 2px;
