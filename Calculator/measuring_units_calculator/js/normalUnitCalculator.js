@@ -1,4 +1,4 @@
-function convert() {
+function convertNormal() {
     const value = parseFloat(document.getElementById('value').value);
     const fromUnit = document.getElementById('fromUnit').value;
     const toUnit = document.getElementById('toUnit').value;
@@ -21,7 +21,9 @@ function convert() {
     } else if (unitFactors[fromUnit] && unitFactors[toUnit]) {
         const result = (value * unitFactors[fromUnit]) / unitFactors[toUnit];
         resultToDisplay.innerHTML = result;
-        formula.innerHTML = `${value} ${fromUnit} = ${result} ${toUnit}`;
+        const operation = unitFactors[fromUnit] > unitFactors[toUnit] ? ' ÷ ' : ' × ';
+        
+        formula.innerHTML = `${value}${fromUnit} ${operation} ${unitFactors[toUnit]}0 = ${result}`
     } else {
         resultToDisplay.innerHTML = 'Invalid units';
         formula.innerHTML = '';
