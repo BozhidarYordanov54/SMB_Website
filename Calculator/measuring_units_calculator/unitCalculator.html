@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калкулатор за мерни единици</title>
+</head>
+<body>
+    <div class="calculator-wrapper">
+        <div class="input">
+            <input type="text" id="value">
+            <select id="fromUnit">
+                <option value="mm">Милиметър</option>
+                <option value="cm">Сантиметър</option>
+                <option value="dm">Дециметър</option>
+                <option value="m">Метър</option>
+                <option value="km">Километър</option>
+                <option value="ft">Фут</option>
+                <option value="in">Инч</option>
+            </select>
+            <select id="toUnit">
+                <option value="mm">Милиметър</option>
+                <option value="cm">Сантиметър</option>
+                <option value="dm">Дециметър</option>
+                <option value="m">Метър</option>
+                <option value="km">Километър</option>
+                <option value="ft">Фут</option>
+                <option value="in">Инч</option>
+            </select>
+            <button onclick="convert()">Convert</button>
+            <div id="result"></div>
+            <div id="formula"></div>               
+        </div>
+    </div>
+
+    <script src="normalUnitCalculator.js"></script>
+</body>
+</html>
