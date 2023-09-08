@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/site.css">
+    <link rel="stylesheet" type="text/css" href="binomialCoefficient.css">
+    <title>Binomial Coefficient Calculator</title>
+</head>
+<body>
+    <header class="site-header">
+        <section class="logo">
+             <a href="../../index.html"><img src="../../Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
+        </section>
+         <nav class="nav-bar">
+             <ul class="navbar-contents">
+                 <li><a href="../../competitions.html">Състезания</a></li>
+                 <li><a href="../../exams.html">Изпити</a></li>
+                 <li><a href="../../contestSignUp.html">Записване</a></li>
+                 <li><a href="../../members.html">Членство</a></li>
+                 <li><a href="../../contacts.html">Контакти</a></li>
+             </ul>
+         </nav>
+ 
+         <div class="sideNavigation">
+             <div id="mySidenav" class="sidenav">
+                 <a href="../../index.html"><img src="../../Images/Logo/Logo-White.png" alt="СМБ-Велико Търново" class="sidenav-image"></a>
+                 <a href="../../competitions.html">Състезания</a>
+                 <a href="../../exams.html">Изпити</a>
+                 <a href="../../contestSignUp.html">Записване</a>
+                 <a href="../../members.html">Членство</a>
+                 <a href="../../contacts.html">Контакти</a>
+               </div>
+               <div class="container" onclick="toggleNav(); myFunction(this)">
+                 <div class="bar1"></div>
+                 <div class="bar2"></div>
+                 <div class="bar3"></div>
+               </div>
+         </div>
+     </header>
+
+     <section class="type-of-calculator">
+        <h1>Калкулатор - биномни коефициенти</h1>
+     </section>
+    <div class="calculator">
+        
+        <div class="calc-group">
+            <span class="floating-label">n:</span>
+            <input type="text" id="n" min="0">
+        </div>
+        
+        <div class="calc-group">
+            <span class="floating-label">k:</label>
+            <input type="text" id="k" min="0">
+        </div>
+        <p>Result: <span id="result"></span></p>
+    </div>
+
+    <footer>
+        <div class="footer-copyright">&copy; СМБ - Велико Търново 2023</div>
+        <span class="partners">
+            <a href="https://www.mon.bg/"><img class="mon-image" src="../../Images/Partners/mon-logo.png" alt="Министерство на образованието и науката на България"></a>
+            <a href="http://www.math.bas.bg/smb/"><img class="smb-image" src="../../Images/Partners/SMB-logo-b&w.png" alt=""></a>
+            <a href="http://www.math.bas.bg/omi/hssimi/"><img class="uchimi-image" src="../../Images/Partners/UchIMI-logo-short_text-color-transparent-BG.png" alt="УчИМИ"></a>
+        </span>
+    </footer>
+
+
+    <script src="binomialScript.js"></script>
+</body>
+</html>

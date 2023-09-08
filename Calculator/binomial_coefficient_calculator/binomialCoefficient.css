@@ -1,0 +1,13 @@
+.calculator{
+    max-width: 450px;
+    padding: 1em 2em 2em 2em;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#n, #k{
+    margin: 0;
+    width: 90%;
+}

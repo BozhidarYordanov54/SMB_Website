@@ -131,6 +131,10 @@
     height: auto;
 }
 
+.oa-image-1{
+    width: 52%;
+}
+
   .notification {
     position: fixed;
     bottom: 20px;
@@ -178,6 +182,10 @@
     .oa-imge{
         width: 20em;
         height: auto;
+    }
+
+    .oa-image-1{
+        width: 13em;
     }
 
     .oa-image-2{

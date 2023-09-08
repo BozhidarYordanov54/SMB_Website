@@ -1,6 +1,8 @@
 // Set the dates for form open and close
 var formOpenDate = new Date("2023-08-31T06:00:00+03:00"); // EEST (UTC+3)
-var formCloseDate = new Date("2023-12-06T06:00:00+03:00"); // EEST (UTC+3)
+var formCloseDate = new Date("2023-09-15T21:00:00+03:00"); // EEST (UTC+3)
+
+var isFormOpen = '';
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -18,15 +20,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
           // Countdown until form opens
           displayCountdown("Формата ще бъде отворена след: ", timeUntilOpen);
           disableFormSubmission();
+
+          isFormOpen = false;
       } else if (timeUntilClose > 0) {
           // Countdown while form is open
           displayCountdown("Формата ще бъде затворена след: ", timeUntilClose);
           enableFormSubmission();
+
+          isFormOpen = true;
       } else {
           // Form is closed
           clearInterval(countdownTimer);
           document.getElementById("countdown").innerHTML = "Формата е затворена.";
           disableFormSubmission();
+
+          isFormOpen = false;
       }
   }, 1000);
 
@@ -46,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       submitButton.style.background = "gray";
       submitButton.style.cursor = "not-allowed";
       submitButton.value = "Формата не е активна!";
+      
   }
 
   // Enable form submission
@@ -54,8 +63,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       submitButton.value = "Записване";
   }
 });
-
-
 
 const phoneInput = document.querySelector('input[name="Тел. номер"]');
 const phoneId = document.getElementById('phone-number');
@@ -134,16 +141,6 @@ function updateSubmitButton() {
 
     const isValidData = isValidPhone && isValidFullName && isValidContestantName && isValidEmail && allFieldsFilled;
 
-    var now = new Date();
-    var nowEET = new Date(now.getTime() + (now.getTimezoneOffset() + 180) * 60000); // Adjust for EET (UTC+3)
-
-    var timeUntilOpen = formOpenDate - nowEET;
-    var timeUntilClose = formCloseDate - nowEET;
-
-    //Check to see if its valid
-    
-    const isFormOpen = timeUntilOpen <= 0 && timeUntilClose > 0;
-
     submitButton.style.backgroundColor = (isValidData && isFormOpen && isFileUploaded) ? '' : 'gray';
     submitButton.disabled = (isValidData && isFormOpen && isFileUploaded) ? false : true;
     submitButton.style.cursor = (isValidData && isFormOpen && isFileUploaded) ? 'pointer' : 'not-allowed';
@@ -157,6 +154,8 @@ function updateSubmitButton() {
     emailInput.parentElement.classList.toggle('invalid', !isValidEmail);
     cityInput.parentElement.classList.toggle('invalid', cityInput.value === '');
     schoolInput.parentElement.classList.toggle('invalid', schoolInput.value === '');
+
+    console.log(isFormOpen);
    
   }
 
