@@ -37,6 +37,10 @@
     transition: all 0.3s ease-in;
 }
 
+.site-header .nav-bar .navbar-contents li a svg{
+  fill: #ffffff;
+}
+
 .site-header .nav-bar .navbar-contents li a::after {
     content: '';
     position: absolute;
@@ -132,14 +136,10 @@
       font-size: 25px;
       color: #ffffff;
       display: block;
+      white-space: nowrap;
       transition: 0.3s;
     }
-    
-    /* When you mouse over the navigation links, change their color */
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-    
+
     .sidenav-image{
       width: 45%;
       margin-top: -2em;
