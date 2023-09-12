@@ -18,12 +18,20 @@ function setDarkModeStyles() {
     siteNav.style.backgroundColor = "#1a3c57"; 
     siteNav.style.transition = `background-color ${transitionTime}`;
 
-    newestArticle.style.backgroundColor = "#1a3c57"; 
-    newestArticle.style.transition = `background-color ${transitionTime}`;
+    //Checks for index.html
+    if(newestArticle){
+        newestArticle.style.backgroundColor = "#1a3c57"; 
+        newestArticle.style.transition = `background-color ${transitionTime}`;
+    }
 
-    olderArticleParagraphs.forEach(function(paragraph) {
-        paragraph.style.color = "#fff"; // Use a valid color format 
-    });
+    if(olderArticleParagraphs){
+        olderArticleParagraphs.forEach(function(paragraph) {
+            paragraph.style.color = "#fff"; 
+        });
+    }
+    //End of index.html checks for elements
+
+
     siteFooter.style.backgroundColor = "#1a3c57"; 
 }
 
