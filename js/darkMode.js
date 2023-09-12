@@ -25,24 +25,33 @@ var contactsNames = document.getElementById("contacts");
 var contactFormWrapper = document.querySelector('.contacts');
 //end of contacts.html elements
 
+var countdownTimerStyle = document.querySelector('.countdown-timer');
+var signupMainStyles = document.querySelector('.signup-main');
+var inputsForm = document.querySelectorAll('input[type = text]');
+var dropContainerStyle = document.querySelector('.drop-container');
+var dropContainerTitleStyle = document.querySelector('.drop-title');
+
+var continueButtonStyle = document.querySelector('.continue-button');
+var backButtonStyle = document.querySelector('.back-button');
+
 var siteFooter = document.querySelector(`footer`); 
 
 const transitionTime = "0.7s"; 
 
 // Function to set dark mode styles
 function setDarkModeStyles() {
-    document.body.style.backgroundColor = "#2c2c2c"; 
+    document.body.style.backgroundColor = "#1E1E1E"; 
     document.body.style.transition = `background-color ${transitionTime}`;
 
     navbarImage.src = "Images/Logo/Logo-White.png"; 
 
-    siteNav.style.backgroundColor = "#1a3c57"; 
+    siteNav.style.backgroundColor = "#234465"; 
     siteNav.style.transition = `background-color ${transitionTime}`;
     siteNav.style.borderBottom = '#4B4B4B';
 
     //Checks for index.html
     if(newestArticle){
-        newestArticle.style.backgroundColor = "#1a3c57"; 
+        newestArticle.style.backgroundColor = "#234465"; 
         newestArticle.style.transition = `background-color ${transitionTime}`;
     }
 
@@ -55,47 +64,68 @@ function setDarkModeStyles() {
 
     //Check for elements in competitions.html
     if(compHeader){
-        compHeader.style.backgroundColor = "#1a3c57";
+        compHeader.style.backgroundColor = "#234465";
         compHeader.style.transition = `background-color ${transitionTime}`;
     }
     if(christmasMathCompArticle && christmasMathComp && easterMathCompArticle && easterMathComp){
-        christmasMathComp.style.backgroundColor = "#1a3c57";
+        christmasMathComp.style.backgroundColor = "#234465";
         christmasMathComp.style.transition = `background-color ${transitionTime}`;
 
         compRegulationsWrapper.forEach(function(regulation){
-            regulation.style.boxShadow = "0 0 10px #949494";
-            console.log("I am here");
+            regulation.style.background = '#2c2c2c';
+            regulation.style.transition = `background-colo ${transitionTime}`;
+            regulation.style.boxShadow = "0 0 10px rgba(255,255,255, 0.4)";
+            
         })
 
         christmasMathCompArticle.style.color = "#fff";
         christmasMathCompArticle.style.transition = `background-color ${transitionTime}`;
 
-        easterMathComp.style.backgroundColor = "#1a3c57";
+        easterMathComp.style.backgroundColor = "#234465";
         easterMathComp.style.transition = `background-color ${transitionTime}`;
-
+        
         easterMathCompArticle.style.color = "#fff";
         easterMathCompArticle.style.transition = `color ${transitionTime}`;
 
         tasksLinks.forEach(function(links){
-            links.style.color = "#C900C9";
+            links.style.color = "#007bff";
             
         })
         
     }
+    //End of competitions.html checks
 
+    //Check for elements in contacts.html
     if(contactsNames){
-        contactsNames.style.background = '#1a3c57';
+        contactsNames.style.background = '#234465';
         contactsNames.style.transition = `background-color ${transitionTime}`;
 
         contactFormWrapper.style.background = '#474747';
         contactFormWrapper.style.transition = `background-color ${transitionTime}`;
-        contactFormWrapper.style.boxShadow = '0 0 10px #949494';
+        contactFormWrapper.style.boxShadow = '0 0 10px rgba(255,255,255, 0.4)';
     }
-   
-    //End of competitions.html checks
+    //End of check for elements in contacts.html
 
+    //Start of contestSignUp.html element check
+    if(signupMainStyles)
+    {
+        signupMainStyles.style.background = '#2c2c2c';
+        //signupMainStyles.style.transition = `background-color ${transitionTime}`;
+        signupMainStyles.style.color = '#fff';
+        signupMainStyles.style.boxShadow = '0 0 10px rgba(255,255,255, 0.4)';
 
-    siteFooter.style.backgroundColor = "#1a3c57"; 
+        countdownTimerStyle.style.background = '#013d7d';
+        countdownTimerStyle.style.transition = `background-color ${transitionTime}`; 
+        
+        dropContainerStyle.style.color = '#fff';
+        dropContainerTitleStyle.style.color = '#fff';
+
+        continueButtonStyle.style.background = '#0068d6';
+        backButtonStyle.style.background = '#0068d6';
+    }
+    //End contesignUp.html element check
+
+    siteFooter.style.backgroundColor = "#234465"; 
 }
 
 // Function to remove dark mode styles
@@ -118,6 +148,7 @@ function removeDarkModeStyles() {
 
         compRegulationsWrapper.forEach(function(regulation){
             regulation.style.boxShadow = "";
+            regulation.style.background = '';
         })
 
         christmasMathCompArticle.style.color = "";
@@ -134,6 +165,21 @@ function removeDarkModeStyles() {
         contactsNames.style.background = '';
         contactFormWrapper.style.background = '';
         contactFormWrapper.style.boxShadow = '';
+    }
+
+    if(signupMainStyles){
+        signupMainStyles.style.background = '';
+        signupMainStyles.style.transition = ``;
+        signupMainStyles.style.color = '';
+        signupMainStyles.style.boxShadow = '';
+
+        countdownTimerStyle.style.background = '';
+         
+        dropContainerStyle.style.color = '';
+        dropContainerTitleStyle.style.color = '';
+
+        continueButtonStyle.style.background = '';
+        backButtonStyle.style.background = '';
     }
 
     siteFooter.style.backgroundColor = ''; 
