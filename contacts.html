@@ -10,7 +10,7 @@
 <body>
     <header class="site-header">
         <section class="logo">
-             <a href="index.html"><img src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
+             <a href="index.html"><img id="logo-image-navbar" src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
         </section>
          <nav class="nav-bar">
              <ul class="navbar-contents">
@@ -32,6 +32,15 @@
                  <a href="contestSignUp.html">Записване</a>
                  <a href="members.html">Членство</a>
                  <a href="contacts.html">Контакти</a>
+                 <div class="slider-wrap">
+                    <p>Тъмен режим</p>
+                    <div class="slider-container">
+                        <label class="switch" for="checkbox">
+                          <input type="checkbox" id="checkbox" />
+                          <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
                </div>
                <div class="container" onclick="toggleNav(); myFunction(this)">
                  <div class="bar1"></div>
@@ -79,7 +88,7 @@
             </div>
 
            
-            <img src="Images/Logo/Logo.png" alt="smb_logo" class="id-card">
+            <img src="Images/Logo/Logo.png" alt="smb_logo" class="id-card" id="contacts-logo-image">
         </section>
 
         <section class="contact-form-wrapper">
@@ -118,5 +127,6 @@
     <script src="js/checkWhitespaces.js"></script>
     <script src="js/showMenu.js"></script>
     <script src="js/changeOpenButton.js"></script>
+    <script src="js/darkMode.js"></script>
 </body>
 </html>

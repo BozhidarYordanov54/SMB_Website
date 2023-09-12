@@ -19,6 +19,12 @@ var easterMathCompArticle = document.querySelector('.easter-math-competition');
 
 var tasksLinks = document.querySelectorAll('.tasks li a');
 //end of competitions.html elements
+
+//contacts.html elements
+var contactsNames = document.getElementById("contacts");
+var contactFormWrapper = document.querySelector('.contacts');
+//end of contacts.html elements
+
 var siteFooter = document.querySelector(`footer`); 
 
 const transitionTime = "0.7s"; 
@@ -32,6 +38,7 @@ function setDarkModeStyles() {
 
     siteNav.style.backgroundColor = "#1a3c57"; 
     siteNav.style.transition = `background-color ${transitionTime}`;
+    siteNav.style.borderBottom = '#4B4B4B';
 
     //Checks for index.html
     if(newestArticle){
@@ -75,6 +82,15 @@ function setDarkModeStyles() {
         })
         
     }
+
+    if(contactsNames){
+        contactsNames.style.background = '#1a3c57';
+        contactsNames.style.transition = `background-color ${transitionTime}`;
+
+        contactFormWrapper.style.background = '#474747';
+        contactFormWrapper.style.transition = `background-color ${transitionTime}`;
+        contactFormWrapper.style.boxShadow = '0 0 10px #949494';
+    }
    
     //End of competitions.html checks
 
@@ -112,6 +128,12 @@ function removeDarkModeStyles() {
             links.style.color = "";
         })
         
+    }
+
+    if(contactsNames){
+        contactsNames.style.background = '';
+        contactFormWrapper.style.background = '';
+        contactFormWrapper.style.boxShadow = '';
     }
 
     siteFooter.style.backgroundColor = ''; 
