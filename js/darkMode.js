@@ -2,8 +2,23 @@ var checkbox = document.getElementById("checkbox");
 var siteNav = document.querySelector('.site-header'); 
 var navbarImage = document.getElementById('logo-image-navbar');
 
+//index.html elements
 var newestArticle = document.getElementById('newest-article'); 
 var olderArticleParagraphs = document.querySelectorAll(".older-article .text"); 
+//end of index.html elements
+
+//competitions.html elements
+var compHeader = document.querySelector('.competitions-header');
+var compRegulationsWrapper = document.querySelectorAll('.comp-regulations-wrapper');
+
+var christmasMathComp = document.querySelector('.cmc-header');
+var  christmasMathCompArticle = document.querySelector('.christmas-math-competition');
+
+var easterMathComp = document.querySelector('.emc-header');
+var easterMathCompArticle = document.querySelector('.easter-math-competition');
+
+var tasksLinks = document.querySelectorAll('.tasks li a');
+//end of competitions.html elements
 var siteFooter = document.querySelector(`footer`); 
 
 const transitionTime = "0.7s"; 
@@ -31,6 +46,38 @@ function setDarkModeStyles() {
     }
     //End of index.html checks for elements
 
+    //Check for elements in competitions.html
+    if(compHeader){
+        compHeader.style.backgroundColor = "#1a3c57";
+        compHeader.style.transition = `background-color ${transitionTime}`;
+    }
+    if(christmasMathCompArticle && christmasMathComp && easterMathCompArticle && easterMathComp){
+        christmasMathComp.style.backgroundColor = "#1a3c57";
+        christmasMathComp.style.transition = `background-color ${transitionTime}`;
+
+        compRegulationsWrapper.forEach(function(regulation){
+            regulation.style.boxShadow = "0 0 10px #949494";
+            console.log("I am here");
+        })
+
+        christmasMathCompArticle.style.color = "#fff";
+        christmasMathCompArticle.style.transition = `background-color ${transitionTime}`;
+
+        easterMathComp.style.backgroundColor = "#1a3c57";
+        easterMathComp.style.transition = `background-color ${transitionTime}`;
+
+        easterMathCompArticle.style.color = "#fff";
+        easterMathCompArticle.style.transition = `color ${transitionTime}`;
+
+        tasksLinks.forEach(function(links){
+            links.style.color = "#C900C9";
+            
+        })
+        
+    }
+   
+    //End of competitions.html checks
+
 
     siteFooter.style.backgroundColor = "#1a3c57"; 
 }
@@ -40,10 +87,33 @@ function removeDarkModeStyles() {
     document.body.style.backgroundColor = ''; 
     navbarImage.src = "Images/Logo/Logo.png"; 
     siteNav.style.backgroundColor = ''; 
-    newestArticle.style.backgroundColor = ''; 
-    olderArticleParagraphs.forEach(function(paragraph) {
-        paragraph.style.color = ''; 
-    });
+    if(newestArticle){
+        newestArticle.style.backgroundColor = ''; 
+    }
+    if(olderArticleParagraphs){
+        olderArticleParagraphs.forEach(function(paragraph) {
+            paragraph.style.color = ''; 
+        });
+    }
+
+    if(christmasMathCompArticle && christmasMathComp && easterMathCompArticle && easterMathComp){
+        compHeader.style.backgroundColor = "";
+        christmasMathComp.style.backgroundColor = "";
+
+        compRegulationsWrapper.forEach(function(regulation){
+            regulation.style.boxShadow = "";
+        })
+
+        christmasMathCompArticle.style.color = "";
+        easterMathComp.style.backgroundColor = "";
+        easterMathCompArticle.style.color = "";
+
+        tasksLinks.forEach(function(links){
+            links.style.color = "";
+        })
+        
+    }
+
     siteFooter.style.backgroundColor = ''; 
 }
 
