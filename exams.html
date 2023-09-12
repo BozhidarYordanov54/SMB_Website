@@ -9,7 +9,7 @@
 <body>
     <header class="site-header">
         <section class="logo">
-             <a href="index.html"><img src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
+             <a href="index.html"><img id="logo-image-navbar" src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
         </section>
          <nav class="nav-bar">
              <ul class="navbar-contents">
@@ -31,6 +31,15 @@
                  <a href="contestSignUp.html">Записване</a>
                  <a href="members.html">Членство</a>
                  <a href="contacts.html">Контакти</a>
+                 <div class="slider-wrap">
+                    <p>Тъмен режим</p>
+                    <div class="slider-container">
+                        <label class="switch" for="checkbox">
+                          <input type="checkbox" id="checkbox" />
+                          <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
                </div>
                <div class="container" onclick="toggleNav(); myFunction(this)">
                  <div class="bar1"></div>
@@ -42,7 +51,7 @@
 
      <main class="exam-info">
         <header class="exam-header">
-            <h2>ПРОБНИ ИЗПИТИ 2023/2024</h2>
+            <h2 class="exams-text">ПРОБНИ ИЗПИТИ 2023/2024</h2>
             
         </header>
 
@@ -92,5 +101,6 @@
 
     <script src="js/showMenu.js"></script>
     <script src="js/changeOpenButton.js"></script>
+    <script src="js/darkMode.js"></script>
 </body>
 </html>

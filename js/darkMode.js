@@ -25,14 +25,26 @@ var contactsNames = document.getElementById("contacts");
 var contactFormWrapper = document.querySelector('.contacts');
 //end of contacts.html elements
 
+//contestSignUp.html dark mode styles
 var countdownTimerStyle = document.querySelector('.countdown-timer');
 var signupMainStyles = document.querySelector('.signup-main');
-var inputsForm = document.querySelectorAll('input[type = text]');
 var dropContainerStyle = document.querySelector('.drop-container');
 var dropContainerTitleStyle = document.querySelector('.drop-title');
 
 var continueButtonStyle = document.querySelector('.continue-button');
 var backButtonStyle = document.querySelector('.back-button');
+//end of contestSignUp.html styles
+
+//exams.html style
+var examsTextStyle = document.querySelector('.exams-text');
+var examMainStyle = document.querySelector('.exam-info');
+//end of exams.html styles
+
+var tableCaptionStyle = document.querySelector('caption');
+var tableContainerBoolean = document.querySelector('.table-container');
+var tableRowStyle = document.querySelectorAll('.table-container tr');
+var tableDataStyle = document.querySelectorAll('.table-container td');
+var tableHeadStyle = document.querySelectorAll('.table-container th');
 
 var siteFooter = document.querySelector(`footer`); 
 
@@ -125,6 +137,39 @@ function setDarkModeStyles() {
     }
     //End contesignUp.html element check
 
+    if(examMainStyle){
+        examsTextStyle.style.background = '#234465';
+        examMainStyle.style.transition = `background-color ${transitionTime}`;
+        examMainStyle.style.color = '#fff';
+    }
+
+    if(tableContainerBoolean){
+        tableCaptionStyle.style.background = '#7a7a7a';
+
+        tableHeadStyle.forEach(function(head){
+            head.style.background = '#b3b1b1';
+            head.style.transition = `background-color ${transitionTime}`;
+        })
+        
+        tableRowStyle.forEach(function(row){
+            row.style.background = '#b3b1b1';
+            row.style.transition = `background-color ${transitionTime}`;
+            row.style.color = '#fff';
+            
+        });
+
+        tableDataStyle.forEach(function(data){
+            data.style.borderBottom = '#7d7d7d';
+            
+        });
+        
+        for (let i = 1; i < tableRowStyle.length; i += 2) {
+            // Apply your custom styles here
+            tableRowStyle[i].style.backgroundColor = '#7d7d7d'; // Example: Dark background color for even rows
+            tableRowStyle[i].style.color = '#fff'; // Example: White text color for even rows
+        }
+    }
+
     siteFooter.style.backgroundColor = "#234465"; 
 }
 
@@ -180,6 +225,38 @@ function removeDarkModeStyles() {
 
         continueButtonStyle.style.background = '';
         backButtonStyle.style.background = '';
+    }
+
+    if(examMainStyle){
+        examsTextStyle.style.background = '';
+
+        examMainStyle.style.background = '';
+        examMainStyle.style.color = '';
+    }
+
+    if(tableRowStyle){
+        tableCaptionStyle.style.background = '';
+
+        tableHeadStyle.forEach(function(head){
+            head.style.background = '';
+        })
+        
+        tableRowStyle.forEach(function(row){
+            row.style.background = '';
+            row.style.color = '';
+            
+        });
+
+        tableDataStyle.forEach(function(data){
+            data.style.borderBottom = '';
+            
+        });
+        
+        for (let i = 1; i < tableRowStyle.length; i += 2) {
+            // Apply your custom styles here
+            tableRowStyle[i].style.backgroundColor = ''; // Example: Dark background color for even rows
+            tableRowStyle[i].style.color = ''; // Example: White text color for even rows
+        }
     }
 
     siteFooter.style.backgroundColor = ''; 
