@@ -71,7 +71,7 @@ const transitionTime = "0.7s";
 
 // Function to set dark mode styles
 function setDarkModeStyles() {
-    document.body.style.backgroundColor = "#1E1E1E"; 
+    document.body.style.backgroundColor = "#1e1e1e"; 
     document.body.style.transition = `background-color ${transitionTime}`;
 
     navbarImage.src = "Images/Logo/Logo-White.png"; 
@@ -131,7 +131,7 @@ function setDarkModeStyles() {
         contactsNames.style.background = '#234465';
         contactsNames.style.transition = `background-color ${transitionTime}`;
 
-        contactFormWrapper.style.background = '#474747';
+        contactFormWrapper.style.background = '#2c2c2c';
         contactFormWrapper.style.transition = `background-color ${transitionTime}`;
         contactFormWrapper.style.boxShadow = '0 0 10px rgba(255,255,255, 0.4)';
     }

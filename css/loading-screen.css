@@ -5,23 +5,42 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(140, 140, 140, 1); /* Semi-transparent background */
+    background-color: rgb(211, 211, 211); /* Semi-transparent background */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 9999; /* Ensure it's above other elements */
-    transition: opacity 0.5s ease;
+    transition: opacity 3s ease;
 }
 
 /* Style the loading spinner */
 .loading-spinner {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #3498db;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 5em;
+    height: 5em;
     animation: spin 2s linear infinite;
+}
+
+#loading-logo{
+    width: 20em;
+    margin-bottom: 1em;
+}
+
+.jumping-text {
+    font-size: 20px;
+    animation: jump 1s infinite alternate; /* Apply the 'jump' animation */
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0); /* Start at the original position */
+    }
+    100% {
+        transform: translateY(-10px); /* Jump up 10 pixels */
+    }
 }
 
 @keyframes spin {
