@@ -31,13 +31,13 @@ window.addEventListener("load", function() {
 
         // Set the loading screen opacity to 0 (fade out) after the animation ends (1 second duration)
         setTimeout(function() {
-            loadingScreen.style.transition = "opacity 1s";
+            loadingScreen.style.transition = "opacity 0.7s";
             loadingScreen.style.opacity = "0";
 
             // Hide the loading screen after the fade-out animation completes
             setTimeout(function() {
                 loadingScreen.style.display = "none";
             }, 1000);
-        }, 1000); // Delay the fade-out by one second
-    }, 2000); // Delay the movement by two seconds
+        }, 900); // Delay the fade-out by one second
+    }, 1000); // Delay the movement by two seconds
 });
