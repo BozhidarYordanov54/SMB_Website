@@ -40,11 +40,30 @@ var examsTextStyle = document.querySelector('.exams-text');
 var examMainStyle = document.querySelector('.exam-info');
 //end of exams.html styles
 
+//members.html
 var tableCaptionStyle = document.querySelector('caption');
 var tableContainerBoolean = document.querySelector('.table-container');
 var tableRowStyle = document.querySelectorAll('.table-container tr');
 var tableDataStyle = document.querySelectorAll('.table-container td');
 var tableHeadStyle = document.querySelectorAll('.table-container th');
+//end of members.html styles
+
+//newestArticle.html style
+var newestArticleParagraphs = document.querySelectorAll('.text');
+//end of newestArticle.html style
+
+var articleHeader = document.querySelector('.header-wrapper');
+var articleResult = document.querySelector('.article-text');
+var easterMathCompArticleDescription = document.querySelector('.desc');
+var easterMathCompArticlePDFResults = document.querySelector('.pdf-results');
+
+var christmasTableHeader = document.querySelector('.table-header');
+var christmasMathCompTable = document.querySelector('.table-wrapper');
+var christmasMathCompTableHeader = document.querySelectorAll('.table-wrapper th');
+var christmasMathCompTableRow = document.querySelectorAll('.table-wrapper tr');
+var christmasMathCompTableData = document.querySelectorAll('.table-wrapper td');
+
+var lastArticleHeaderWrapper = document.querySelector('.article-header-wrapper');
 
 var siteFooter = document.querySelector(`footer`); 
 
@@ -149,6 +168,7 @@ function setDarkModeStyles() {
         tableHeadStyle.forEach(function(head){
             head.style.background = '#b3b1b1';
             head.style.transition = `background-color ${transitionTime}`;
+            
         })
         
         tableRowStyle.forEach(function(row){
@@ -168,6 +188,54 @@ function setDarkModeStyles() {
             tableRowStyle[i].style.backgroundColor = '#7d7d7d'; // Example: Dark background color for even rows
             tableRowStyle[i].style.color = '#fff'; // Example: White text color for even rows
         }
+    }
+
+    if(newestArticleParagraphs){
+        newestArticleParagraphs.forEach(function(text){
+            text.style.color = '#fff';
+        })
+    }
+
+    if(articleResult){
+        articleResult.style.color = '#fff';
+        articleHeader.style.backgroundColor = '#01468f';
+        articleHeader.style.transition = `background-color ${transitionTime}`; 
+        
+    }
+
+    if(easterMathCompArticleDescription)
+    {
+        easterMathCompArticleDescription.style.backgroundColor = '#01468f';
+        easterMathCompArticleDescription.style.transition = `background-color ${transitionTime}`; 
+        easterMathCompArticlePDFResults.style.backgroundColor = '#0068d6';
+        easterMathCompArticlePDFResults.style.transition = `background-color ${transitionTime}`; 
+    }
+
+    if(christmasTableHeader){
+        christmasTableHeader.style.background = '#01468f';
+    }
+    
+    if(christmasMathCompTable){
+        christmasMathCompTableRow.forEach(function(row){
+            row.style.background = '#b3b1b1';
+            row.style.transition = `background-color ${transitionTime}`;
+            row.style.color = '#fff';
+        })
+
+        for(let i = 1; i < christmasMathCompTableRow.length; i += 2)
+        {
+             christmasMathCompTableRow[i].style.backgroundColor = '#7d7d7d';
+             christmasMathCompTableRow[i].style.color = '#fff';
+        }
+
+        christmasMathCompTableHeader.forEach(function(header){
+            header.style.background = '#234465';
+        })
+    }
+
+    if(lastArticleHeaderWrapper)
+    {
+        lastArticleHeaderWrapper.style.background = '#01468f';
     }
 
     siteFooter.style.backgroundColor = "#234465"; 
@@ -257,6 +325,51 @@ function removeDarkModeStyles() {
             tableRowStyle[i].style.backgroundColor = ''; // Example: Dark background color for even rows
             tableRowStyle[i].style.color = ''; // Example: White text color for even rows
         }
+    }
+
+    if(newestArticleParagraphs){
+        newestArticleParagraphs.forEach(function(text){
+            text.style.color = '';
+        })
+    }
+
+    if(articleResult){
+        articleResult.style.color = '';
+        articleHeader.style.backgroundColor = '';
+        easterMathCompArticleDescription.style.backgroundColor = '';
+        easterMathCompArticlePDFResults.style.backgroundColor = '';
+    }
+
+    if(easterMathCompArticleDescription)
+    {
+        easterMathCompArticleDescription.style.backgroundColor = '';
+        easterMathCompArticlePDFResults.style.backgroundColor = '';
+    }
+
+    if(christmasTableHeader){
+        christmasTableHeader.style.background = '';
+    }
+    
+    if(christmasMathCompTable){
+        christmasMathCompTableRow.forEach(function(row){
+            row.style.background = '';
+            row.style.color = '';
+        })
+
+        for(let i = 1; i < christmasMathCompTableRow.length; i += 2)
+        {
+             christmasMathCompTableRow[i].style.backgroundColor = '';
+             christmasMathCompTableRow[i].style.color = '';
+        }
+
+        christmasMathCompTableHeader.forEach(function(header){
+            header.style.background = '';
+        })
+    }
+
+    if(lastArticleHeaderWrapper)
+    {
+        lastArticleHeaderWrapper.style.background = '';
     }
 
     siteFooter.style.backgroundColor = ''; 

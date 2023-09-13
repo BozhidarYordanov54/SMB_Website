@@ -69,6 +69,10 @@ main img{
     overflow: hidden;
 }
 
+.slider-container{
+    margin-top: 1em;
+}
+
 @media (max-width: 768px) {
     .image-container-header{
         padding: .5em;

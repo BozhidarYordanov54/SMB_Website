@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="css/site-footer.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="icon" type="image/x-icon" href="Images/Logo/Logo-White.png">
     <title>Великденско математическо състезание 2023 г. - резултати</title>
 </head>
 <body>
     <header class="site-header">
         <section class="logo">
-             <a href="index.html"><img src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
+             <a href="index.html"><img id="logo-image-navbar" src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
         </section>
          <nav class="nav-bar">
              <ul class="navbar-contents">
@@ -36,6 +37,15 @@
                  <a href="contestSignUp.html">Записване</a>
                  <a href="members.html">Членство</a>
                  <a href="contacts.html">Контакти</a>
+                 <div class="slider-wrap">
+                    <p>Тъмен режим</p>
+                    <div class="slider-container">
+                        <label class="switch" for="checkbox">
+                          <input type="checkbox" id="checkbox" />
+                          <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
                </div>
                <div class="container" onclick="toggleNav(); myFunction(this)">
                  <div class="bar1"></div>
@@ -54,7 +64,7 @@
 
     <div class="article-wrapper">
         <div class="image-article-wrapper">
-            <img src="Images/ArticleImages/zaek.jpg" alt="bunny">
+            <img src="Images/ArticleImages/zaek1.png" alt="bunny">
 
         <p class="article-text">На 22 април 2023 г. в ПМГ „Васил Друмев“ се проведе Великденско математическо състезание за ученици от първи до седми клас. 
             Задачите са изготвени от секция Изток – СМБ, гр. София. Учениците от 7. клас се състезаваха във формата на изпита за НВО. 
@@ -89,5 +99,6 @@
 
     <script src="js/showMenu.js"></script>
     <script src="js/changeOpenButton.js"></script>
+    <script src="js/darkMode.js"></script>
 </body>
 </html>

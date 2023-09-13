@@ -131,6 +131,10 @@
     display: none;
 }
 
+.slider-container{
+    margin-top: 1em;
+}
+
 @media (max-width: 1284px)
 {
     .image-article-wrapper{

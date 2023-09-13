@@ -72,6 +72,11 @@ table {
     background-color: #dbdbdb;
   }
 
+  .slider-container{
+    margin-top: 1em;
+}
+
+
   @media(max-width: 768px)
   {
     table {
