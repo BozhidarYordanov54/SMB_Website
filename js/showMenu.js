@@ -13,9 +13,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-
-  if("ontouchstart" in document.documentElement)
-  {
-    document.getElementById("mySidenav").style.width = "0";
-  }
 }
+
+
+

@@ -234,7 +234,7 @@ function removeDarkModeStyles() {
         examMainStyle.style.color = '';
     }
 
-    if(tableRowStyle){
+    if(tableContainerBoolean){
         tableCaptionStyle.style.background = '';
 
         tableHeadStyle.forEach(function(head){
