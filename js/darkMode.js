@@ -1,4 +1,8 @@
 var checkbox = document.getElementById("checkbox"); 
+
+var loadingScreen = document.getElementById('loading-screen');
+var loadingScreenImage = document.getElementById('loading-logo');
+
 var siteNav = document.querySelector('.site-header'); 
 var navbarImage = document.getElementById('logo-image-navbar');
 
@@ -73,6 +77,9 @@ const transitionTime = "0.7s";
 function setDarkModeStyles() {
     document.body.style.backgroundColor = "#1e1e1e"; 
     document.body.style.transition = `background-color ${transitionTime}`;
+
+    loadingScreen.style.background = '#2c2c2c';
+    loadingScreenImage.src = 'Images/Logo/Logo-White.png';
 
     navbarImage.src = "Images/Logo/Logo-White.png"; 
 
@@ -244,6 +251,8 @@ function setDarkModeStyles() {
 // Function to remove dark mode styles
 function removeDarkModeStyles() {
     document.body.style.backgroundColor = ''; 
+    loadingScreen.style.background = '';
+    loadingScreenImage.src = 'Images/Logo/Logo.png';
     navbarImage.src = "Images/Logo/Logo.png"; 
     siteNav.style.backgroundColor = ''; 
     if(newestArticle){
@@ -282,7 +291,6 @@ function removeDarkModeStyles() {
 
     if(signupMainStyles){
         signupMainStyles.style.background = '';
-        signupMainStyles.style.transition = ``;
         signupMainStyles.style.color = '';
         signupMainStyles.style.boxShadow = '';
 

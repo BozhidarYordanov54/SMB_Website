@@ -25,7 +25,8 @@
 }
 
 #loading-logo{
-    width: 0;
+    width: 150px;
+    height: 150px;
     margin-bottom: 1em;
 }
 

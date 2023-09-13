@@ -9,10 +9,18 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/loading-screen.css">
     <link rel="icon" type="image/x-icon" href="Images/Logo/Logo-White.png">
     <title>Пробен изпит 2023 г. - резултати</title>
 </head>
 <body>
+
+  <div id="loading-screen">
+    <img id="loading-logo" src="Images/Logo/Logo.png" alt="">
+    <div class="loading-spinner"></div>
+    <p class="jumping-text">Зареждане...</p>
+  </div>
+
   <header class="site-header">
     <section class="logo">
          <a href="index.html"><img id="logo-image-navbar" src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
@@ -302,6 +310,7 @@
     <script src="js/showMenu.js"></script>
     <script src="js/changeOpenButton.js"></script>
     <script src="js/darkMode.js"></script>
+    <script src="js/loadingScreen.js"></script>
 </body>
 </html>
 
