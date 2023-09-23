@@ -1,10 +1,9 @@
 .contacts{
-    max-width: 800px;
-    margin: 0 auto;
+    width: 800px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    margin-top: 2em;
+    margin: 6em auto;
     display: flex;
 }
 
@@ -134,6 +133,11 @@
 @media(max-width: 768px)
 {
     .contacts{
+        max-width: 390px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin: 1em auto;
         flex-direction: column;
     }
 

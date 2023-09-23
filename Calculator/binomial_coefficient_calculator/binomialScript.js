@@ -3,6 +3,7 @@ document.getElementById("k").addEventListener("input", updateCalculation);
 
 const resultDisplay = document.getElementById("result");
 
+
 function updateCalculation() {
     const n = parseInt(document.getElementById("n").value);
     const k = parseInt(document.getElementById("k").value);
@@ -14,16 +15,18 @@ function updateCalculation() {
     {
         resultDisplay.textContent = "Числото n трябва да е по голямо или равно на 0";
         resultDisplay.style.color = 'red';
+        resultDisplay.style.fontSize = '20px';
     }
     else if(k < 0)
     {
         resultDisplay.textContent = "Числото k трябва да е по голямо или равно на 0";
         resultDisplay.style.color = 'red';
+        resultDisplay.style.fontSize = '20px'
     }
     else if(k > n)
     {
         resultDisplay.textContent = "Числото n трябва да е по голямо или равно на k";
-        resultDisplay.style.fontSize = "15px"
+        resultDisplay.style.fontSize = "20px"
         resultDisplay.style.color = 'red';
     }
     else 

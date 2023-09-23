@@ -1,23 +1,36 @@
+.calculator-wrapper{
+    display: flex;
+    gap: 6em;
+}
+
 .type-of-calculator{
     text-align: center;
+    color: #000000;
     text-decoration: underline;
     padding: 1em 0;
 }
 
+#binomial-formula-one{
+    margin-top: 2em;
+    width: 80%;
+}
+
 .calculator{
-    max-width: 460px;
-    padding: 1em 3em 2em 2em;
-    margin: 0 auto;
-    margin-top: 1.5em;
-    overflow: hidden;
+    min-width: 400px;
+    max-height: 600px;
+    margin-left: 5em;
+    margin-top: 5%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2em 3em 2em 2em;
+    position: fixed;
 }
 
 .floating-label{
     position: relative;
-    top: 1.8em;
-    left: 0.5em;
+    font-size: 22px;
+    top: 1.6em;
+    left: 2%;
     color: #7a7a7a;
 }
 
@@ -27,6 +40,7 @@
 
 input[type="text"]{
     width: 100%;
+    font-size: 22px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -35,9 +49,27 @@ input[type="text"]{
 
 .result{
     padding-top: 1em;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 #result{
     font-weight: bold;
+    font-size: 20px;
+}
+
+.binomial-info-wrapper{
+    margin: 5em 5em 5em 45em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.binomial-text{
+    text-indent: 1em;
+}
+
+.binomial-list{
+    margin-left: 3em;
 }
