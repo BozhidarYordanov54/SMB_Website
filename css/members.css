@@ -7,17 +7,16 @@ caption{
 }
 
 /* Style the table-container */
-.table-container {
-    margin: 20px auto;
-    max-width: 1200px;
+.table-container-members {
+    padding: 1em 2em;
     background-color: #ffffff;
-    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
 /* Style the table */
-table {
+.members-table
+ {
     width: 100%;
     border-collapse: collapse;
 }
