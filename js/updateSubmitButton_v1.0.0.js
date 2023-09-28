@@ -82,6 +82,9 @@ const cityId = document.getElementById('city');
 const schoolInput = document.querySelector('select[name="Училище"]');
 const schoolId = document.getElementById('school-name');
 
+const gradeInput = document.querySelector('select[name="Клас"]');
+const gradeId = document.getElementById('grade');
+
 const fileInput = document.getElementById('images');
 const imgDrop = document.getElementById('dropcontainer');
 
@@ -90,8 +93,8 @@ const imgUploaded = document.getElementById('imageUploaded');
 const submitButton = document.getElementById('submit-button');
 
 const phoneRegex = /^(0|\+359)([87][0-9]{8})$/;
-const fullNameRegex = /^[A-ZА-Я][а-яА-Яa-zA-Z]+\s[A-ZА-Я][а-яА-Яa-zA-Z]{3,}$/;
-const contestantNameRegex = /^[A-ZА-Я][а-яА-Яa-zA-Z]+\s[A-ZА-Я][а-яА-Яa-zA-Z]{3,}$/;
+const fullNameRegex = /^[А-Я][а-я]+\s[А-Я][а-я]{3,}$/;
+const contestantNameRegex = /^[А-Я][а-я]+\s[А-Я][а-я]{3,}$/;
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
 function checkImgUploadedContent() {
@@ -112,7 +115,8 @@ function updateSubmitButton() {
       contestantNameInput.value !== '' &&
       emailInput.value !== '' &&
       cityInput.value !== '' &&
-      schoolInput.value !== ''
+      schoolInput.value !== '' &&
+      gradeInput.value !== ''
     );
 
     //Regex Tests
@@ -154,6 +158,7 @@ function updateSubmitButton() {
     emailInput.parentElement.classList.toggle('invalid', !isValidEmail);
     cityInput.parentElement.classList.toggle('invalid', cityInput.value === '');
     schoolInput.parentElement.classList.toggle('invalid', schoolInput.value === '');
+    gradeInput.parentElement.classList.toggle('invalid', gradeInput.value === '')
 
     console.log(isFormOpen);
    
@@ -182,6 +187,10 @@ cityInput.addEventListener('change', () => {
 schoolInput.addEventListener('change', () => {
   updateSubmitButton();
 });
+
+gradeInput.addEventListener('change', () => {
+  updateSubmitButton();
+})
 
 fileInput.addEventListener('change', () => {
   if(fileInput.files.length > 0)
