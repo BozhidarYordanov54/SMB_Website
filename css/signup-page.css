@@ -49,7 +49,7 @@ label {
     margin-top: 1em;
 }
 
-input[type="text"], #city, #school-name {
+input[type="text"], #city, #school-name, #grade {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;

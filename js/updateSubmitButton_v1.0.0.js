@@ -1,6 +1,6 @@
 // Set the dates for form open and close
 var formOpenDate = new Date("2023-08-31T06:00:00+03:00"); // EEST (UTC+3)
-var formCloseDate = new Date("2023-09-15T21:00:00+03:00"); // EEST (UTC+3)
+var formCloseDate = new Date("2023-10-12T21:00:00+03:00"); // EEST (UTC+3)
 
 var isFormOpen = '';
 
