@@ -30,6 +30,8 @@
     gap: 5em;
     align-items: center;
     padding: 2em; /* Adjust as needed */
+    padding-top: 3em;
+    padding-bottom: 4em;
     background: rgb(49, 162, 249);
 }
 
@@ -66,7 +68,7 @@
 }
 
 .newest-article .image-container a img {
-    max-width: 95%;
+    width: 120%;
     height: auto;
     border-radius: 3%;
     display: block;
@@ -120,8 +122,8 @@
     font-size: 18px;
 }
 
-.oa-imge {
-    width: 90%;/* Set your desired width here */
+.oa-image-1 {
+    width: 52%;/* Set your desired width here */
     height: auto; /* Set your desired height here */
   }
 
@@ -130,8 +132,9 @@
     height: auto;
 }
 
-.oa-image-1{
-    width: 52%;
+.oa-image-3{
+    width: 90%;
+    border-radius: 2em;
 }
 
   .notification {
@@ -153,6 +156,10 @@
     flex-direction: column;
     padding: 1em;
     gap: 1.5em;
+   }
+
+   .newest-article .image-container a img {
+        width: 100%;
    }
 
    .text-wrapper{
