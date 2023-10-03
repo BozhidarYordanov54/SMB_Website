@@ -54,6 +54,8 @@ var tableHeadStyle = document.querySelectorAll('.table-container th');
 
 //newestArticle.html style
 var newestArticleParagraphs = document.querySelectorAll('.text');
+var newestArticleText = document.querySelector('.newest-article-page');
+var newestArticleCompHeader = document.querySelector('.competition_header');
 //end of newestArticle.html style
 
 var articleHeader = document.querySelector('.header-wrapper');
@@ -87,10 +89,21 @@ function setDarkModeStyles() {
     siteNav.style.transition = `background-color ${transitionTime}`;
     siteNav.style.borderBottom = '#4B4B4B';
 
+    
+
     //Checks for index.html
     if(newestArticle){
         newestArticle.style.backgroundColor = "#234465"; 
         newestArticle.style.transition = `background-color ${transitionTime}`;
+    }
+
+    if(newestArticleText)
+    {
+        newestArticleText.style.color = "#ffffff";
+        newestArticleText.style.transition = `color ${transitionTime}`;
+
+        newestArticleCompHeader.style.background = "rgba(0, 121, 214, 1)";
+        newestArticleCompHeader.style.transition = `background ${transitionTime}`;
     }
 
     if(olderArticleParagraphs){
@@ -258,6 +271,16 @@ function removeDarkModeStyles() {
     if(newestArticle){
         newestArticle.style.backgroundColor = ''; 
     }
+
+    if(newestArticleText)
+    {
+        newestArticleText.style.color = "";
+        newestArticleText.style.transition = `color ${transitionTime}`;
+
+        newestArticleCompHeader.style.background = "";
+        newestArticleCompHeader.style.transition = `background ${transitionTime}`;
+    }
+
     if(olderArticleParagraphs){
         olderArticleParagraphs.forEach(function(paragraph) {
             paragraph.style.color = ''; 
