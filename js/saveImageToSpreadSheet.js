@@ -37,7 +37,6 @@ file.addEventListener('change', () => {
                     imgUploaded.innerHTML = "Image uploaded";
                     imageStatus.innerHTML = "Снимката качена успешно!";
                     imageStatus.style.color = "rgb(0, 179, 0)";
-                    // You can perform additional actions here after successful upload
                 } else {
                     console.log("Image upload failed.");
                     // You can handle the failed upload scenario here
