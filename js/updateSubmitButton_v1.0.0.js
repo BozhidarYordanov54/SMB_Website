@@ -1,6 +1,6 @@
 // Set the dates for form open and close
 var formOpenDate = new Date("2023-08-31T06:00:00+03:00"); // EEST (UTC+3)
-var formCloseDate = new Date("2023-10-12T21:00:00+03:00"); // EEST (UTC+3)
+var formCloseDate = new Date("2023-10-12T23:59:59+03:00"); // EEST (UTC+3)
 
 var isFormOpen = '';
 
@@ -67,6 +67,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 const phoneInput = document.querySelector('input[name="Тел. номер"]');
 const phoneId = document.getElementById('phone-number');
 
+const competitionInput = document.querySelector('select[name="Състезание"]');
+const competitionId = document.getElementById('competition-name');
+
 const fullNameInput = document.querySelector('input[name="Родител"]');
 const fullNameId = document.getElementById('parent-name');
 
@@ -116,7 +119,8 @@ function updateSubmitButton() {
       emailInput.value !== '' &&
       cityInput.value !== '' &&
       schoolInput.value !== '' &&
-      gradeInput.value !== ''
+      gradeInput.value !== '' &&
+      competitionInput.value !== ''
     );
 
     //Regex Tests
@@ -153,6 +157,7 @@ function updateSubmitButton() {
     fileInput.style.cursor = isFormOpen ? 'pointer' : 'not-allowed';
     imgDrop.style.cursor = isFormOpen ? 'pointer' : 'not-allowed';
 
+    competitionInput.parentElement.classList.toggle('invalid', competitionInput.value === '')
     fullNameInput.parentElement.classList.toggle('invalid', !isValidFullName);
     contestantNameInput.parentElement.classList.toggle('invalid', !isValidContestantName);
     emailInput.parentElement.classList.toggle('invalid', !isValidEmail);
@@ -163,6 +168,10 @@ function updateSubmitButton() {
     console.log(isFormOpen);
    
   }
+
+competitionInput.addEventListener('change', () => {
+  updateSubmitButton();
+})
 
 phoneInput.addEventListener('input', () => {
   updateSubmitButton();

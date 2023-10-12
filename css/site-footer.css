@@ -1,60 +1,60 @@
 /* CSS for your footer */
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  main {
-    flex: 1;
-  }
-  
-  footer {
-    font-family: "Poppins", sans-serif;
-    background: rgb(49, 162, 249);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.4em;
-  }
-  
-  /* Rest of your footer styles... */
-  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  background: rgb(49, 162, 249);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.4em;
+}
+
+/* Rest of your footer styles... */
+
 
 .footer-copyright{
-    font-size: 18px;
-    color: #ffffff;
+  font-size: 18px;
+  color: #ffffff;
 }
 
 .partners{
-    display: flex;
-    gap: 4em;
-    align-items: center;
+  display: flex;
+  gap: 4em;
+  align-items: center;
 }
 
 @media(max-width: 768px)
 {
-    footer{
-        flex-direction: column;
-        gap: 1em;
-    }
+  footer{
+      flex-direction: column;
+      gap: 1em;
+  }
 
-    .footer-copyright{
-        font-size: 16px;
-    }
+  .footer-copyright{
+      font-size: 16px;
+  }
 
-   .partners{
-    gap: 1em;
-   }
+ .partners{
+  gap: 1em;
+ }
 
-   .partners a img{
-    width: 150px;
-   }
+ .partners a img{
+  width: 150px;
+ }
 
-   .partners a .smb-image{
-    width: 40px;
-   }
+ .partners a .smb-image{
+  width: 40px;
+ }
 }

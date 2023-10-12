@@ -112,6 +112,14 @@
             <h3 style="text-align: center;">Форма за записване</h3>
             <form id="signup-form" action="#" method="post">
                 <div class="form-group">
+                    <label for="competition-name">Състезание</label>
+                    <select name="Състезание" id="competition-name" required>
+                        <option value="">Изберете състезание</option>
+                        <option value='Математически турнир "Иван Салабашев"'>Математически турнир "Иван Салабашев"</option>
+                        <option value="Коледно математическо състезание">Коледно математическо състезание</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label for="parent-name">Име на родител:</label>
                     <input name="Родител" placeholder="Име Фамилия" type="text" id="parent-name" autocomplete="off" required>
                 </div>
@@ -195,14 +203,6 @@
                     <label for="grade">Клас:</label>
                     <select name="Клас" id="grade" required>
                         <option value="">Изберете клас на участника</option>
-                        <option value="1">I клас</option>
-                        <option value="2">II клас</option>
-                        <option value="3">III клас</option>
-                        <option value="4">IV клас</option>
-                        <option value="5">V клас</option>
-                        <option value="6">VI клас</option>
-                        <option value="7">VII клас</option>
-                        <option value="8">VIII клас</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -239,6 +239,7 @@
 
     <!--logic js-->
     <script src="js/citySchool.js"></script>
+    <script src="js/chooseCompetiotionGrade.js"></script>
     <script src="js/dragAndDropHandling.js"></script>
     <script src="js/returnToMainPage.js"></script>
     <script src="js/saveImageToSpreadSheet.js"></script>
