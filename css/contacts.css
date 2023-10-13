@@ -5,6 +5,7 @@
     border-radius: 5px;
     margin: 6em auto;
     display: flex;
+    overflow: hidden;
 }
 
 #contacts{
@@ -130,84 +131,81 @@
     background: #005dc0;
 }
 
-.faq-header{
-    text-align: center;
-    color: #007BFF;
-}
-
-.questions-wrapper{
+.faq-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 0.1em;
-}
-
-.question-one{
-    display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
 }
 
-.collapsible {
-    background-color: #eee;
-    color: #444;
+.faq-header{
+    color: #007bff;
+    font-size: 26px;
+}
+
+.accordion{
+   width: 1200px;
+   margin-right: 2em;
+}
+
+.accordion .faq-element{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #ddf5ff;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.15)
+}
+
+.accordion .faq-element ol{
+    list-style-type: none;
+}
+
+.accordion .faq-element .faq-label{
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    font-style: 18px;
     font-weight: bold;
     cursor: pointer;
-    padding: 20px;
-    min-width: 80%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
-  }
+}
 
-  .collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
-  
-  .active, .collapsible:hover {
-    background-color: #ccc;
-  }
-  
-  .faq-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 0 20px;
-    min-width: 80%;
-    background-color: white;
+.faq-label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.faq-input{
+    display: none;
+}
+
+.accordion .faq-content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
     max-height: 0;
-    transition: max-height 0.2s ease-out;
-  }
+    overflow: hidden;
+    transition:  max-height 0.5s, padding 0.5s;
+}
 
-  .faq-content p{
-    font-weight: bold;
-    margin: 1em 1em;
-  }
+.accordion .faq-input:checked + .faq-label + .faq-content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
 
-  .faq-content ol{
-    display: flex;
-    flex-direction: column;
-    gap: .7em;
-    margin: 1em 1em;
-  }
-
-  .collapsible-why{
-    font-weight: bold;
-  }
+.accordion .faq-input:checked + .faq-label::before{
+    content: '-';
+}
 
 
 @media(max-width: 768px)
 {
     .contacts{
-        max-width: 390px;
+        max-width: 380px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
@@ -228,4 +226,19 @@
     .contact-svg{
         margin-top: 1em;
     }
+
+    .accordion{
+        width: 360px;
+        margin-right: 2.5em;
+     }
+
+     .accordion .faq-element{
+        padding: 1px;
+     }
+
+     .accordion .faq-element .faq-label{
+        padding: 5px;
+        font-weight: bold;
+        font-size: 14px;
+     }
 }

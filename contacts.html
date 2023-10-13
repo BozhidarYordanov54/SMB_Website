@@ -120,49 +120,58 @@
          </section>
      </main>
 
-    <div class="faq-wrapper">
+     <div class="faq-wrapper">
         <h2 class="faq-header">Често задавани въпроси</h2>
-        <div class="questions-wrapper">
-            <div class="question-one">
-                <button type="button" class="collapsible">Защо не мога да се запиша?</button>
-                <div class="faq-content">
-                    <ol>
-                        <li>Формата не е активна, което означава, че няма състезания в близкото бъдеще.</li>
-                        <li>При попълване на данните трябва да внимавате да не би да сте поставили погрешно някой символ, също така при автоматично попълване на данните се добавя празен символ накрая, което може да бъде причина формата да не приеме вашите данни.</li>
-                        <li>При автоматично попълване на данните, полетата няма да светнат червено или зелено, а синьо което не е индикация дали са попълнени правилно</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="question-one">
-                <button type="button" class="collapsible">Таймерът не е активен</button>
-                <div class="faq-content">
-                    <p class="collapsible-why">Причината поради която таймерът не е активен, а има активно състезание е, че имате по стара версия на сайта. Решенията на проблемите са следните:</p>
+        <div class="question-wrapper">
+            <ul class="accordion">
+                <li class="faq-element">
+                    <input class="faq-input" type="radio" name="accordion" id="first">
+                    <label class="faq-label" for="first">Защо не мога да се запиша?</label>
+                    <div class="faq-content">
+                        <ol class="list-first-faq">
+                            <li>Формата не е активна, което означава, че няма състезания в близкото бъдеще.</li>
+                            <li>При попълване на данните трябва да внимавате да не би да сте поставили погрешно някой символ, също така при автоматично попълване на данните се добавя празен символ накрая, което може да бъде причина формата да не приеме вашите данни.</li>
+                            <li> При автоматично попълване на данните, полетата няма да светнат червено или зелено, а синьо което не е индикация дали са попълнени правилно</li>
+                        </ol>
+                    </div>
+                </li>
+                <li class="faq-element">
+                    <input class="faq-input" type="radio" name="accordion" id="second">
+                    <label class="faq-label" for="second">Таймерът не е активен</label>
+                    <div class="faq-content">
                         <ul>
-                            <li>Ако използвате настолен компютър/лаптоп за записване то тогава може да натиснете клавишната комбинация от CTRL + Shift + R(За устройства на Windows), за да изчистите кеша на вашия браузър</li>
+                            <li>&bull; Ако използвате настолен компютър/лаптоп за записване, то тогава може да натиснете клавишната комбинация от CTRL + Shift + R(За устройства на Windows)/⌘Command + Shift + R(За Mac устройства), за да изчистите кеша на вашия браузър.</li>
                             <li>
                                 <p>При използването на мобилни устройства трябва да влезете в настройки и от там да изчистите кеша на приложението</p>
                                 <ul>
-                                    <li>За Android устройства: Настройки => Приложения => (Намерете браузъра който използвате) => изчистване на кеш</li>
-                                    <li>За iPhone устройства => Настройки => (Вашият браузър) => Изчистване на историята и данните на уебсайта</li>
+                                    <li>За Android устройства: Настройки => Приложения => (Намерете браузъра който използвате) => изчистване на кеш.</li>
+                                    <li>За iPhone устройства => Настройки => (Вашият браузър) => Изчистване на историята и данните на уебсайта.</li>
                                 </ul>
                             </li>
                         </ul>
-                </div>
-            </div>
-            <div class="question-one">
-                <button type="button" class="collapsible">Къде мога да проверя дали съм се записал?</button>
-                <div class="faq-content">
-                    <p>На този етап може да ни пишете чрез формата за контакти за да ви потвърдим дали сте се записали успешно. Нашият екип работи усилено да имплементира система която при записване да изпраща автоматизирани имейли.</p>
-                </div>
-            </div>
-            <div class="question-one">
-                <button type="button" class="collapsible">Как ще разбера в коя стая трябва да отида?</button>
-                <div class="faq-content">
-                    <p>Два дена преди състезанието ще получите имейл с разпределението и стаята в която ще се проведе състезанието за записания участник</p>
-                </div>
-            </div>
+                    </div>
+                </li>
+                <li class="faq-element">
+                    <input class="faq-input" type="radio" name="accordion" id="third">
+                    <label class="faq-label" for="third">Къде мога да проверя дали съм се записал?</label>
+                    <div class="faq-content">
+                        <ol class="list-first-faq">
+                            <p>На този етап може да ни пишете чрез формата за контакти за да ви потвърдим дали сте се записали успешно. Нашият екип работи усилено да имплементира система която при записване да изпраща автоматизирани имейли.</p>
+                        </ol>
+                    </div>
+                </li>
+                <li class="faq-element">
+                    <input class="faq-input" type="radio" name="accordion" id="fourth">
+                    <label class="faq-label" for="fourth">Как ще разбера в коя стая трябва да отида?</label>
+                    <div class="faq-content">
+                        <ol class="list-first-faq">
+                            <p>Два дни преди състезанието ще получите имейл с разпределението и стаята в която ще се проведе състезанието за записания участник.</p>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div>
+     </div>
 
      <footer>
         <div class="footer-copyright">&copy; СМБ - Велико Търново 2023</div>
@@ -175,7 +184,6 @@
 
     <script src="js/checkWhitespaces.js"></script>
     <script src="js/showMenu.js"></script>
-    <script src="js/openCollapsible.js"></script>
     <script src="js/changeOpenButton.js"></script>
     <script src="js/darkMode.js"></script>
     <script src="js/loadingScreen.js"></script>
