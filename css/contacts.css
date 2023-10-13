@@ -1,7 +1,8 @@
 .contacts{
     width: 800px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
     border-radius: 5px;
     margin: 6em auto;
     display: flex;
@@ -10,7 +11,8 @@
 
 #contacts{
     background: rgb(49, 162, 249);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
     padding: 2em;
     color: #ffffff;
     margin: 0;
@@ -59,6 +61,8 @@
 .contact-form-header {
     color: #007bff;
     border-bottom: 2px solid #a6a6a6;
+    width: 100%;
+    text-align: center;
 }
 
 .names-wrapper,
@@ -70,8 +74,7 @@
 }
 
 #message {
-    height: 15.7em;
-    min-height: 8em;
+    min-height: 15.2em;
     width: 100%;
     resize: vertical;
     background: rgba(249, 249, 249, 1);
@@ -140,11 +143,18 @@
 
 .faq-header{
     color: #007bff;
+    border-bottom: 2px solid #a6a6a6;
     font-size: 26px;
 }
 
+.faq-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .accordion{
-   width: 1200px;
+   width: 80%;
    margin-right: 2em;
 }
 
@@ -156,7 +166,7 @@
     border-radius: 8px;
     background: #ddf5ff;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                -6px -6px 10px -1px rgba(255, 255, 255, 0.15)
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
 }
 
 .accordion .faq-element ol{
@@ -201,13 +211,36 @@
     content: '-';
 }
 
+.list-first-faq{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.list-second-faq{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.list-second-mobile-faq{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.faq-svg{
+    fill: #000000;
+}
+
 
 @media(max-width: 768px)
 {
     .contacts{
-        max-width: 380px;
+        max-width: 100%;
         background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
         border-radius: 5px;
         margin: 1em auto;
         flex-direction: column;
@@ -228,7 +261,7 @@
     }
 
     .accordion{
-        width: 325px;
+        width: 100%;
         margin-left: 30px;
      }
 

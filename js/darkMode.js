@@ -153,7 +153,7 @@ function setDarkModeStyles() {
 
         contactFormWrapper.style.background = '#2c2c2c';
         contactFormWrapper.style.transition = `background-color ${transitionTime}`;
-        contactFormWrapper.style.boxShadow = '0 0 10px rgba(255,255,255, 0.4)';
+        contactFormWrapper.style.boxShadow = ' box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.15)';
     }
     //End of check for elements in contacts.html
 
