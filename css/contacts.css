@@ -151,7 +151,7 @@
 .accordion .faq-element{
     list-style: none;
     width: 100%;
-    margin: 20px;
+    margin: 20px 0px;
     padding: 10px;
     border-radius: 8px;
     background: #ddf5ff;
@@ -228,12 +228,13 @@
     }
 
     .accordion{
-        width: 360px;
-        margin-right: 2.5em;
+        width: 325px;
+        margin-left: 30px;
      }
 
      .accordion .faq-element{
         padding: 1px;
+        margin: 10px 0;
      }
 
      .accordion .faq-element .faq-label{
