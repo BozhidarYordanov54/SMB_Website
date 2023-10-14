@@ -33,7 +33,7 @@
   }
   
   .popup-header {
-    color: red;
+    color: rgb(49, 162, 249);
   }
   
   .popup-link  {
@@ -42,7 +42,7 @@
   }
   
   .popup-close-button {
-    background-color: red;
+    background-color: rgb(49, 162, 249);
     color: white;
     border: none;
     padding: 10px 20px;
