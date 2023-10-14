@@ -6,6 +6,7 @@
     <meta name="keywords" content="smb, smb-vt, math">
     <link rel="canonical" href="https://smb-vt.com">
     <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
     <link rel="icon" type="image/x-icon" href="Images/Logo/Logo-White.png">
     <title>СМБ-Велико Търново</title>
 </head>
@@ -16,6 +17,15 @@
         <div class="loading-spinner"></div>
         <p class="jumping-text">Зареждане...</p>
     </div>
+
+    <!--Pop up window-->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <h2 class="popup-header">Внимание!</h2>
+          <p class="popup-text">Резултатите от математическо състезание “Хитър Петър” (национално класиране) ще бъдат качени до 5 дни на <a class="popup-link" href="https://www.smb-gabrovo.com/">СМБ - Габрово</a> и споделени на нашия сайт, както и във Фейсбук страницата ни <a class="popup-link" href="https://www.facebook.com/profile.php?id=61550607287866">СМБ - Велико Търново</a>.</p>
+          <button class="popup-close-button" id="closeBtn">Разбрах</button>
+        </div>
+      </div>
 
     <header class="site-header">
        <section class="logo">
@@ -135,5 +145,8 @@
     <script src="js/changeOpenButton.js"></script>
     <script src="js/darkMode.js"></script>
     <script src="js/loadingScreen.js"></script>
+
+    <!--Popup script-->
+    <script src="js/popupWindow.js"></script>
 </body>
 </html>
