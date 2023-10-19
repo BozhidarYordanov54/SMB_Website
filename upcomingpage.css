@@ -62,7 +62,7 @@
     line-height: 26px;
     max-height: 0;
     overflow: hidden;
-    transition:  max-height 0.5s, padding 0.5s;
+    transition:  max-height 0.7s, padding 0.7s;
 }
 
 .result-accordion .result-input:checked + .result-label + .result-content{
@@ -92,7 +92,7 @@
     background: #00b7ff;
 }
 
-@media (max-width: 700px)
+@media (max-width: 1200px)
 {
     .result-main
     {
@@ -118,6 +118,11 @@
     .result-wrapper table
     {
         width: 100%;
+    }
+
+    .result-wrapper th
+    {
+        white-space: nowrap;
     }
 
     .result-accordion .result-element{

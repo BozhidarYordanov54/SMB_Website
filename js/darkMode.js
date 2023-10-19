@@ -53,25 +53,27 @@ var tableHeadStyle = document.querySelectorAll('.table-container th');
 //end of members.html styles
 
 //newestArticle.html style
-var newestArticleParagraphs = document.querySelectorAll('.text');
-var newestArticleText = document.querySelector('.newest-article-page');
+var newestArticleHeader = document.querySelector('.article-header');
+var newestArticleGreeting = document.querySelector('.article-competition-greeting');
+var newestArticleText = document.querySelector('.article-info');
 var newestArticleCompHeader = document.querySelector('.competition_header');
 //end of newestArticle.html style
 
 var articleHeader = document.querySelector('.header-wrapper');
 var articleResult = document.querySelector('.article-text');
-var easterMathCompArticleDescription = document.querySelector('.desc');
-var easterMathCompArticlePDFResults = document.querySelector('.pdf-results');
+var olderArticle002Page = document.querySelector('.newest-article-page');
+var olderArticle002Header = document.querySelector('.competition_header');
 
-var christmasTableHeader = document.querySelector('.table-header');
-var christmasMathCompTable = document.querySelector('.table-wrapper');
-var christmasMathCompTableHeader = document.querySelectorAll('.table-wrapper th');
-var christmasMathCompTableRow = document.querySelectorAll('.table-wrapper tr');
-var christmasMathCompTableData = document.querySelectorAll('.table-wrapper td');
+var text = document.querySelectorAll('.text');
 
 var lastArticleHeaderWrapper = document.querySelector('.article-header-wrapper');
 
 var siteFooter = document.querySelector(`footer`); 
+
+var olderArticle1TableWrapper = document.querySelector('.table-wrapper');
+var olderArticle1TableRow = document.querySelectorAll('.table-wrapper tr');
+var olderArticle1TableData = document.querySelectorAll('.table-wrapper td');
+var olderArticle1TableHeader = document.querySelectorAll('.table-wrapper th');
 
 const transitionTime = "0.7s"; 
 
@@ -89,10 +91,9 @@ function setDarkModeStyles() {
     siteNav.style.transition = `background-color ${transitionTime}`;
     siteNav.style.borderBottom = '#4B4B4B';
 
-    
-
     //Checks for index.html
-    if(newestArticle){
+    if(newestArticle)
+    {
         newestArticle.style.backgroundColor = "#234465"; 
         newestArticle.style.transition = `background-color ${transitionTime}`;
     }
@@ -101,9 +102,14 @@ function setDarkModeStyles() {
     {
         newestArticleText.style.color = "#ffffff";
         newestArticleText.style.transition = `color ${transitionTime}`;
+    }
 
-        newestArticleCompHeader.style.background = "rgba(0, 121, 214, 1)";
-        newestArticleCompHeader.style.transition = `background ${transitionTime}`;
+    if(text)
+    {
+        text.forEach(function(t)
+        {
+            t.style.color = '#ffffff';
+        })
     }
 
     if(olderArticleParagraphs){
@@ -210,10 +216,26 @@ function setDarkModeStyles() {
         }
     }
 
-    if(newestArticleParagraphs){
-        newestArticleParagraphs.forEach(function(text){
-            text.style.color = '#fff';
-        })
+    if(olderArticle1TableWrapper)
+    {
+        for(let i = 0; i < olderArticle1TableRow.length; i++)
+        {
+            if(i % 2 === 0)
+            {
+                olderArticle1TableRow[i].style.background = '#ccc';
+            }
+            else
+            {
+                olderArticle1TableRow[i].style.background = '#E6E6E6';
+            }
+        }
+    }
+
+    if(newestArticleGreeting){
+
+
+        newestArticleGreeting.style.color = '#fff';
+        newestArticleHeader.style.background = '#234465';
     }
 
     if(articleResult){
@@ -223,35 +245,12 @@ function setDarkModeStyles() {
         
     }
 
-    if(easterMathCompArticleDescription)
+    if(olderArticle002Page)
     {
-        easterMathCompArticleDescription.style.backgroundColor = '#01468f';
-        easterMathCompArticleDescription.style.transition = `background-color ${transitionTime}`; 
-        easterMathCompArticlePDFResults.style.backgroundColor = '#0068d6';
-        easterMathCompArticlePDFResults.style.transition = `background-color ${transitionTime}`; 
+        olderArticle002Page.style.color = '#ffffff';
+        olderArticle002Header.style.background = '#234465';
     }
 
-    if(christmasTableHeader){
-        christmasTableHeader.style.background = '#01468f';
-    }
-    
-    if(christmasMathCompTable){
-        christmasMathCompTableRow.forEach(function(row){
-            row.style.background = '#b3b1b1';
-            row.style.transition = `background-color ${transitionTime}`;
-            row.style.color = '#fff';
-        })
-
-        for(let i = 1; i < christmasMathCompTableRow.length; i += 2)
-        {
-             christmasMathCompTableRow[i].style.backgroundColor = '#7d7d7d';
-             christmasMathCompTableRow[i].style.color = '#fff';
-        }
-
-        christmasMathCompTableHeader.forEach(function(header){
-            header.style.background = '#234465';
-        })
-    }
 
     if(lastArticleHeaderWrapper)
     {
@@ -276,9 +275,14 @@ function removeDarkModeStyles() {
     {
         newestArticleText.style.color = "";
         newestArticleText.style.transition = `color ${transitionTime}`;
+    }
 
-        newestArticleCompHeader.style.background = "";
-        newestArticleCompHeader.style.transition = `background ${transitionTime}`;
+    if(text)
+    {
+        text.forEach(function(t)
+        {
+            t.style.color = '';
+        })
     }
 
     if(olderArticleParagraphs){
@@ -358,10 +362,24 @@ function removeDarkModeStyles() {
         }
     }
 
-    if(newestArticleParagraphs){
-        newestArticleParagraphs.forEach(function(text){
-            text.style.color = '';
-        })
+    if(newestArticleGreeting){
+        newestArticleGreeting.style.color = '';
+        newestArticleHeader.style.background = '';
+    }
+
+    if(olderArticle1TableWrapper)
+    {
+        for(let i = 0; i < olderArticle1TableRow.length; i++)
+        {
+            if(i % 2 === 0)
+            {
+                olderArticle1TableRow[i].style.background = '';
+            }
+            else
+            {
+                olderArticle1TableRow[i].style.background = '';
+            }
+        }
     }
 
     if(articleResult){
@@ -371,31 +389,10 @@ function removeDarkModeStyles() {
         easterMathCompArticlePDFResults.style.backgroundColor = '';
     }
 
-    if(easterMathCompArticleDescription)
+    if(olderArticle002Page)
     {
-        easterMathCompArticleDescription.style.backgroundColor = '';
-        easterMathCompArticlePDFResults.style.backgroundColor = '';
-    }
-
-    if(christmasTableHeader){
-        christmasTableHeader.style.background = '';
-    }
-    
-    if(christmasMathCompTable){
-        christmasMathCompTableRow.forEach(function(row){
-            row.style.background = '';
-            row.style.color = '';
-        })
-
-        for(let i = 1; i < christmasMathCompTableRow.length; i += 2)
-        {
-             christmasMathCompTableRow[i].style.backgroundColor = '';
-             christmasMathCompTableRow[i].style.color = '';
-        }
-
-        christmasMathCompTableHeader.forEach(function(header){
-            header.style.background = '';
-        })
+        olderArticle002Page.style.color = '';
+        olderArticle002Header.style.background = '';
     }
 
     if(lastArticleHeaderWrapper)

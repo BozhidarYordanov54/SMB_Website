@@ -1,116 +1,236 @@
-.newest-aricle-main{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-
-}
-
-.newest_article-wrapper{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    margin: 2em;
-    border-radius: 2em;
-    padding: 2em;
-}
-
-.newest_article-wrapper img{
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 4em;
-}
-
-.competition_header{
-    background-color: rgba(49, 162, 249, 0.9);
-    text-align: center;
-    color: #ffffff;
-    padding: 0;
-    margin-top: 0.5em;
-    padding: 1em;
-    font-size: 30px;
-}
-
-.newest-article-page{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    padding: 2em;
-    padding-top: 1em;
-}
-
-.competition_opening{
-    font-size: 24px;
-    margin-top: 2em;
-}
-
-.competition_info_gabrovo{
-    font-size: 18px;
-}
-
-.competition-list-information{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    list-style-type: disc;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 2em;
-}
-
-.competition_registration{
-    font-size: 18px;
-}
-
-.competition_registration a{
-    color: #00a9af;
-}
-
-.form-sumbission-condition{
-    font-size: 22px;
-    color: rgb(207, 0, 0);
-    font-weight: bold;
-}
-
-@media (max-width: 1550px)
+.article-header
 {
-    .newest_article-wrapper{
-        flex-direction: column;
-        padding: .5em;
-        margin: 0em;
-        margin-bottom: 1em;
-    }
+    text-align: center;
+    background: rgba(49, 162, 249, 0.9);
+    padding: 1em;
+    margin: 1em 0;
+    color: #ffffff;
+}
 
-    .newest_article-wrapper img{
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 1em;
-        border-radius: 1em;
-    }
+.hitar-petar-article-wrapper
+{
+    display: flex;
+    gap: 5em;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 95%;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    margin-bottom: 2em;
+}
 
-    .newest-article-page{
-        gap: 1em;
-        padding: 1em;
-    }
+.hitar-petar-article-wrapper .text-wrapper
+{
+    width: 50%;
+}
 
-    .competition_header{
-        font-size: 24px;
-    }
+.hitar-petar-article-wrapper a{
+    color: rgba(49, 162, 249, 0.9);
+}
 
-    .competition_opening{
+.hitar-petar-article-wrapper img
+{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.article-info{
+    padding: 2em 2em 1em 2em;
+    line-height: 1.5em;
+    font-size: 18px;
+    
+}
+
+.article-competition-greeting{
+    padding: 0 2em;
+    padding-bottom: 2em;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.national-ranking
+{
+    padding: 0 2em;
+    padding-bottom: 2em;
+    font-size: 18px;
+    text-align: center;
+}
+
+.article-info .bold,
+.article-competition-greeting .bold
+{
+    font-weight: bold;
+}
+
+.result-main
+{
+    margin: 3em 0;
+}
+
+.result-header{
+    color: #007bff;
+    text-align: center;
+    border-bottom: 2px solid #a6a6a6;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 26px;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+}
+
+.accordion{
+   margin-right: 2em;
+}
+
+.result-accordion .result-element{
+    list-style: none;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 1em;
+    border-radius: 8px;
+    background: #ddf5ff;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
+}
+
+.result-accordion .result-element ul{
+    list-style-type: none;
+}
+
+.result-accordion .result-element .result-label{
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    font-style: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.result-label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.result-input{
+    display: none;
+}
+
+.result-accordion .result-content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition:  max-height 0.7s, padding 0.7s;
+}
+
+.result-accordion .result-input:checked + .result-label + .result-content{
+    max-height: 4000px;
+    padding: 10px 10px 20px;
+}
+
+.result-accordion .result-input:checked + .result-label::before{
+    content: '-';
+}
+
+.result-wrapper table
+{
+    width: 100%;
+    background: transparent;
+}
+
+.result-wrapper th
+{
+    background: #5fd2ff5b;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.result-wrapper .context-row
+{
+    
+    background: #00b7ff;
+}
+
+@media (max-width: 1200px)
+{   
+    .article-header
+    {
         font-size: 18px;
+    }
+
+    .hitar-petar-article-wrapper
+    {
+        flex-direction: column;
+        gap: 1em;
+        width: 90%;
+    }
+
+    .hitar-petar-article-wrapper .text-wrapper
+    {
+        width: 100%;
+    }
+
+    .hitar-petar-article-wrapper img
+    {
+        width: 100%;
+    }
+
+    .article-info,
+    .article-competition-greeting
+    {
+        padding: 0.5em;
+        line-height: 1.5em;
+    }
+
+    .national-ranking{
+        padding-bottom: 0em;
+        padding-top: 1em;
+    }
+
+    .result-main
+    {
+        margin: 1em 0;
+    }
+
+
+    .result-header
+    {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .result-accordion
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .result-wrapper table
+    {
+        width: 100%;
+    }
+
+    .result-wrapper th
+    {
+        white-space: nowrap;
+    }
+
+    .result-accordion .result-element{
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0px;
         
     }
 
-    .competition-list-information{
-        margin-left: 1em;
-    }
-
-    .competition_info_gabrovo{
-        font-size: 18px;
-    }
-
-    .form-sumbission-condition{
-        font-size: 20px;
+    .result-content ul{
+        overflow: auto;
     }
 }

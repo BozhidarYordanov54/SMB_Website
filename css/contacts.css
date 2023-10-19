@@ -75,7 +75,7 @@
 
 #message {
     min-height: 15.2em;
-    width: 100%;
+    width: 200%;
     resize: vertical;
     background: rgba(249, 249, 249, 1);
     border: 1px solid rgb(206, 206, 206);
