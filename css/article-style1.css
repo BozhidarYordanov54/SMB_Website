@@ -111,3 +111,50 @@
     gap: 1em;
     font-size: 18px;
 }
+
+@media(max-width: 768px)
+{
+    .december-header
+    {
+        font-size: 20px;
+        padding: 1em;
+    }
+
+    .opening-sentence
+    {
+        font-size: 18px;
+        margin-bottom: 1em;
+    }
+
+    .december-accordion
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .december-accordion .december-element{
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0px;
+        
+    }
+
+    .older-competitions a
+    {
+        font-size: 14px;
+    }
+
+    .info-wrapper
+    {
+        padding: 1em;
+    }
+
+    .info-wrapper p
+    {
+        font-size: 16px;
+    }
+    
+}
