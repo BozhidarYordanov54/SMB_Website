@@ -22,7 +22,19 @@ document.getElementById('signup-form').addEventListener('submit', async function
 
         if (response.status === 200) {
             // Set success message in localStorage
-            localStorage.setItem('notificationMessage', 'Записването успешно!');
+            
+            const phpScriptUrl = 'php\\sendConfirmationEmail.php';  // Replace with the actual path to your PHP script
+            const phpResponse = await fetch(phpScriptUrl, {
+                method: 'GET' // or 'POST' if needed
+            });
+
+            if (phpResponse.status === 200) {
+                // Set success message in localStorage
+                localStorage.setItem('notificationMessage', 'Записването успешно!');
+            } else {
+                // Set error message in localStorage
+                localStorage.setItem('notificationMessage', 'Записването не бе успешно. Моля опитайте отново.');
+            }
         } else {
             // Set error message in localStorage
             localStorage.setItem('notificationMessage', 'Записването не бе успешно. Моля опитайте отново.');

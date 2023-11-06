@@ -66,6 +66,11 @@
     margin-bottom: 10px; /* Adjust as needed */
 }
 
+.text-second
+{
+    margin-top: 0;
+}
+
 .newest-article .image-container a img {
     width: 100%;
     height: auto;

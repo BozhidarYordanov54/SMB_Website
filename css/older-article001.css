@@ -1,87 +1,236 @@
-.article-header-wrapper{
+.article-header
+{
     text-align: center;
+    background: rgba(49, 162, 249, 0.9);
     padding: 1em;
-    background: #007bff;
     margin: 1em 0;
-    font-size: 14px;
     color: #ffffff;
-  }
-  
-  .searchBar-wrapper {
+}
+
+.hitar-petar-article-wrapper
+{
     display: flex;
-    flex-direction: column;
-    gap: 1em;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
+    gap: 5em;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 95%;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    margin-bottom: 2em;
+}
+
+.hitar-petar-article-wrapper .text-wrapper
+{
+    width: 50%;
+}
+
+.hitar-petar-article-wrapper a{
+    color: rgba(49, 162, 249, 0.9);
+}
+
+.hitar-petar-article-wrapper img
+{
+    width: 100%;
     margin-top: 1em;
-    background: #7d7d7d;
-  }
-  
-  .search-by-p {
-    margin-right: 10px;
-    font-size: 20px;
+}
+
+.article-info{
+    padding: 2em 2em 1em 2em;
+    line-height: 1.5em;
+    font-size: 18px;
+    
+}
+
+.article-competition-greeting{
+    padding: 0 2em;
+    padding-bottom: 2em;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.national-ranking
+{
+    padding: 0 2em;
+    padding-bottom: 2em;
+    font-size: 18px;
+    text-align: center;
+}
+
+.article-info .bold,
+.article-competition-greeting .bold
+{
     font-weight: bold;
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  
-  #searchInput {
-    padding: 12px;
-    width: 20em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+}
+
+.result-main
+{
+    margin: 3em 0;
+}
+
+.result-header{
+    color: #007bff;
+    text-align: center;
+    border-bottom: 2px solid #a6a6a6;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 26px;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+}
+
+.accordion{
+   margin-right: 2em;
+}
+
+.result-accordion .result-element{
+    list-style: none;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 1em;
+    border-radius: 8px;
+    background: #ddf5ff;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
+}
+
+.result-accordion .result-element ul{
+    list-style-type: none;
+}
+
+.result-accordion .result-element .result-label{
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    font-style: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.result-label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.result-input{
+    display: none;
+}
+
+.result-accordion .result-content{
     color: #555;
-    outline: none;
-  }
-  
-  #searchInput:focus {
-    border-color: #66afe9;
-    box-shadow: 0 0 8px #66afe9;
-  }
-  
-  .table-wrapper{
-      overflow: auto;
-  }
-  
-  table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition:  max-height 0.7s, padding 0.7s;
+}
+
+.result-accordion .result-input:checked + .result-label + .result-content{
+    max-height: 4000px;
+    padding: 10px 10px 20px;
+}
+
+.result-accordion .result-input:checked + .result-label::before{
+    content: '-';
+}
+
+.result-wrapper table
+{
+    width: 100%;
+    background: transparent;
+}
+
+.result-wrapper th
+{
+    background: #5fd2ff5b;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.result-wrapper .context-row
+{
     
-    th, td {
-      padding: 12px 15px;
-      text-align: left;
-      border-bottom: 1px solid #d3d3d3;
-    }
-    
-    th {
-      background-color: #525252;
-      font-weight: bold;
-      color: #ffffff;
-    }
-    
-    /* Alternate row styles */
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-    
-    /* Hover effect */
-    tbody tr:hover {
-      background-color: #dbdbdb;
-    }
-  
-    .slider-container{
-      margin-top: 1em;
-  }
-  
-  
-    @media(max-width: 768px)
+    background: #00b7ff;
+}
+
+@media (max-width: 1200px)
+{   
+    .article-header
     {
-      table {
-          width: 100%;
-      }
+        font-size: 18px;
     }
-  
-  
+
+    .hitar-petar-article-wrapper
+    {
+        flex-direction: column;
+        gap: 1em;
+        width: 90%;
+    }
+
+    .hitar-petar-article-wrapper .text-wrapper
+    {
+        width: 100%;
+    }
+
+    .hitar-petar-article-wrapper img
+    {
+        width: 100%;
+    }
+
+    .article-info,
+    .article-competition-greeting
+    {
+        padding: 0.5em;
+        line-height: 1.5em;
+    }
+
+    .national-ranking{
+        padding-bottom: 0em;
+        padding-top: 1em;
+    }
+
+    .result-main
+    {
+        margin: 1em 0;
+    }
+
+
+    .result-header
+    {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .result-accordion
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .result-wrapper table
+    {
+        width: 100%;
+    }
+
+    .result-wrapper th
+    {
+        white-space: nowrap;
+    }
+
+    .result-accordion .result-element{
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0px;
+        
+    }
+
+    .result-content ul{
+        overflow: auto;
+    }
+}
