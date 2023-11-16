@@ -64,6 +64,9 @@ var articleResult = document.querySelector('.article-text');
 var olderArticle002Page = document.querySelector('.newest-article-page');
 var olderArticle002Header = document.querySelector('.competition_header');
 
+var decemberArticleCheck = document.querySelector('.december-competition-article');
+var decemberAcordion = document.querySelectorAll('.december-element');
+
 var text = document.querySelectorAll('.text');
 
 var lastArticleHeaderWrapper = document.querySelector('.article-header-wrapper');
@@ -257,6 +260,15 @@ function setDarkModeStyles() {
         lastArticleHeaderWrapper.style.background = '#01468f';
     }
 
+    if(decemberArticleCheck)
+    {
+        decemberArticleCheck.style.color = '#ffffff';
+        decemberAcordion.forEach(function(element)
+        {
+            element.style.color = '#000';
+        })
+    }
+
     siteFooter.style.backgroundColor = "#234465"; 
 }
 
@@ -398,6 +410,11 @@ function removeDarkModeStyles() {
     if(lastArticleHeaderWrapper)
     {
         lastArticleHeaderWrapper.style.background = '';
+    }
+
+    if(decemberArticleCheck)
+    {
+        decemberArticleCheck.style.color = '';
     }
 
     siteFooter.style.backgroundColor = ''; 
