@@ -1,34 +1,81 @@
-.december-competition-article
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.opening-sentence
+.article-header
 {
     text-align: center;
-    font-size: 22px;
+    background: rgba(49, 162, 249, 0.9);
+    padding: 1em;
+    margin: 1em 0;
+    color: #ffffff;
+}
+
+.hitar-petar-article-wrapper
+{
+    display: flex;
+    gap: 5em;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 95%;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    margin-bottom: 2em;
+}
+
+.hitar-petar-article-wrapper .text-wrapper
+{
+    width: 50%;
+}
+
+.hitar-petar-article-wrapper a{
+    color: rgba(49, 162, 249, 0.9);
+}
+
+.hitar-petar-article-wrapper img
+{
+    width: 60%;
     margin-top: 1em;
+}
+
+.article-info{
+    padding: 2em 2em 1em 2em;
+    line-height: 1.5em;
+    font-size: 18px;
+    
+}
+
+.article-competition-greeting{
+    padding: 0 2em;
+    padding-bottom: 2em;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.national-ranking
+{
+    padding: 0 2em;
+    padding-bottom: 2em;
+    font-size: 18px;
+    text-align: center;
+}
+
+.article-info .bold,
+.article-competition-greeting .bold
+{
     font-weight: bold;
 }
 
-.december-content ul{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
+.result-main
+{
+    margin: 3em 0;
 }
 
-.december-header{
-    color: #ffffff;
-    background: #007bff;
+.result-header{
+    color: #007bff;
     text-align: center;
-    padding: 1em;
-    margin-top: 0.5em;
-    
+    border-bottom: 2px solid #a6a6a6;
+    margin: 0 auto;
+    width: 80%;
     font-size: 26px;
 }
 
-.december-container {
+.result-container {
     display: flex;
     justify-content: center;
 }
@@ -37,7 +84,7 @@
    margin-right: 2em;
 }
 
-.december-accordion .december-element{
+.result-accordion .result-element{
     list-style: none;
     width: 100%;
     margin: 20px 0px;
@@ -48,11 +95,11 @@
                 -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
 }
 
-.december-accordion .december-element ul{
+.result-accordion .result-element ul{
     list-style-type: none;
 }
 
-.december-accordion .december-element .december-label{
+.result-accordion .result-element .result-label{
     display: flex;
     align-items: center; 
     padding: 10px;
@@ -61,19 +108,19 @@
     cursor: pointer;
 }
 
-.december-label::before{
+.result-label::before{
     content: '+';
     margin-right: 10px;
     font-size: 24px;
     font-weight: 600;
 }
 
-.december-input{
+.result-input{
     display: none;
 }
 
-.december-accordion .december-content{
-    color: #000000;
+.result-accordion .result-content{
+    color: #555;
     padding: 0 10px;
     line-height: 26px;
     max-height: 0;
@@ -81,82 +128,83 @@
     transition:  max-height 0.7s, padding 0.7s;
 }
 
-.december-accordion .december-input:checked + .december-label + .december-content{
+.result-accordion .result-input:checked + .result-label + .result-content{
     max-height: 4000px;
     padding: 10px 10px 20px;
 }
 
-.december-accordion .december-input:checked + .december-label::before{
+.result-accordion .result-input:checked + .result-label::before{
     content: '-';
 }
 
-.december-competition-info-wrapper table
+.result-wrapper table
 {
     width: 100%;
     background: transparent;
 }
 
-.december-competition-info-wrapper th
+.result-wrapper th
 {
     background: #5fd2ff5b;
     border-radius: 5px;
     padding: 12px;
 }
 
-.december-competition-info-wrapper .context-row
+.result-wrapper .context-row
 {
-    
     background: #00b7ff;
 }
 
-.info-wrapper
-{
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    font-size: 18px;
-}
-
-.newest-aricle-image
-{
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 2em;
-}
-
-.newest-article-box
-{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    max-width: 90%;
-    margin: 0 auto;
-    border-radius: 1em;
-    padding: 1em;
-    margin-top: 1em;
-}
-
-.december-competition-article a
-{
-    color: rgb(49, 162, 249);
-}
-
-
-@media(max-width: 768px)
-{
-    .december-header
-    {
-        font-size: 20px;
-        padding: 1em;
-    }
-
-    .opening-sentence
+@media (max-width: 1200px)
+{   
+    .article-header
     {
         font-size: 18px;
-        margin-bottom: 1em;
     }
 
-    .december-accordion
+    .hitar-petar-article-wrapper
+    {
+        flex-direction: column;
+        gap: 1em;
+        width: 90%;
+    }
+
+    .hitar-petar-article-wrapper .text-wrapper
+    {
+        width: 100%;
+    }
+
+    .hitar-petar-article-wrapper img
+    {
+        width: 80%;
+        margin-left: 2em;
+    }
+
+    .article-info,
+    .article-competition-greeting
+    {
+        padding: 0.5em;
+        line-height: 1.5em;
+    }
+
+    .national-ranking{
+        padding-bottom: 0em;
+        padding-top: 1em;
+    }
+
+    .result-main
+    {
+        margin: 1em 0;
+    }
+
+
+    .result-header
+    {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .result-accordion
     {
         display: flex;
         flex-direction: column;
@@ -165,26 +213,24 @@
         width: 90%;
     }
 
-    .december-accordion .december-element{
+    .result-wrapper table
+    {
+        width: 100%;
+    }
+
+    .result-wrapper th
+    {
+        white-space: nowrap;
+    }
+
+    .result-accordion .result-element{
         width: 100%;
         padding: 5px;
         margin: 10px 0px;
         
     }
 
-    .older-competitions a
-    {
-        font-size: 14px;
+    .result-content ul{
+        overflow: auto;
     }
-
-    .info-wrapper
-    {
-        padding: 1em;
-    }
-
-    .info-wrapper p
-    {
-        font-size: 16px;
-    }
-    
 }
