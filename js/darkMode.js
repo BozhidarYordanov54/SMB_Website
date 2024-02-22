@@ -21,6 +21,8 @@ var  christmasMathCompArticle = document.querySelector('.christmas-math-competit
 var easterMathComp = document.querySelector('.emc-header');
 var easterMathCompArticle = document.querySelector('.easter-math-competition');
 
+var mathCompetitionInfo = document.querySelector('.hitar-petar-article-wrapper');
+
 var tasksLinks = document.querySelectorAll('.tasks li a');
 //end of competitions.html elements
 
@@ -236,7 +238,6 @@ function setDarkModeStyles() {
 
     if(newestArticleGreeting){
 
-
         newestArticleGreeting.style.color = '#fff';
         newestArticleHeader.style.background = '#234465';
     }
@@ -246,6 +247,27 @@ function setDarkModeStyles() {
         articleHeader.style.backgroundColor = '#01468f';
         articleHeader.style.transition = `background-color ${transitionTime}`; 
         
+    }
+
+    if(mathCompetitionInfo){
+        var articleHeader = document.querySelector('.article-header');
+        var infoTableRow = document.querySelectorAll('.table-row');
+        var tableHeader = document.querySelector('.reponsive-table-header');
+
+        tableHeader.style.color = '#fff';
+
+        articleHeader.style.backgroundColor = '#234465';
+        infoTableRow.forEach(function(row){
+            row.style.background = '#555';
+            row.style.color = '#fff';
+            row.classList.add('dark');
+        })
+
+
+        mathCompetitionInfo.style.backgroundColor = '#555';
+        mathCompetitionInfo.style.transition = `background-color ${transitionTime}`;
+        mathCompetitionInfo.style.color = '#fff';
+
     }
 
     if(olderArticle002Page)

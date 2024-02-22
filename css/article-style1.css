@@ -31,6 +31,8 @@
 .hitar-petar-article-wrapper img
 {
     width: 100%;
+    height: 50%;
+    margin: auto;
     border-top-left-radius: 2em;
     border-bottom-right-radius: 2em;
 }
@@ -53,6 +55,11 @@
     margin-left: 2em;
 }
 
+.container ul:nth-child(1),
+.responsive-table:nth-child(4){
+    background: #356688;
+}
+
 
 .container {
     display: flex;
@@ -60,7 +67,7 @@
     margin-left: 0.8em;
   }
   
-  h2 {
+  .responsive-table-header {
     font-size: 26px;
     margin: 20px 0;
     text-align: center;
@@ -68,7 +75,7 @@
       font-size: 0.5em;
     }
   }
-  
+
   .responsive-table {
     li {
       border-radius: 3px;
@@ -139,6 +146,12 @@
           text-align: center;
         }
       }
+
+      .table-row.dark .col::before{
+        color: #d8d8d8;
+      }
+
+      
     }
 }
 
@@ -192,7 +205,14 @@
         flex-direction: column;
     }
 
-    
+    .container{
+        width: 95%;
+    }
+
+    .reponsive-table-header{
+        text-align: center;
+        margin-bottom: 1em;
+    }
 }
 
 
