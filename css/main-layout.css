@@ -107,6 +107,19 @@
    
 }
 
+.table-row.one{
+  background: #356688 !important;
+}
+.table-row.two{
+  background: #6a4165 !important;
+}
+.table-row.three{
+  background: #005002 !important;
+}
+.table-row.four{
+  background: #356688 !important;
+}
+
 .image-container
 {
     text-align: center;
@@ -217,10 +230,6 @@
 
 }
 
-
-.col{
-    color: #000000;
-}
 .container {
     display: flex;
     flex-direction: column;
@@ -242,14 +251,14 @@
       margin-bottom: 25px;
     }
     .table-header {
-      background-color: #95A5A6;
+      background-color: rgb(27, 98, 151);
       font-weight: bold;
       font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 0.03em;
     }
     .table-row {
-      background-color: #ffffff;
+      color: #ffffff;
       box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
     }
     .col-1 {
