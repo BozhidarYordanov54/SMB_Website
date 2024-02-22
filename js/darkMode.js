@@ -252,9 +252,6 @@ function setDarkModeStyles() {
     if(mathCompetitionInfo){
         var articleHeader = document.querySelector('.article-header');
         var infoTableRow = document.querySelectorAll('.table-row');
-        var tableHeader = document.querySelector('.reponsive-table-header');
-
-        tableHeader.style.color = '#fff';
 
         articleHeader.style.backgroundColor = '#234465';
         infoTableRow.forEach(function(row){
@@ -442,10 +439,7 @@ function removeDarkModeStyles() {
     if(mathCompetitionInfo){
         var articleHeader = document.querySelector('.article-header');
         var infoTableRow = document.querySelectorAll('.table-row');
-        var tableHeader = document.querySelector('.reponsive-table-header');
-
-        tableHeader.style.color = '';
-
+        
         articleHeader.style.backgroundColor = '';
         infoTableRow.forEach(function(row){
             row.style.background = '';
