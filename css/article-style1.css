@@ -55,18 +55,11 @@
     margin-left: 2em;
 }
 
-.table-row.one{
-  background: #356688 !important;
+.container ul:nth-child(1),
+.responsive-table:nth-child(4){
+    background: #356688;
 }
-.table-row.two{
-  background: #6a4165 !important;
-}
-.table-row.three{
-  background: #005002 !important;
-}
-.table-row.four{
-  background: #356688 !important;
-}
+
 
 .container {
     display: flex;
@@ -92,15 +85,14 @@
       margin-bottom: 25px;
     }
     .table-header {
-      color: #ffffff;
-      background-color: rgb(49, 162, 249);
+      background-color: #95A5A6;
       font-weight: bold;
       font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 0.03em;
     }
     .table-row {
-      color: #ffffff;
+      background-color: #ffffff;
       box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
     }
     .col-1 {
