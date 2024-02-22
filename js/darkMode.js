@@ -439,6 +439,27 @@ function removeDarkModeStyles() {
         decemberArticleCheck.style.color = '';
     }
 
+    if(mathCompetitionInfo){
+        var articleHeader = document.querySelector('.article-header');
+        var infoTableRow = document.querySelectorAll('.table-row');
+        var tableHeader = document.querySelector('.reponsive-table-header');
+
+        tableHeader.style.color = '';
+
+        articleHeader.style.backgroundColor = '';
+        infoTableRow.forEach(function(row){
+            row.style.background = '';
+            row.style.color = '';
+            row.classList.remove('dark');
+        })
+
+
+        mathCompetitionInfo.style.backgroundColor = '';
+        mathCompetitionInfo.style.transition = `background-color ${transitionTime}`;
+        mathCompetitionInfo.style.color = '';
+
+    }
+
     siteFooter.style.backgroundColor = ''; 
 }
 

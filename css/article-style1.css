@@ -97,6 +97,9 @@
     }
     .col-1 {
       flex-basis: 13%;
+      font-weight: bold;
+      padding-right: 3em;
+      text-align: center;
     }
     .col-2 {
       flex-basis: 13%;
@@ -198,6 +201,10 @@
     .col-1::before{
         font-weight: bold;
         font-size: 18px;
+    }
+
+    .col-1{
+      padding-right: 0;
     }
 
     .table-row{
