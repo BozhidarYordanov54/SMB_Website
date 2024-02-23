@@ -2,12 +2,18 @@ const competitionName = document.getElementById('competition-name');
 const gradeSelect = document.getElementById('grade');
 
 const gradeByCompetition = {
-    "Математически турнир \"Иван Салабашев\"": [
+    "16 март - Изпит": [
+        "7"
+    ],
+    "13 април - БЕЛ": [
+        "7"
+    ],
+    "27 април - ВКС": [
         "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
     ],
-    "Коледно математическо състезание": [
-        "1", "2", "3", "4", "5", "6", "7"
-    ]
+    "11 май - Изпит": [
+        "7"
+    ],
 }
 
 const gradeNames = {
