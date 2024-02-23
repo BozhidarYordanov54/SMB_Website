@@ -21,7 +21,7 @@ var  christmasMathCompArticle = document.querySelector('.christmas-math-competit
 var easterMathComp = document.querySelector('.emc-header');
 var easterMathCompArticle = document.querySelector('.easter-math-competition');
 
-var mathCompetitionInfo = document.querySelector('.hitar-petar-article-wrapper');
+var mathCompetitionInfo = document.querySelector('.yearly-competitions');
 
 var tasksLinks = document.querySelectorAll('.tasks li a');
 //end of competitions.html elements
@@ -251,21 +251,12 @@ function setDarkModeStyles() {
 
     if(mathCompetitionInfo){
         var articleHeader = document.querySelector('.article-header');
-        var infoTableRow = document.querySelectorAll('.table-row');
-        var tableHeader = document.querySelector('.reponsive-table-header');
+        var tableHeader = document.querySelector('.responsive-table-header');
 
         tableHeader.style.color = '#fff';
 
         articleHeader.style.backgroundColor = '#234465';
-        infoTableRow.forEach(function(row){
-            row.style.background = '#555';
-            row.style.color = '#fff';
-            row.classList.add('dark');
-        })
 
-
-        mathCompetitionInfo.style.backgroundColor = '#555';
-        mathCompetitionInfo.style.transition = `background-color ${transitionTime}`;
         mathCompetitionInfo.style.color = '#fff';
 
     }
@@ -441,18 +432,11 @@ function removeDarkModeStyles() {
 
     if(mathCompetitionInfo){
         var articleHeader = document.querySelector('.article-header');
-        var infoTableRow = document.querySelectorAll('.table-row');
-        var tableHeader = document.querySelector('.reponsive-table-header');
+        var tableHeader = document.querySelector('.responsive-table-header');
 
         tableHeader.style.color = '';
 
         articleHeader.style.backgroundColor = '';
-        infoTableRow.forEach(function(row){
-            row.style.background = '';
-            row.style.color = '';
-            row.classList.remove('dark');
-        })
-
 
         mathCompetitionInfo.style.backgroundColor = '';
         mathCompetitionInfo.style.transition = `background-color ${transitionTime}`;

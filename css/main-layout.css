@@ -155,6 +155,23 @@
     display: none;
 }
 
+.newest-article-items{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.paragraph-header{
+    font-size: 24px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.purpose-items{
+    margin-left: 3em;
+}
+
 
 @media(max-width: 768px)
 {
