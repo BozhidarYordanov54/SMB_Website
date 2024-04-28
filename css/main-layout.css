@@ -124,18 +124,18 @@
 }
 
 .oa-image-1 {
-    width: 90%;
+    width: 250px;
     border-radius: 2em;
     height: auto; 
   }
 
 .oa-image-2{
-    width: 50%;
+    width: 250px;
     height: auto;
 }
 
 .oa-image-3{
-    width: 100%;
+    width: 250px;
     border-radius: 2em;
 }
 

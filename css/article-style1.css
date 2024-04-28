@@ -1,23 +1,7 @@
-.main-article{
-  width: 100%;
-}
-
-.article-header{
-  background-color: rgb(49, 162, 249);
-  color: #ffffff;
-  padding: 1em;
-  margin-top: 0.5em;
-  text-align: center;
-}
-
-.article-container{
-  padding: 1em;
-}
-
-.article-wrapper{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    background: #ffffff;
-    border-radius: 1em;
+.article-header
+{
+    text-align: center;
+    background: rgba(49, 162, 249, 0.9);
     padding: 1em;
     margin: 1em 0;
     color: #ffffff;
@@ -44,30 +28,37 @@
     color: rgba(49, 162, 249, 0.9);
 }
 
-.purpose-items{
-  margin-left: 3em;
+.hitar-petar-article-wrapper .image-container
+{
+    width: 30%;
+    margin-top: 1em;
 }
 
-.table-header.one,
-.table-row.one,
-.table-header.four,
-.table-row.four{
-  background-color: rgba(53, 101, 136, 0.7);
-  color: #ffffff;
-  text-align: center;
+.hitar-petar-article-wrapper img
+{
+    width: 350px;
 }
 
-.table-header.two,
-.table-row.two{
-    background: rgba(106,65,101, 0.7);
-    color: #ffffff;
+.article-info{
+    padding: 2em 2em 1em 2em;
+    line-height: 1.5em;
+    font-size: 18px;
+    text-align: center;
 }
 
-.table-header.three,
-.table-row.three{
-  background: rgba(0,80,2,0.7);
-  color: #ffffff;
-  height: 625px;
+.article-competition-greeting{
+    padding: 0 2em;
+    padding-bottom: 2em;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.national-ranking
+{
+    padding: 0 2em;
+    padding-bottom: 2em;
+    font-size: 18px;
+    text-align: center;
 }
 
 .article-info .bold,
@@ -79,11 +70,6 @@
 .result-main
 {
     margin: 3em 0;
-}
-
-.col-1{
-  font-weight: bold !important;
-  text-align: center !important;
 }
 
 .result-header{
@@ -182,18 +168,27 @@
     {
         font-size: 18px;
     }
-    .col-1 {
-      flex-basis: 13%;
-      font-weight: bold;
+
+    .hitar-petar-article-wrapper
+    {
+        flex-direction: column;
+        gap: 1em;
+        width: 90%;
     }
 
     .hitar-petar-article-wrapper .text-wrapper
     {
         width: 100%;
     }
-    .col-3 {
-      flex-basis: 13%;
-      padding-left: 3em;
+
+    .hitar-petar-article-wrapper .image-container
+    {
+        width: 100%;
+    }
+
+    .hitar-petar-article-wrapper .image-container img
+    {
+        width: 100%;
     }
 
     .article-info,
@@ -219,89 +214,34 @@
         font-size: 20px;
         width: 90%;
     }
-
-    .col {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 0;
-      &:before {
-        color: #ffffff;
-        margin-bottom: 0.2em;
-        font-weight: bold;
-        font-size: 18px;
-        content: attr(data-label);
-        flex-basis: 50%;
-        text-align: justify;
-      }
-    }
     
-    @media(max-width: 768px) {
-      
-      .table-header {
-        display: none;
-      }
-      
-      li {
-        display: block;
-      }
-      .col {
-        flex-basis: 100%;
-      }
-      .col {
+    .result-accordion
+    {
         display: flex;
-        padding: 10px 0;
-        &:before {
-          color: #ffffff;
-          padding-right: 10px;
-          content: attr(data-label);
-          flex-basis: 50%;
-          text-align: center;
-        }
-      }
-      .table-row.dark .col::before{
-        color: #d8d8d8;
-      }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
 
-      
+    .result-wrapper table
+    {
+        width: 100%;
+    }
+
+    .result-wrapper th
+    {
+        white-space: nowrap;
+    }
+
+    .result-accordion .result-element{
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0px;
+        
+    }
+
+    .result-content ul{
+        overflow: auto;
     }
 }
-
-.gallery-cell {
-  display: flex;
-  flex-direction: column;
-  width: 66%;
-  height: 680px;
-  margin-right: 10px;
-}
-
-@media (max-width: 768px) {
-  .article-wrapper{
-    padding: 1em;
-  }
-  
-  .yearly-competitions{
-    flex-direction: column-reverse;
-  }
-
-  .article-items{
-    width: 100%;
-  }
-
-  .carousell-wrapper{
-    width: 100%;
-  }
-
-  .gallery-cell{
-    margin-right: 5px;
-    width: 80%;
-    height: 770px;
-  }
-
-  .table-row.three{
-    height: 680px;
-  }
-  
-}
-
