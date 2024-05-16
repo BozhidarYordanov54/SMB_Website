@@ -1,466 +1,1170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/article-style1.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/site-footer.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/loading-screen.css">
-    <link rel="icon" type="image/x-icon" href="Images/Logo/Logo-White.png">
-    <title>Декемврийски състезания - Резултати - СМБ - Велико Търново</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/article-style1.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/site-footer.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/loading-screen.css">
+  <link rel="icon" type="image/x-icon" href="Images/Logo/Logo-White.png">
+  <title>Декемврийски състезания - Резултати - СМБ - Велико Търново</title>
 </head>
+
 <body>
 
-    <div id="loading-screen">
-        <img id="loading-logo" src="Images/Logo/Logo.png" alt="">
-        <div class="loading-spinner"></div>
-        <p class="jumping-text">Зареждане...</p>
+  <div id="loading-screen">
+    <img id="loading-logo" src="Images/Logo/Logo.png" alt="">
+    <div class="loading-spinner"></div>
+    <p class="jumping-text">Зареждане...</p>
+  </div>
+
+  <header class="site-header">
+    <section class="logo">
+      <a href="index.html"><img id="logo-image-navbar" src="Images/Logo/Logo.png"
+          alt="Съюз на математиците в България"></a>
+    </section>
+    <nav class="nav-bar">
+      <ul class="navbar-contents">
+        <li><a href="index.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg" height="0.8em"
+              viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+            </svg>Начало</a></li>
+        <li><a href="competitions.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg"
+              height="0.8em"
+              viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M32 0C49.7 0 64 14.3 64 32V48l69-17.2c38.1-9.5 78.3-5.1 113.5 12.5c46.3 23.2 100.8 23.2 147.1 0l9.6-4.8C423.8 28.1 448 43.1 448 66.1V345.8c0 13.3-8.3 25.3-20.8 30l-34.7 13c-46.2 17.3-97.6 14.6-141.7-7.4c-37.9-19-81.3-23.7-122.5-13.4L64 384v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V400 334 64 32C0 14.3 14.3 0 32 0zM64 187.1l64-13.9v65.5L64 252.6V318l48.8-12.2c5.1-1.3 10.1-2.4 15.2-3.3V238.7l38.9-8.4c8.3-1.8 16.7-2.5 25.1-2.1l0-64c13.6 .4 27.2 2.6 40.4 6.4l23.6 6.9v66.7l-41.7-12.3c-7.3-2.1-14.8-3.4-22.3-3.8v71.4c21.8 1.9 43.3 6.7 64 14.4V244.2l22.7 6.7c13.5 4 27.3 6.4 41.3 7.4V194c-7.8-.8-15.6-2.3-23.2-4.5l-40.8-12v-62c-13-3.8-25.8-8.8-38.2-15c-8.2-4.1-16.9-7-25.8-8.8v72.4c-13-.4-26 .8-38.7 3.6L128 173.2V98L64 114v73.1zM320 335.7c16.8 1.5 33.9-.7 50-6.8l14-5.2V251.9l-7.9 1.8c-18.4 4.3-37.3 5.7-56.1 4.5v77.4zm64-149.4V115.4c-20.9 6.1-42.4 9.1-64 9.1V194c13.9 1.4 28 .5 41.7-2.6l22.3-5.2z" />
+            </svg>Състезания</a></li>
+        <li><a href="exams.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg" height="0.8em"
+              viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+            </svg>Изпити</a></li>
+        <li><a href="contestSignUp.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg"
+              height="0.8em"
+              viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V428.7c-2.7 1.1-5.4 2-8.2 2.7l-60.1 15c-3 .7-6 1.2-9 1.4c-.9 .1-1.8 .2-2.7 .2H240c-6.1 0-11.6-3.4-14.3-8.8l-8.8-17.7c-1.7-3.4-5.1-5.5-8.8-5.5s-7.2 2.1-8.8 5.5l-8.8 17.7c-2.9 5.9-9.2 9.4-15.7 8.8s-12.1-5.1-13.9-11.3L144 381l-9.8 32.8c-6.1 20.3-24.8 34.2-46 34.2H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h8.2c7.1 0 13.3-4.6 15.3-11.4l14.9-49.5c3.4-11.3 13.8-19.1 25.6-19.1s22.2 7.8 25.6 19.1l11.6 38.6c7.4-6.2 16.8-9.7 26.8-9.7c15.9 0 30.4 9 37.5 23.2l4.4 8.8h8.9c-3.1-8.8-3.7-18.4-1.4-27.8l15-60.1c2.8-11.3 8.6-21.5 16.8-29.7L384 203.6V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM549.8 139.7c-15.6-15.6-40.9-15.6-56.6 0l-29.4 29.4 71 71 29.4-29.4c15.6-15.6 15.6-40.9 0-56.6l-14.4-14.4zM311.9 321c-4.1 4.1-7 9.2-8.4 14.9l-15 60.1c-1.4 5.5 .2 11.2 4.2 15.2s9.7 5.6 15.2 4.2l60.1-15c5.6-1.4 10.8-4.3 14.9-8.4L512.1 262.7l-71-71L311.9 321z" />
+            </svg>Записване</a></li>
+        <li><a href="members.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg" height="0.8em"
+              viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+            </svg>Членство</a></li>
+        <li><a href="contacts.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg" height="0.8em"
+              viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+            </svg>Контакти</a></li>
+      </ul>
+    </nav>
+
+    <div class="sideNavigation">
+      <div id="mySidenav" class="sidenav">
+        <a href="index.html"><img src="Images/Logo/Logo-White.png" alt="СМБ-Велико Търново" class="sidenav-image"></a>
+        <a href="index.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em"
+            viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #e6e6e6
+              }
+            </style>
+            <path
+              d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+          </svg>Начало</a>
+        <a href="competitions.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em"
+            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #e6e6e6
+              }
+            </style>
+            <path
+              d="M32 0C49.7 0 64 14.3 64 32V48l69-17.2c38.1-9.5 78.3-5.1 113.5 12.5c46.3 23.2 100.8 23.2 147.1 0l9.6-4.8C423.8 28.1 448 43.1 448 66.1V345.8c0 13.3-8.3 25.3-20.8 30l-34.7 13c-46.2 17.3-97.6 14.6-141.7-7.4c-37.9-19-81.3-23.7-122.5-13.4L64 384v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V400 334 64 32C0 14.3 14.3 0 32 0zM64 187.1l64-13.9v65.5L64 252.6V318l48.8-12.2c5.1-1.3 10.1-2.4 15.2-3.3V238.7l38.9-8.4c8.3-1.8 16.7-2.5 25.1-2.1l0-64c13.6 .4 27.2 2.6 40.4 6.4l23.6 6.9v66.7l-41.7-12.3c-7.3-2.1-14.8-3.4-22.3-3.8v71.4c21.8 1.9 43.3 6.7 64 14.4V244.2l22.7 6.7c13.5 4 27.3 6.4 41.3 7.4V194c-7.8-.8-15.6-2.3-23.2-4.5l-40.8-12v-62c-13-3.8-25.8-8.8-38.2-15c-8.2-4.1-16.9-7-25.8-8.8v72.4c-13-.4-26 .8-38.7 3.6L128 173.2V98L64 114v73.1zM320 335.7c16.8 1.5 33.9-.7 50-6.8l14-5.2V251.9l-7.9 1.8c-18.4 4.3-37.3 5.7-56.1 4.5v77.4zm64-149.4V115.4c-20.9 6.1-42.4 9.1-64 9.1V194c13.9 1.4 28 .5 41.7-2.6l22.3-5.2z" />
+          </svg>Състезания</a>
+        <a href="exams.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em"
+            viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #e6e6e6
+              }
+            </style>
+            <path
+              d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+          </svg>Изпити</a>
+        <a href="contestSignUp.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em"
+            viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #e6e6e6
+              }
+            </style>
+            <path
+              d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V428.7c-2.7 1.1-5.4 2-8.2 2.7l-60.1 15c-3 .7-6 1.2-9 1.4c-.9 .1-1.8 .2-2.7 .2H240c-6.1 0-11.6-3.4-14.3-8.8l-8.8-17.7c-1.7-3.4-5.1-5.5-8.8-5.5s-7.2 2.1-8.8 5.5l-8.8 17.7c-2.9 5.9-9.2 9.4-15.7 8.8s-12.1-5.1-13.9-11.3L144 381l-9.8 32.8c-6.1 20.3-24.8 34.2-46 34.2H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h8.2c7.1 0 13.3-4.6 15.3-11.4l14.9-49.5c3.4-11.3 13.8-19.1 25.6-19.1s22.2 7.8 25.6 19.1l11.6 38.6c7.4-6.2 16.8-9.7 26.8-9.7c15.9 0 30.4 9 37.5 23.2l4.4 8.8h8.9c-3.1-8.8-3.7-18.4-1.4-27.8l15-60.1c2.8-11.3 8.6-21.5 16.8-29.7L384 203.6V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM549.8 139.7c-15.6-15.6-40.9-15.6-56.6 0l-29.4 29.4 71 71 29.4-29.4c15.6-15.6 15.6-40.9 0-56.6l-14.4-14.4zM311.9 321c-4.1 4.1-7 9.2-8.4 14.9l-15 60.1c-1.4 5.5 .2 11.2 4.2 15.2s9.7 5.6 15.2 4.2l60.1-15c5.6-1.4 10.8-4.3 14.9-8.4L512.1 262.7l-71-71L311.9 321z" />
+          </svg>Записване</a>
+        <a href="members.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em"
+            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #e6e6e6
+              }
+            </style>
+            <path
+              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+          </svg>Членство</a>
+        <a href="contacts.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em"
+            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #e6e6e6
+              }
+            </style>
+            <path
+              d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+          </svg>Контакти</a>
+        <div class="slider-wrap">
+          <p class="dark-mode">Тъмен режим</p>
+          <div class="slider-container">
+            <label class="switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="container" onclick="toggleNav(); myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="article-wrapper">
+      <h2 class="article-header">Резултати от Великденско математическо състезание</h2>
+      <article class="hitar-petar-article-wrapper">
+        <div class="text-wrapper">
+          <p class="article-info">На <span class="bold">27 април 2024 г.</span> СМБ – секция В. Търново проведе
+            традиционното Великденско математическо състезание в ПМГ „Васил Друмев“ . Състезанието е
+            предназначено за ученици с изявен интерес към математиката и има за цел да открива таланти и да мотивира
+            развитието на техните умения. Споделяме резултатите, които вече бяха публикувани
+            на нашата <a href="https://www.facebook.com/profile.php?id=61550607287866">фейсбук страница</a> .
+          </p>
+          <p class="national-ranking"><span style="font-weight: bold;">Пожелаваме Ви весело посрещане на предстоящите
+              светли празници!<br>Екипът на СМБ - секция В. Търново</span></p>
+        </div>
+        <div class="image-container">
+          <img src="Images/ArticleImages/easter_math_competition_four.jpg" alt="santa_claus_image" class="santa_claus_image">
+        </div>
+      </article>
     </div>
 
-    <header class="site-header">
-        <section class="logo">
-             <a href="index.html"><img id="logo-image-navbar" src="Images/Logo/Logo.png" alt="Съюз на математиците в България"></a>
-        </section>
-         <nav class="nav-bar">
-            <ul class="navbar-contents">
-                <li><a href="index.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>Начало</a></li>
-                <li><a href="competitions.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M32 0C49.7 0 64 14.3 64 32V48l69-17.2c38.1-9.5 78.3-5.1 113.5 12.5c46.3 23.2 100.8 23.2 147.1 0l9.6-4.8C423.8 28.1 448 43.1 448 66.1V345.8c0 13.3-8.3 25.3-20.8 30l-34.7 13c-46.2 17.3-97.6 14.6-141.7-7.4c-37.9-19-81.3-23.7-122.5-13.4L64 384v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V400 334 64 32C0 14.3 14.3 0 32 0zM64 187.1l64-13.9v65.5L64 252.6V318l48.8-12.2c5.1-1.3 10.1-2.4 15.2-3.3V238.7l38.9-8.4c8.3-1.8 16.7-2.5 25.1-2.1l0-64c13.6 .4 27.2 2.6 40.4 6.4l23.6 6.9v66.7l-41.7-12.3c-7.3-2.1-14.8-3.4-22.3-3.8v71.4c21.8 1.9 43.3 6.7 64 14.4V244.2l22.7 6.7c13.5 4 27.3 6.4 41.3 7.4V194c-7.8-.8-15.6-2.3-23.2-4.5l-40.8-12v-62c-13-3.8-25.8-8.8-38.2-15c-8.2-4.1-16.9-7-25.8-8.8v72.4c-13-.4-26 .8-38.7 3.6L128 173.2V98L64 114v73.1zM320 335.7c16.8 1.5 33.9-.7 50-6.8l14-5.2V251.9l-7.9 1.8c-18.4 4.3-37.3 5.7-56.1 4.5v77.4zm64-149.4V115.4c-20.9 6.1-42.4 9.1-64 9.1V194c13.9 1.4 28 .5 41.7-2.6l22.3-5.2z"/></svg>Състезания</a></li>
-                <li><a href="exams.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>Изпити</a></li>
-                <li><a href="contestSignUp.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V428.7c-2.7 1.1-5.4 2-8.2 2.7l-60.1 15c-3 .7-6 1.2-9 1.4c-.9 .1-1.8 .2-2.7 .2H240c-6.1 0-11.6-3.4-14.3-8.8l-8.8-17.7c-1.7-3.4-5.1-5.5-8.8-5.5s-7.2 2.1-8.8 5.5l-8.8 17.7c-2.9 5.9-9.2 9.4-15.7 8.8s-12.1-5.1-13.9-11.3L144 381l-9.8 32.8c-6.1 20.3-24.8 34.2-46 34.2H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h8.2c7.1 0 13.3-4.6 15.3-11.4l14.9-49.5c3.4-11.3 13.8-19.1 25.6-19.1s22.2 7.8 25.6 19.1l11.6 38.6c7.4-6.2 16.8-9.7 26.8-9.7c15.9 0 30.4 9 37.5 23.2l4.4 8.8h8.9c-3.1-8.8-3.7-18.4-1.4-27.8l15-60.1c2.8-11.3 8.6-21.5 16.8-29.7L384 203.6V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM549.8 139.7c-15.6-15.6-40.9-15.6-56.6 0l-29.4 29.4 71 71 29.4-29.4c15.6-15.6 15.6-40.9 0-56.6l-14.4-14.4zM311.9 321c-4.1 4.1-7 9.2-8.4 14.9l-15 60.1c-1.4 5.5 .2 11.2 4.2 15.2s9.7 5.6 15.2 4.2l60.1-15c5.6-1.4 10.8-4.3 14.9-8.4L512.1 262.7l-71-71L311.9 321z"/></svg>Записване</a></li>
-                <li><a href="members.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>Членство</a></li>
-                <li><a href="contacts.html"><svg style="margin-right: 0.3em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>Контакти</a></li>
-            </ul>
-         </nav>
- 
-         <div class="sideNavigation">
-            <div id="mySidenav" class="sidenav">
-                <a href="index.html"><img src="Images/Logo/Logo-White.png" alt="СМБ-Велико Търново" class="sidenav-image"></a>
-                <a href="index.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#e6e6e6}</style><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>Начало</a>
-                <a href="competitions.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#e6e6e6}</style><path d="M32 0C49.7 0 64 14.3 64 32V48l69-17.2c38.1-9.5 78.3-5.1 113.5 12.5c46.3 23.2 100.8 23.2 147.1 0l9.6-4.8C423.8 28.1 448 43.1 448 66.1V345.8c0 13.3-8.3 25.3-20.8 30l-34.7 13c-46.2 17.3-97.6 14.6-141.7-7.4c-37.9-19-81.3-23.7-122.5-13.4L64 384v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V400 334 64 32C0 14.3 14.3 0 32 0zM64 187.1l64-13.9v65.5L64 252.6V318l48.8-12.2c5.1-1.3 10.1-2.4 15.2-3.3V238.7l38.9-8.4c8.3-1.8 16.7-2.5 25.1-2.1l0-64c13.6 .4 27.2 2.6 40.4 6.4l23.6 6.9v66.7l-41.7-12.3c-7.3-2.1-14.8-3.4-22.3-3.8v71.4c21.8 1.9 43.3 6.7 64 14.4V244.2l22.7 6.7c13.5 4 27.3 6.4 41.3 7.4V194c-7.8-.8-15.6-2.3-23.2-4.5l-40.8-12v-62c-13-3.8-25.8-8.8-38.2-15c-8.2-4.1-16.9-7-25.8-8.8v72.4c-13-.4-26 .8-38.7 3.6L128 173.2V98L64 114v73.1zM320 335.7c16.8 1.5 33.9-.7 50-6.8l14-5.2V251.9l-7.9 1.8c-18.4 4.3-37.3 5.7-56.1 4.5v77.4zm64-149.4V115.4c-20.9 6.1-42.4 9.1-64 9.1V194c13.9 1.4 28 .5 41.7-2.6l22.3-5.2z"/></svg>Състезания</a>
-                <a href="exams.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#e6e6e6}</style><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>Изпити</a>
-                <a href="contestSignUp.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#e6e6e6}</style><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V428.7c-2.7 1.1-5.4 2-8.2 2.7l-60.1 15c-3 .7-6 1.2-9 1.4c-.9 .1-1.8 .2-2.7 .2H240c-6.1 0-11.6-3.4-14.3-8.8l-8.8-17.7c-1.7-3.4-5.1-5.5-8.8-5.5s-7.2 2.1-8.8 5.5l-8.8 17.7c-2.9 5.9-9.2 9.4-15.7 8.8s-12.1-5.1-13.9-11.3L144 381l-9.8 32.8c-6.1 20.3-24.8 34.2-46 34.2H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h8.2c7.1 0 13.3-4.6 15.3-11.4l14.9-49.5c3.4-11.3 13.8-19.1 25.6-19.1s22.2 7.8 25.6 19.1l11.6 38.6c7.4-6.2 16.8-9.7 26.8-9.7c15.9 0 30.4 9 37.5 23.2l4.4 8.8h8.9c-3.1-8.8-3.7-18.4-1.4-27.8l15-60.1c2.8-11.3 8.6-21.5 16.8-29.7L384 203.6V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM549.8 139.7c-15.6-15.6-40.9-15.6-56.6 0l-29.4 29.4 71 71 29.4-29.4c15.6-15.6 15.6-40.9 0-56.6l-14.4-14.4zM311.9 321c-4.1 4.1-7 9.2-8.4 14.9l-15 60.1c-1.4 5.5 .2 11.2 4.2 15.2s9.7 5.6 15.2 4.2l60.1-15c5.6-1.4 10.8-4.3 14.9-8.4L512.1 262.7l-71-71L311.9 321z"/></svg>Записване</a>
-                <a href="members.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#e6e6e6}</style><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>Членство</a>
-                <a href="contacts.html"><svg style="margin-right: 0.5em;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#e6e6e6}</style><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>Контакти</a>
-                <div class="slider-wrap">
-                    <p class="dark-mode">Тъмен режим</p>
-                    <div class="slider-container">
-                        <label class="switch" for="checkbox">
-                          <input type="checkbox" id="checkbox" />
-                          <div class="slider round"></div>
-                        </label>
-                    </div>
-                </div>
-            </div>
-              <div class="container" onclick="toggleNav(); myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+    <div class="result-wrapper">
+      <h2 class="result-header">Класиране на учениците от област Велико Търново - Математически турнир "Иван Салабашев".
+      </h2>
+      <div class="results-wrapper">
+        <div class="result-container">
+          <ul class="result-accordion">
+            <li class="result-element">
+              <input class="result-input" type="radio" name="accordion" id="first">
+              <label class="result-label" for="first">Резултати: I клас</label>
+              <div class="result-content">
+                <ul class="list-first-result">
+                  <li>
+                    <table>
+                      <tr class="context-row">
+                        <th>Място</th>
+                        <th>Име</th>
+                        <th>Точки</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <th>Андрей Гушев</th>
+                        <th>60</th>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <th>Петър Армянов</th>
+                        <th>57</th>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <th>Радост Тодоранова</th>
+                        <th>52</th>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <th>Мария Белчева</th>
+                        <th>48</th>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <th>Самуил Димитров</th>
+                        <th>47</th>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <th>Йоан Ковачев</th>
+                        <th>46</th>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <th>Ивелин Андреев</th>
+                        <th>46</th>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <th>Ивайло Калев</th>
+                        <th>46</th>
+                      </tr>
+                      <tr>
+                        <th>9</th>
+                        <th>Самуил Андонов</th>
+                        <th>44</th>
+                      </tr>
+                      <tr>
+                        <th>10</th>
+                        <th>Владимир Цонев</th>
+                        <th>43</th>
+                      </tr>
+                      <tr>
+                        <th>11</th>
+                        <th>Виктор Борисов</th>
+                        <th>43</th>
+                      </tr>
+                      <tr>
+                        <th>12</th>
+                        <th>Радост Петрова</th>
+                        <th>42</th>
+                      </tr>
+                      <tr>
+                        <th>13</th>
+                        <th>Виктор Банчев</th>
+                        <th>40</th>
+                      </tr>
+                      <tr>
+                        <th>13</th>
+                        <th>Зорница Корчева</th>
+                        <th>40</th>
+                      </tr>
+                      <tr>
+                        <th>14</th>
+                        <th>Кремена Димитрова</th>
+                        <th>38</th>
+                      </tr>
+                      <tr>
+                        <th>15</th>
+                        <th>Борис Иванов</th>
+                        <th>36</th>
+                      </tr>
+                      <tr>
+                        <th>16</th>
+                        <th>Гергана Георгиева</th>
+                        <th>33</th>
+                      </tr>
+                      <tr>
+                        <th>17</th>
+                        <th>Борислав Друмев</th>
+                        <th>33</th>
+                      </tr>
+                      <tr>
+                        <th>18</th>
+                        <th>Рая Арабаджиева</th>
+                        <th>32</th>
+                      </tr>
+                      <tr>
+                        <th>19</th>
+                        <th>Владимир Друмев</th>
+                        <th>32</th>
+                      </tr>
+                      <tr>
+                        <th>20</th>
+                        <th>Яна Георгиева</th>
+                        <th>28</th>
+                      </tr>
+                      <tr>
+                        <th>21</th>
+                        <th>Михаил Заемджиков</th>
+                        <th>25</th>
+                      </tr>
+                      <tr>
+                        <th>22</th>
+                        <th>Никола Иванов</th>
+                        <th>22</th>
+                      </tr>
+                      <tr>
+                        <th>23</th>
+                        <th>Джаан Николов</th>
+                        <th>21</th>
+                      </tr>
+                      <tr>
+                        <th>24</th>
+                        <th>Деница Радева</th>
+                        <th>21</th>
+                      </tr>
+                      <tr>
+                        <th>25</th>
+                        <th>Димитър Димитров</th>
+                        <th>20</th>
+                      </tr>
+                      <tr>
+                        <th>26</th>
+                        <th>Анна-Мария Русева</th>
+                        <th>20</th>
+                      </tr>
+                      <tr>
+                        <th>27</th>
+                        <th>Грета Стефанова</th>
+                        <th>18</th>
+                      </tr>
+                      <tr>
+                        <th>28</th>
+                        <th>Кристиан Атанасов</th>
+                        <th>18</th>
+                      </tr>
+                      <tr>
+                        <th>29</th>
+                        <th>Пресиана Бъчварова</th>
+                        <th>17</th>
+                      </tr>
+                      <tr>
+                        <th>30</th>
+                        <th>Теодор Палазов</th>
+                        <th>15</th>
+                      </tr>
+                      <tr>
+                        <th>31</th>
+                        <th>Петър Станев</th>
+                        <th>14</th>
+                      </tr>
+                      <tr>
+                        <th>32</th>
+                        <th>Ния Стаменова</th>
+                        <th>14</th>
+                      </tr>
+                      <tr>
+                        <th>33</th>
+                        <th>Ивайла Иванова</th>
+                        <th>14</th>
+                      </tr>
+                      <tr>
+                        <th>34</th>
+                        <th>Ивомир Христов</th>
+                        <th>14</th>
+                      </tr>
+                      <tr>
+                        <th>35</th>
+                        <th>София Балъкова</th>
+                        <th>11</th>
+                      </tr>
+                      <tr>
+                        <th>36</th>
+                        <th>Александър Миланов</th>
+                        <th>11</th>
+                      </tr>
+                      <tr>
+                        <th>37</th>
+                        <th>Константин Стефанов</th>
+                        <th>9</th>
+                      </tr>
+                      <tr>
+                        <th>38</th>
+                        <th>Боян Богомилов</th>
+                        <th>8</th>
+                      </tr>
+                      <tr>
+                        <th>39</th>
+                        <th>Вероника Хорозова</th>
+                        <th>6</th>
+                      </tr>
+                      <tr>
+                        <th>40</th>
+                        <th>Стилиан Димитров</th>
+                        <th>5</th>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
               </div>
-        </div>
-      </header>
-      
-      <main>
-        <div class="article-wrapper">
-           <h2 class="article-header">Резултати от пробен изпит по БЕЛ</h2>
-           <div class="article-content-wrapper">
-            <article class="hitar-petar-article-wrapper">
-               <div class="text-wrapper">
-                <p class="article-info">На 13 април 2024 г., секция В. Търново на СМБ проведе пробен изпит по БЕЛ в ПМГ „Васил Друмев“. Изпитът беше организиран за учениците, които им предстои да се явят на национално външно оценяване по БЕЛ след 7. клас с цел, те да тестват своите умения.</p>
-               </div>
-               <div class="image-container">
-                   <img src="Images/ArticleImages/result_BEL.jpg" alt="santa_claus_image" class="santa_claus_image">
-               </div>
-            </article>
-           </div>
-        </div>
-   
-       <div class="result-wrapper">
-           <h2 class="result-header">Резултатите от Пробния изпит по математика - 16 март</h2>
-           <div class="results-wrapper">
-               <div class="result-container">
-                   <ul class="result-accordion">
-                       <li class="result-element">
-                            <ul class="list-first-result">
-                                <li>
-                                    <table>
-                                        <tr class="context-row">
-                                            <th>Име фамилия</th>
-                                            <th>Общо</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Биляна Градева</th>
-                                          <th>94</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Елица Борисова</th>
-                                          <th>90</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Елица Ангелова</th>
-                                          <th>88</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Магдалена Бояджиева</th>
-                                          <th>87</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Никол Стилиянова</th>
-                                          <th>86</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Диляна Пенчева</th>
-                                          <th>86</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Десислава Топалова</th>
-                                          <th>86</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Камелия Йорданова</th>
-                                          <th>84</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Симеон Хаджийски</th>
-                                          <th>83</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Дария Тотева</th>
-                                          <th>83</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Преслава Спасичкова</th>
-                                          <th>82</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Александра Александрова</th>
-                                          <th>82</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Йоанна Ганчева</th>
-                                          <th>80</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Деница Матеева</th>
-                                          <th>80</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Данаил Боев</th>
-                                          <th>78</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Магдалена Вачева</th>
-                                          <th>77</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Борислав Стефанов</th>
-                                          <th>77</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Андрея Хутова</th>
-                                          <th>76</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Никола Недев</th>
-                                          <th>75</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Ева Тачева</th>
-                                          <th>75</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Калоян Димитров</th>
-                                          <th>74</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Зорница Тотева</th>
-                                          <th>74</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Христина Метева</th>
-                                          <th>73</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Румен Петров</th>
-                                          <th>73</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Радост Радева</th>
-                                          <th>73</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Радосвета Стефанова</th>
-                                          <th>73</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Ева Димитрова</th>
-                                          <th>73</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Дарина Ненова</th>
-                                          <th>73</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Аделина Петрова</th>
-                                          <th>73</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Екатерина Минчева</th>
-                                          <th>72</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Цанко Илиев</th>
-                                          <th>71</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Симеон Милчев</th>
-                                          <th>71</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Ивана Маркова</th>
-                                          <th>71</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Антоан Амонс</th>
-                                          <th>70</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Александра Ставрева</th>
-                                          <th>70</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Самуил Николов</th>
-                                          <th>69</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Изабела Дешева</th>
-                                          <th>69</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Онур Халилов</th>
-                                          <th>68</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Никола Начев</th>
-                                          <th>68</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Мария Михова</th>
-                                          <th>68</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Добромир Матеев</th>
-                                          <th>67.5</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Никола Китанов</th>
-                                          <th>67</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Милица Трифонова</th>
-                                          <th>67</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Санер Кенан Али</th>
-                                          <th>66</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Рая Кабранджиева</th>
-                                          <th>66</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Николай Костадинов</th>
-                                          <th>66</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Никол Вълчева</th>
-                                          <th>66</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Виктория Богданова</th>
-                                          <th>66</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Калоян Янчев</th>
-                                          <th>65</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Йоана Ненова</th>
-                                          <th>65</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Велислав Суванджиев</th>
-                                          <th>65</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Божидара Методиева</th>
-                                          <th>65</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Преслава Кънчева</th>
-                                          <th>64</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Гергана Минчева</th>
-                                          <th>64</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Михаела Христова</th>
-                                          <th>63</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Васил Марков</th>
-                                          <th>63</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Айля Мехмедова</th>
-                                          <th>63</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Петя Николова</th>
-                                          <th>61</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Николай Съботинов</th>
-                                          <th>61</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Миа Желязкова</th>
-                                          <th>61</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Елица Гайдарова</th>
-                                          <th>61</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Ина Златева</th>
-                                          <th>60</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Ева Йорданова</th>
-                                          <th>60</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Даная Неделчева</th>
-                                          <th>60</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Шанел Шефкатова</th>
-                                          <th>59.5</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Йоана Славчева</th>
-                                          <th>59</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Ивайла Бондарева</th>
-                                          <th>59</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Антония Захариева</th>
-                                          <th>59</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Никола Нунев</th>
-                                          <th>58</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Ивалин Бояджиев</th>
-                                          <th>57</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Денис Алексиев</th>
-                                          <th>56</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Бюшра Темиз</th>
-                                          <th>56</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Никола Ненов</th>
-                                          <th>55.5</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Николета Коева</th>
-                                          <th>55</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Мария Дикова</th>
-                                          <th>55</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Алекс Кънчев</th>
-                                          <th>54</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Александър Ценков</th>
-                                          <th>51</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Михаил Минчев</th>
-                                          <th>50.5</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Иван Георгиев</th>
-                                          <th>50</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Радостина Иванова</th>
-                                          <th>49</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Киара Панчева</th>
-                                          <th>49</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Огнян Обретенов</th>
-                                          <th>48</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Йордан Каменов</th>
-                                          <th>47</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Васил Йосифов</th>
-                                          <th>46</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Христомир Стоянов</th>
-                                          <th>45</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Ивайла Йосифова</th>
-                                          <th>37</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Гергана Пенчева</th>
-                                          <th>34</th>
-                                        </tr>
-                                    </table>
-                                </li>
-                            </ul>
-                       </li>
-                   </ul>
-               </div>
-           </div>
-        </div>
-    </main>
+            </li>
+            <li class="result-element">
+              <input class="result-input" type="radio" name="accordion" id="second">
+              <label class="result-label" for="second">Резултати: II Клас</label>
+              <div class="result-content">
+                <ul class="list-second-result">
+                  <li>
+                    <table>
+                      <tr class="context-row">
+                        <th>Място</th>
+                        <th>Име</th>
+                        <th>Точки</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <th>Паола Иванова</th>
+                        <th>71</th>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <th>Цанко Стефанов</th>
+                        <th>55</th>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <th>Калоян Трифонов</th>
+                        <th>53</th>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <th>Йордан Капукаранов</th>
+                        <th>47</th>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <th>Тодор Тодоров</th>
+                        <th>46</th>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <th>Иван Гаджев</th>
+                        <th>43</th>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <th>Владимир Капукаранов</th>
+                        <th>43</th>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <th>Ева Табакова</th>
+                        <th>42</th>
+                      </tr>
+                      <tr>
+                        <th>9</th>
+                        <th>Николай Трифонов</th>
+                        <th>42</th>
+                      </tr>
+                      <tr>
+                        <th>10</th>
+                        <th>Денислава Спирова</th>
+                        <th>41</th>
+                      </tr>
+                      <tr>
+                        <th>11</th>
+                        <th>Петър Нанев</th>
+                        <th>41</th>
+                      </tr>
+                      <tr>
+                        <th>12</th>
+                        <th>Дария Кънчева</th>
+                        <th>35</th>
+                      </tr>
+                      <tr>
+                        <th>13</th>
+                        <th>Еди Солаков</th>
+                        <th>30</th>
+                      </tr>
+                      <tr>
+                        <th>14</th>
+                        <th>Борислав Станчев</th>
+                        <th>27</th>
+                      </tr>
+                      <tr>
+                        <th>15</th>
+                        <th>Мартин Александров</th>
+                        <th>27</th>
+                      </tr>
+                      <tr>
+                        <th>16</th>
+                        <th>Дария Манчева</th>
+                        <th>24</th>
+                      </tr>
+                      <tr>
+                        <th>17</th>
+                        <th>Йоан Даниел Димитров</th>
+                        <th>24</th>
+                      </tr>
+                      <tr>
+                        <th>18</th>
+                        <th>Веселин Георгиев</th>
+                        <th>23</th>
+                      </tr>
+                      <tr>
+                        <th>19</th>
+                        <th>Георги Петров</th>
+                        <th>20</th>
+                      </tr>
+                      <tr>
+                        <th>20</th>
+                        <th>Теона Тутекова</th>
+                        <th>18</th>
+                      </tr>
+                      <tr>
+                        <th>21</th>
+                        <th>Диман Димов</th>
+                        <th>16</th>
+                      </tr>
+                      <tr>
+                        <th>22</th>
+                        <th>Денчо Стефанов</th>
+                        <th>11</th>
+                      </tr>
+                      <tr>
+                        <th>23</th>
+                        <th>Ангел Игнатов</th>
+                        <th>7</th>
+                      </tr>
+                    </table>
 
-    <footer>
-        <div class="footer-copyright">&copy; СМБ - Велико Търново 2023</div>
-        <span class="partners">
-            <a href="https://www.mon.bg/"><img class="mon-image" src="Images/Partners/mon-logo.png" alt="Министерство на образованието и науката на България"></a>
-            <a href="http://www.math.bas.bg/smb/"><img class="smb-image" src="Images/Partners/SMB-logo-b&w.png" alt=""></a>
-            <a href="http://www.math.bas.bg/omi/hssimi/"><img class="uchimi-image" src="Images/Partners/UchIMI-logo-short_text-color-transparent-BG.png" alt="УчИМИ"></a>
-        </span>
-    </footer>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="result-element">
+              <input class="result-input" type="radio" name="accordion" id="third">
+              <label class="result-label" for="third">Резултати: III клас</label>
+              <div class="result-content">
+                <ul class="list-third-result">
+                  <li>
+                    <table>
+                      <tr class="context-row">
+                        <th>Място</th>
+                        <th>Име</th>
+                        <th>Точки</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <th>Стефан Момински</th>
+                        <th>70</th>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <th>Цветослав Радев</th>
+                        <th>70</th>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <th>Максим Енев</th>
+                        <th>66</th>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <th>Добромир Гичев</th>
+                        <th>66</th>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <th>Борил Савов</th>
+                        <th>65</th>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <th>Валери Ангелов</th>
+                        <th>63</th>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <th>Александър Попов</th>
+                        <th>62</th>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <th>Явор Шомов</th>
+                        <th>54</th>
+                      </tr>
+                      <tr>
+                        <th>9</th>
+                        <th>Петко Тошев</th>
+                        <th>54</th>
+                      </tr>
+                      <tr>
+                        <th>10</th>
+                        <th>Денислав Мирчев</th>
+                        <th>53</th>
+                      </tr>
+                      <tr>
+                        <th>11</th>
+                        <th>Изабела Горанова</th>
+                        <th>52</th>
+                      </tr>
+                      <tr>
+                        <th>12</th>
+                        <th>Даниелина Стефанова</th>
+                        <th>51</th>
+                      </tr>
+                      <tr>
+                        <th>13</th>
+                        <th>Пламена Китанова</th>
+                        <th>51</th>
+                      </tr>
+                      <tr>
+                        <th>14</th>
+                        <th>Денислав Ангелов</th>
+                        <th>49</th>
+                      </tr>
+                      <tr>
+                        <th>15</th>
+                        <th>Габриела Буюклиева</th>
+                        <th>49</th>
+                      </tr>
+                      <tr>
+                        <th>16</th>
+                        <th>Александър Пенев</th>
+                        <th>48</th>
+                      </tr>
+                      <tr>
+                        <th>17</th>
+                        <th>Юлияна Георгиева</th>
+                        <th>48</th>
+                      </tr>
+                      <tr>
+                        <th>18</th>
+                        <th>Диляна Богомилова</th>
+                        <th>47</th>
+                      </tr>
+                      <tr>
+                        <th>19</th>
+                        <th>Петър Иванов</th>
+                        <th>45</th>
+                      </tr>
+                      <tr>
+                        <th>20</th>
+                        <th>Йордан Пенчев</th>
+                        <th>44</th>
+                      </tr>
+                      <tr>
+                        <th>21</th>
+                        <th>Йоан-Давид Кирилов Бузев</th>
+                        <th>41</th>
+                      </tr>
+                      <tr>
+                        <th>22</th>
+                        <th>Йордан Георгиев</th>
+                        <th>41</th>
+                      </tr>
+                      <tr>
+                        <th>23</th>
+                        <th>Деан Тотев</th>
+                        <th>32</th>
+                      </tr>
+                      <tr>
+                        <th>24</th>
+                        <th>Мина Папазова</th>
+                        <th>29</th>
+                      </tr>
+                      <tr>
+                        <th>25</th>
+                        <th>Виктория Табакова</th>
+                        <th>24</th>
+                      </tr>
+                      <tr>
+                        <th>26</th>
+                        <th>Мартин Ангелов</th>
+                        <th>22</th>
+                      </tr>
+                      <tr>
+                        <th>27</th>
+                        <th>Мирая Белчева</th>
+                        <th>21</th>
+                      </tr>
+                      <tr>
+                        <th>28</th>
+                        <th>Божидар Александров</th>
+                        <th>19</th>
+                      </tr>
+                      <tr>
+                        <th>29</th>
+                        <th>Радослав Христов</th>
+                        <th>19</th>
+                      </tr>
+                      <tr>
+                        <th>30</th>
+                        <th>Велизар Михайлов</th>
+                        <th>11</th>
+                      </tr>
+                      <tr>
+                        <th>31</th>
+                        <th>Маргарита Матева</th>
+                        <th>9</th>
+                      </tr>
+                    </table>
 
-    <script src="js/showMenu.js"></script>
-    <script src="js/changeOpenButton.js"></script>
-    <script src="js/darkMode.js"></script>
-    <script src="js/loadingScreen.js"></script>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="result-element">
+              <input class="result-input" type="radio" name="accordion" id="fourth">
+              <label class="result-label" for="fourth">Резултати: IV клас</label>
+              <div class="result-content">
+                <ul class="list-fourth-result">
+                  <li>
+                    <table>
+                      <tr class="context-row">
+                        <th>Място</th>
+                        <th>Име</th>
+                        <th>Точки</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <th>Александър Маслянков</th>
+                        <th>75</th>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <th>Виктор Куцаров</th>
+                        <th>70</th>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <th>Александър Пъшев</th>
+                        <th>68</th>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <th>Виктория Марчовска</th>
+                        <th>65</th>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <th>Богорис Георгиев</th>
+                        <th>61</th>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <th>Боримир Иванов</th>
+                        <th>56</th>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <th>Теодор Митев</th>
+                        <th>51</th>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <th>Виктория Иванова</th>
+                        <th>50</th>
+                      </tr>
+                      <tr>
+                        <th>9</th>
+                        <th>Нора Шикова</th>
+                        <th>46</th>
+                      </tr>
+                      <tr>
+                        <th>10</th>
+                        <th>Ралица Тотева</th>
+                        <th>41</th>
+                      </tr>
+                      <tr>
+                        <th>11</th>
+                        <th>Боримир Златинов</th>
+                        <th>38</th>
+                      </tr>
+                      <tr>
+                        <th>12</th>
+                        <th>Преслав Конакчиев</th>
+                        <th>32</th>
+                      </tr>
+                      <tr>
+                        <th>13</th>
+                        <th>Кристина Хаджидосева</th>
+                        <th>25</th>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="result-element">
+              <input class="result-input" type="radio" name="accordion" id="fifth">
+              <label class="result-label" for="fifth">Резултати: V клас</label>
+              <div class="result-content">
+                <ul class="list-fifth-result">
+                  <li>
+                    <table>
+                      <tr class="context-row">
+                        <th>Място</th>
+                        <th>Име</th>
+                        <th>Точки</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <th>Павел Николов</th>
+                        <th>46</th>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <th>Матей Иванов</th>
+                        <th>42</th>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <th>Петър Димитров</th>
+                        <th>41</th>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <th>Дария Ангелова</th>
+                        <th>30</th>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <th>Ивона Русева</th>
+                        <th>30</th>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <th>Иван Тутраканов</th>
+                        <th>23</th>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <th>Йордан Иванов</th>
+                        <th>12</th>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <th>Аделина Йорданова</th>
+                        <th>4</th>
+                      </tr>
+                    </table>
+
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="result-element">
+              <input class="result-input" type="radio" name="accordion" id="sixth">
+              <label class="result-label" for="sixth">Резултати: VI клас</label>
+              <div class="result-content">
+                <ul class="list-sixth-result">
+                  <li>
+
+                    <table>
+                      <tr class="context-row">
+                        <th>Място</th>
+                        <th>Име</th>
+                        <th>Точки</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <th>Преслав Георгиев</th>
+                        <th>54</th>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <th>Лорън Джеймсън</th>
+                        <th>45</th>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <th>Павел Герев</th>
+                        <th>36</th>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <th>Петър Симеонов</th>
+                        <th>31</th>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <th>Джем Ахмедов</th>
+                        <th>23</th>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <th>Теодор Тутеков</th>
+                        <th>18</th>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <th>Кристиана Даскалова</th>
+                        <th>14</th>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <th>Мартина Моминска</th>
+                        <th>7</th>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="result-element">
+              <input class="result-input" type="radio" name="accordion" id="seventh">
+              <label class="result-label" for="seventh">Резултати: VII клас</label>
+              <div class="result-content">
+                <ul class="list-seventh-result">
+                  <li>
+
+                    <table>
+                      <tr class="context-row">
+                        <th>Място</th>
+                        <th>Име</th>
+                        <th>Точки</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <th>Биляна Градева</th>
+                        <th>75</th>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <th>Елена Георгиева</th>
+                        <th>71</th>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <th>Никола Недев</th>
+                        <th>68</th>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <th>Ивайла Бондарева</th>
+                        <th>66</th>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <th>Сиана Георгиева</th>
+                        <th>60</th>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <th>Мария Дикова</th>
+                        <th>57</th>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <th>Борис Шомов</th>
+                        <th>55</th>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <th>Рая Трифонова</th>
+                        <th>54</th>
+                      </tr>
+                      <tr>
+                        <th>9</th>
+                        <th>Христо Банков</th>
+                        <th>54</th>
+                      </tr>
+                      <tr>
+                        <th>10</th>
+                        <th>Диляна Пенчева</th>
+                        <th>53</th>
+                      </tr>
+                      <tr>
+                        <th>11</th>
+                        <th>Иван Козлев</th>
+                        <th>52</th>
+                      </tr>
+                      <tr>
+                        <th>12</th>
+                        <th>Дарина Ненова</th>
+                        <th>48</th>
+                      </tr>
+                      <tr>
+                        <th>13</th>
+                        <th>Йордан Стаменов</th>
+                        <th>47</th>
+                      </tr>
+                      <tr>
+                        <th>14</th>
+                        <th>Преслав Стефанов</th>
+                        <th>44</th>
+                      </tr>
+                      <tr>
+                        <th>15</th>
+                        <th>Никола Нунев</th>
+                        <th>39</th>
+                      </tr>
+                      <tr>
+                        <th>16</th>
+                        <th>Антоанета Момчилова</th>
+                        <th>37</th>
+                      </tr>
+                      <tr>
+                        <th>17</th>
+                        <th>Йордан Каменов</th>
+                        <th>37</th>
+                      </tr>
+                      <tr>
+                        <th>18</th>
+                        <th>Ева Тачева</th>
+                        <th>34</th>
+                      </tr>
+                      <tr>
+                        <th>19</th>
+                        <th>Габриела Иванова</th>
+                        <th>31</th>
+                      </tr>
+                      <tr>
+                        <th>20</th>
+                        <th>Преслав Паунов</th>
+                        <th>31</th>
+                      </tr>
+                      <tr>
+                        <th>21</th>
+                        <th>Мирела Колева</th>
+                        <th>29</th>
+                      </tr>
+                      <tr>
+                        <th>22</th>
+                        <th>Антоан Амонс</th>
+                        <th>25</th>
+                      </tr>
+                      <tr>
+                        <th>23</th>
+                        <th>Гергана Минчева</th>
+                        <th>1</th>
+                      </tr>
+                    </table>
+
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="result-element">
+              <input class="result-input" type="radio" name="accordion" id="eight">
+              <label class="result-label" for="eight">Резултати: VIII клас</label>
+              <div class="result-content">
+                <ul class="list-eight-result">
+                  <li>
+
+                    <table>
+                      <tr class="context-row">
+                        <th>Място</th>
+                        <th>Име</th>
+                        <th>Точки</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <th>Александър Стефанов</th>
+                        <th>72</th>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <th>Петър Тодоров</th>
+                        <th>50</th>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <th>Максим Трифонов</th>
+                        <th>35</th>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <th>Ивайло Иванов</th>
+                        <th>43</th>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="result-element">
+              <input class="result-input" type="radio" name="accordion" id="nineth">
+              <label class="result-label" for="nineth">Резултати: IX клас</label>
+              <div class="result-content">
+                <ul class="list-nineth-result">
+                  <li>
+                    <table>
+                      <tr class="context-row">
+                        <th>Място</th>
+                        <th>Име</th>
+                        <th>Точки</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <th>Калоян Станчев</th>
+                        <th>75</th>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="result-element">
+              <input class="result-input" type="radio" name="accordion" id="tenth">
+              <label class="result-label" for="tenth">Резултати: X клас</label>
+              <div class="result-content">
+                <ul class="list-tenth-result">
+                  <li>
+                    <table>
+                      <tr class="context-row">
+                        <th>Място</th>
+                        <th>Име</th>
+                        <th>Точки</th>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <th>Гергана Вичева</th>
+                        <th>42</th>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-copyright">&copy; СМБ - Велико Търново 2023</div>
+    <span class="partners">
+      <a href="https://www.mon.bg/"><img class="mon-image" src="Images/Partners/mon-logo.png"
+          alt="Министерство на образованието и науката на България"></a>
+      <a href="http://www.math.bas.bg/smb/"><img class="smb-image" src="Images/Partners/SMB-logo-b&w.png" alt=""></a>
+      <a href="http://www.math.bas.bg/omi/hssimi/"><img class="uchimi-image"
+          src="Images/Partners/UchIMI-logo-short_text-color-transparent-BG.png" alt="УчИМИ"></a>
+    </span>
+  </footer>
+
+  <script src="js/showMenu.js"></script>
+  <script src="js/changeOpenButton.js"></script>
+  <script src="js/darkMode.js"></script>
+  <script src="js/loadingScreen.js"></script>
 </body>
+
 </html>
